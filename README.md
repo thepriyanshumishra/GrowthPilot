@@ -16,6 +16,7 @@
 [![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-green?style=for-the-badge&logo=supabase)](https://supabase.com/)
 [![Prisma](https://img.shields.io/badge/Prisma-ORM-white?style=for-the-badge&logo=prisma)](https://www.prisma.io/)
 [![Groq](https://img.shields.io/badge/AI-Groq_Llama_3-orange?style=for-the-badge)](https://groq.com/)
+[![Live Demo](https://img.shields.io/badge/LIVE_DEMO-YES-brightgreen?style=for-the-badge)](https://growthpilotweb.vercel.app/)
 
 </div>
 
