@@ -1,17 +1,16 @@
 "use client"
-
 import { useState } from "react"
 import { useAuth } from "@/context/AuthContext"
 import { GlassCard } from "@/components/GlassCard"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Mail, Lock, ArrowRight, Chrome, User, Eye, EyeOff } from "lucide-react"
-import { motion } from "framer-motion"
+import { Mail, Lock, ArrowRight, Chrome, User, Eye, EyeOff, Wand2, Loader2, CheckCircle2 } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
 import { auth } from "@/lib/firebase"
-import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth"
+import { createUserWithEmailAndPassword, updateProfile, sendSignInLinkToEmail } from "firebase/auth"
 import { useRouter } from "next/navigation"
 import { toast } from "sonner"
 
@@ -23,12 +22,34 @@ export default function SignupPage() {
     const [showPassword, setShowPassword] = useState(false)
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState("")
+    const [loginMethod, setLoginMethod] = useState<"password" | "magic-link">("password")
+    const [linkSent, setLinkSent] = useState(false)
     const router = useRouter()
 
     const handleSignup = async (e: React.FormEvent) => {
         e.preventDefault()
         setLoading(true)
         setError("")
+
+        if (loginMethod === "magic-link") {
+            try {
+                const actionCodeSettings = {
+                    url: `${window.location.origin}/auth/login`, // Redirect to login for processing
+                    handleCodeInApp: true,
+                };
+                await sendSignInLinkToEmail(auth, email, actionCodeSettings);
+                window.localStorage.setItem('emailForSignIn', email);
+                setLinkSent(true);
+                toast.success("Magic link sent!");
+            } catch (err: any) {
+                setError(err.message);
+                toast.error(err.message || "Failed to send link");
+            } finally {
+                setLoading(false);
+            }
+            return;
+        }
+
         try {
             const userCredential = await createUserWithEmailAndPassword(auth, email, password)
             await updateProfile(userCredential.user, { displayName: name })
@@ -43,120 +64,223 @@ export default function SignupPage() {
     }
 
     return (
-        <div className="min-h-screen bg-[#F5F5F7] dark:bg-black flex flex-col items-center justify-center p-6 font-geist">
-            <Link href="/" className="flex items-center gap-3 mb-12 group">
-                <div className="relative w-12 h-12 rounded-2xl overflow-hidden shadow-xl shadow-blue-500/20 group-hover:scale-110 transition-transform ring-1 ring-black/5 dark:ring-white/10">
-                    <Image src="/logo.png" alt="GrowthPilot" fill className="object-cover" />
-                </div>
-                <span className="text-2xl font-black tracking-tighter text-zinc-900 dark:text-white">GrowthPilot</span>
-            </Link>
+        <div className="min-h-screen bg-[#F5F5F7] dark:bg-black flex flex-col items-center justify-center p-6 font-geist relative overflow-hidden">
+            {/* Animated Background Gradients */}
+            <div className="absolute inset-0 pointer-events-none overflow-hidden">
+                <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-500/10 dark:bg-blue-600/5 rounded-full blur-[120px] animate-pulse" />
+                <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-500/10 dark:bg-indigo-600/5 rounded-full blur-[120px] animate-pulse [animation-delay:2s]" />
+            </div>
+
+            <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className="z-10"
+            >
+                <Link href="/" className="flex flex-col items-center gap-4 mb-8 group">
+                    <div className="relative w-16 h-16 rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(59,130,246,0.3)] group-hover:scale-110 transition-transform duration-500 ring-2 ring-white/50 dark:ring-white/10">
+                        <Image src="/logo.png" alt="GrowthPilot" fill className="object-cover" />
+                        <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent" />
+                    </div>
+                    <div className="text-center">
+                        <span className="text-3xl font-black tracking-tighter text-zinc-900 dark:text-white block">GrowthPilot</span>
+                        <span className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-600 dark:text-blue-400 mt-1 block">Career Intelligence</span>
+                    </div>
+                </Link>
+            </motion.div>
 
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="w-full max-w-md"
+                transition={{ delay: 0.2, duration: 0.5 }}
+                className="w-full max-w-md z-10"
             >
-                <GlassCard className="p-8 space-y-8 bg-white/50 dark:bg-zinc-900/50 backdrop-blur-2xl border-white/20 dark:border-zinc-800/50 shadow-2xl">
-                    <div className="text-center space-y-2">
-                        <h1 className="text-3xl font-black tracking-tight text-zinc-900 dark:text-white">Create Account</h1>
-                        <p className="text-zinc-500 text-sm font-medium">Join the next generation of career growth</p>
-                    </div>
+                <GlassCard className="p-8 space-y-8 bg-white/60 dark:bg-zinc-900/60 backdrop-blur-3xl border-white/40 dark:border-zinc-800/50 shadow-[0_32px_120px_-20px_rgba(0,0,0,0.1)] rounded-[2.5rem]">
+                    <AnimatePresence mode="wait">
+                        {!linkSent ? (
+                            <motion.div
+                                key="signup-form"
+                                initial={{ opacity: 0, x: -20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                exit={{ opacity: 0, x: 20 }}
+                                className="space-y-8"
+                            >
+                                <div className="text-center space-y-2">
+                                    <h1 className="text-3xl font-black tracking-tight text-zinc-900 dark:text-white">Create Account</h1>
+                                    <p className="text-zinc-500 text-sm font-medium">Join the next generation of career growth</p>
+                                </div>
 
-                    <form onSubmit={handleSignup} className="space-y-4">
-                        <div className="space-y-2">
-                            <Label htmlFor="name">Full Name</Label>
-                            <div className="relative">
-                                <User className="absolute left-3 top-3 w-4 h-4 text-zinc-400" />
-                                <Input
-                                    id="name"
-                                    placeholder="John Doe"
-                                    className="pl-10 h-10 rounded-xl bg-white/50 dark:bg-zinc-800/50 border-zinc-200 dark:border-zinc-700"
-                                    value={name}
-                                    onChange={(e) => setName(e.target.value)}
-                                    required
-                                />
-                            </div>
-                        </div>
+                                <div className="flex p-1 bg-zinc-100/50 dark:bg-white/5 rounded-2xl border border-zinc-200/50 dark:border-white/5">
+                                    <button
+                                        onClick={() => setLoginMethod("password")}
+                                        className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold transition-all ${loginMethod === "password" ? "bg-white dark:bg-zinc-800 shadow-sm text-zinc-900 dark:text-white" : "text-zinc-400 hover:text-zinc-600"}`}
+                                    >
+                                        <Lock className="w-3.5 h-3.5" />
+                                        Password
+                                    </button>
+                                    <button
+                                        onClick={() => setLoginMethod("magic-link")}
+                                        className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold transition-all ${loginMethod === "magic-link" ? "bg-white dark:bg-zinc-800 shadow-sm text-zinc-900 dark:text-white" : "text-zinc-400 hover:text-zinc-600"}`}
+                                    >
+                                        <Wand2 className="w-3.5 h-3.5" />
+                                        Magic Link
+                                    </button>
+                                </div>
 
-                        <div className="space-y-2">
-                            <Label htmlFor="email">Email Address</Label>
-                            <div className="relative">
-                                <Mail className="absolute left-3 top-3 w-4 h-4 text-zinc-400" />
-                                <Input
-                                    id="email"
-                                    type="email"
-                                    placeholder="name@company.com"
-                                    className="pl-10 h-10 rounded-xl bg-white/50 dark:bg-zinc-800/50 border-zinc-200 dark:border-zinc-700"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    required
-                                />
-                            </div>
-                        </div>
-
-                        <div className="space-y-2">
-                            <Label htmlFor="password">Password</Label>
-                            <div className="relative">
-                                <Lock className="absolute left-3 top-3 w-4 h-4 text-zinc-400" />
-                                <Input
-                                    id="password"
-                                    type={showPassword ? "text" : "password"}
-                                    placeholder="••••••••"
-                                    className="pl-10 pr-10 h-10 rounded-xl bg-white/50 dark:bg-zinc-800/50 border-zinc-200 dark:border-zinc-700"
-                                    value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
-                                    required
-                                />
-                                <button
-                                    type="button"
-                                    onClick={() => setShowPassword(!showPassword)}
-                                    className="absolute right-3 top-3.5 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 transition-colors"
-                                >
-                                    {showPassword ? (
-                                        <EyeOff className="w-4 h-4" />
-                                    ) : (
-                                        <Eye className="w-4 h-4" />
+                                <form onSubmit={handleSignup} className="space-y-4">
+                                    {loginMethod === "password" && (
+                                        <motion.div
+                                            initial={{ opacity: 0, height: 0 }}
+                                            animate={{ opacity: 1, height: "auto" }}
+                                            className="space-y-2"
+                                        >
+                                            <Label htmlFor="name" className="text-[11px] font-black uppercase tracking-widest text-zinc-400 ml-1">Full Name</Label>
+                                            <div className="relative group">
+                                                <User className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-400 group-focus-within:text-blue-500 transition-colors" />
+                                                <Input
+                                                    id="name"
+                                                    placeholder="John Doe"
+                                                    className="pl-11 h-12 rounded-2xl bg-white/50 dark:bg-black/20 border-zinc-200/50 dark:border-white/5 focus-visible:ring-blue-500/20 focus-visible:border-blue-500/50 transition-all"
+                                                    value={name}
+                                                    onChange={(e) => setName(e.target.value)}
+                                                    required={loginMethod === "password"}
+                                                />
+                                            </div>
+                                        </motion.div>
                                     )}
-                                </button>
-                            </div>
-                        </div>
 
-                        {error && <p className="text-xs text-red-500 font-medium">{error}</p>}
+                                    <div className="space-y-2">
+                                        <Label htmlFor="email" className="text-[11px] font-black uppercase tracking-widest text-zinc-400 ml-1">Email Address</Label>
+                                        <div className="relative group">
+                                            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-400 group-focus-within:text-blue-500 transition-colors" />
+                                            <Input
+                                                id="email"
+                                                type="email"
+                                                placeholder="commander@enterprise.com"
+                                                className="pl-11 h-12 rounded-2xl bg-white/50 dark:bg-black/20 border-zinc-200/50 dark:border-white/5 focus-visible:ring-blue-500/20 focus-visible:border-blue-500/50 transition-all"
+                                                value={email}
+                                                onChange={(e) => setEmail(e.target.value)}
+                                                required
+                                            />
+                                        </div>
+                                    </div>
 
-                        <Button
-                            disabled={loading}
-                            className="w-full h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold transition-all shadow-xl shadow-blue-500/20"
-                        >
-                            {loading ? "Creating account..." : "Get Started"}
-                            <ArrowRight className="ml-2 w-4 h-4" />
-                        </Button>
-                    </form>
+                                    {loginMethod === "password" && (
+                                        <motion.div
+                                            initial={{ opacity: 0, height: 0 }}
+                                            animate={{ opacity: 1, height: "auto" }}
+                                            className="space-y-2"
+                                        >
+                                            <Label htmlFor="password" className="text-[11px] font-black uppercase tracking-widest text-zinc-400 ml-1">Security Key</Label>
+                                            <div className="relative group">
+                                                <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-400 group-focus-within:text-blue-500 transition-colors" />
+                                                <Input
+                                                    id="password"
+                                                    type={showPassword ? "text" : "password"}
+                                                    placeholder="••••••••"
+                                                    className="pl-11 pr-11 h-12 rounded-2xl bg-white/50 dark:bg-black/20 border-zinc-200/50 dark:border-white/5 focus-visible:ring-blue-500/20 focus-visible:border-blue-500/50 transition-all"
+                                                    value={password}
+                                                    onChange={(e) => setPassword(e.target.value)}
+                                                    required={loginMethod === "password"}
+                                                />
+                                                <button
+                                                    type="button"
+                                                    onClick={() => setShowPassword(!showPassword)}
+                                                    className="absolute right-4 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 transition-colors"
+                                                >
+                                                    {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                                                </button>
+                                            </div>
+                                        </motion.div>
+                                    )}
 
-                    <div className="relative">
-                        <div className="absolute inset-0 flex items-center">
-                            <span className="w-full border-t border-zinc-200 dark:border-zinc-800" />
-                        </div>
-                        <div className="relative flex justify-center text-xs uppercase">
-                            <span className="bg-[#F5F5F7] dark:bg-[#09090b] px-2 text-zinc-500 font-bold">Or continue with</span>
-                        </div>
-                    </div>
+                                    {error && (
+                                        <motion.p
+                                            initial={{ opacity: 0 }}
+                                            animate={{ opacity: 1 }}
+                                            className="text-[11px] text-red-500 font-bold uppercase tracking-wider text-center bg-red-500/5 py-2 rounded-lg border border-red-500/10"
+                                        >
+                                            {error}
+                                        </motion.p>
+                                    )}
 
-                    <Button
-                        onClick={signInWithGoogle}
-                        variant="outline"
-                        type="button"
-                        className="w-full h-12 rounded-xl border-zinc-200 dark:border-zinc-800 font-bold hover:bg-white dark:hover:bg-zinc-800 transition-all"
-                    >
-                        <Chrome className="mr-2 w-4 h-4 text-zinc-900 dark:text-zinc-100" />
-                        Sign up with Google
-                    </Button>
+                                    <Button
+                                        disabled={loading}
+                                        className="w-full h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-black uppercase tracking-widest transition-all shadow-xl shadow-blue-500/20 active:scale-[0.98]"
+                                    >
+                                        {loading ? (
+                                            <Loader2 className="w-4 h-4 animate-spin" />
+                                        ) : (
+                                            <>
+                                                {loginMethod === "password" ? "Establish Account" : "Send Magic Link"}
+                                                <ArrowRight className="ml-2 w-4 h-4" />
+                                            </>
+                                        )}
+                                    </Button>
+                                </form>
 
-                    <p className="text-center text-sm text-zinc-500 font-medium">
-                        Already have an account?{" "}
-                        <Link href="/auth/login" className="text-blue-600 font-bold hover:underline">Sign in</Link>
-                    </p>
+                                <div className="space-y-6">
+                                    <div className="relative">
+                                        <div className="absolute inset-0 flex items-center">
+                                            <span className="w-full border-t border-zinc-200/50 dark:border-white/5" />
+                                        </div>
+                                        <div className="relative flex justify-center text-[10px] uppercase tracking-[0.2em]">
+                                            <span className="bg-[#ffffffcc] dark:bg-[#121212cc] px-4 text-zinc-400 font-black">Unified Auth</span>
+                                        </div>
+                                    </div>
+
+                                    <Button
+                                        onClick={signInWithGoogle}
+                                        variant="outline"
+                                        type="button"
+                                        className="w-full h-12 rounded-2xl border-zinc-200 dark:border-white/5 bg-white/50 dark:bg-white/5 font-bold hover:bg-white dark:hover:bg-white/10 transition-all flex items-center justify-center gap-3"
+                                    >
+                                        <Chrome className="w-4 h-4 text-zinc-900 dark:text-zinc-100" />
+                                        <span className="text-xs uppercase tracking-widest font-black">Join with Google</span>
+                                    </Button>
+                                </div>
+
+                                <p className="text-center text-[11px] text-zinc-400 font-black uppercase tracking-widest">
+                                    Already Enrolled?{" "}
+                                    <Link href="/auth/login" className="text-blue-600 hover:text-blue-500 border-b-2 border-blue-600/20 hover:border-blue-600 transition-all pb-0.5 ml-1">Sign In</Link>
+                                </p>
+                            </motion.div>
+                        ) : (
+                            <motion.div
+                                key="success-state"
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                className="text-center py-8 space-y-6"
+                            >
+                                <div className="w-20 h-20 bg-blue-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <CheckCircle2 className="w-10 h-10 text-blue-500" />
+                                </div>
+                                <div className="space-y-2">
+                                    <h3 className="text-2xl font-black text-zinc-900 dark:text-white">Transmission Sent</h3>
+                                    <p className="text-zinc-500 text-sm font-medium">Check your inbox at <span className="text-blue-600 font-bold">{email}</span> to establish your account.</p>
+                                </div>
+                                <Button
+                                    variant="ghost"
+                                    onClick={() => setLinkSent(false)}
+                                    className="text-xs font-black uppercase tracking-widest text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-all"
+                                >
+                                    Use another method
+                                </Button>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
                 </GlassCard>
             </motion.div>
+
+            {/* Footer Tagline */}
+            <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.8 }}
+                className="mt-12 text-[10px] font-black uppercase tracking-[0.4em] text-zinc-400 text-center"
+            >
+                Source Powered • Reality Grounded • AI Driven
+            </motion.p>
         </div>
     )
 }
