@@ -4,15 +4,16 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { ArrowLeft, ArrowRight, Check, Loader2 } from "lucide-react"
-import { startOnboarding, processAnswer, saveProfile, resetUserOnboarding } from "./actions"
+import { cn } from "@/lib/utils"
+import { ArrowLeft, ArrowRight, Check, Loader2, Upload, FileText, SkipForward } from "lucide-react"
+import { startOnboarding, processAnswer, saveProfile, resetUserOnboarding, uploadResume } from "./actions"
 import { useRouter } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 
 type Question = {
     question: string
-    type: "text" | "select" | "multiselect"
+    type: "text" | "select" | "multiselect" | "file"
     options?: string[]
     field?: string
 }
@@ -22,7 +23,7 @@ export default function OnboardingPage() {
     const [history, setHistory] = useState<any[]>([]) // Full AI history
     const [currentQ, setCurrentQ] = useState<{
         question: string,
-        type: "text" | "select" | "multiselect",
+        type: "text" | "select" | "multiselect" | "file",
         options?: string[],
         field?: string
     } | null>(null)
@@ -30,6 +31,8 @@ export default function OnboardingPage() {
     const [selectedOptions, setSelectedOptions] = useState<string[]>([])
     const [isLoading, setIsLoading] = useState(true)
     const [isThinking, setIsThinking] = useState(false)
+    const [isUploading, setIsUploading] = useState(false)
+    const [file, setFile] = useState<File | null>(null)
     const [direction, setDirection] = useState(1) // 1 for next, -1 for back
     const [steps, setSteps] = useState<Question[]>([])
 
@@ -131,12 +134,13 @@ export default function OnboardingPage() {
             setTimeout(() => {
                 setCurrentQ({
                     question: res.next_question,
-                    type: res.type,
+                    type: res.type as "text" | "select" | "multiselect" | "file",
                     options: res.options,
                     field: res.field
                 })
                 setInput("")
                 setSelectedOptions([])
+                setFile(null)
                 setIsThinking(false)
             }, 500)
 
@@ -145,6 +149,34 @@ export default function OnboardingPage() {
             setIsThinking(false)
             // You could set an error state here to show a toast
         }
+    }
+
+    const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        const selectedFile = e.target.files?.[0]
+        if (!selectedFile) return
+        setFile(selectedFile)
+    }
+
+    const handleUpload = async () => {
+        if (!file) return
+        setIsUploading(true)
+        const formData = new FormData()
+        formData.append("file", file)
+
+        try {
+            const res = await uploadResume(formData)
+            if (res.success) {
+                handleNext("I have uploaded my resume. Please use the information from it to help with the onboarding.")
+            }
+        } catch (err) {
+            console.error("Upload Error:", err)
+        } finally {
+            setIsUploading(false)
+        }
+    }
+
+    const handleSkip = () => {
+        handleNext("I'll skip the resume upload for now.")
     }
 
 
@@ -259,6 +291,74 @@ export default function OnboardingPage() {
                                             className="h-16 text-xl px-6 rounded-2xl bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 focus-visible:ring-blue-600"
                                             autoFocus
                                         />
+                                    </motion.div>
+                                )}
+
+                                {/* File Upload */}
+                                {currentQ.type === "file" && (
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        className="space-y-4"
+                                    >
+                                        <div className="relative group cursor-pointer">
+                                            <input
+                                                type="file"
+                                                accept=".pdf"
+                                                onChange={handleFileChange}
+                                                className="absolute inset-0 w-full h-full opacity-0 z-20 cursor-pointer"
+                                            />
+                                            <div className={cn(
+                                                "p-12 border-2 border-dashed rounded-[2rem] flex flex-col items-center gap-4 transition-all duration-300 bg-zinc-50 dark:bg-zinc-900",
+                                                file
+                                                    ? "border-blue-500 bg-blue-50/50 dark:bg-blue-900/10"
+                                                    : "border-zinc-200 dark:border-zinc-800 group-hover:border-blue-400 group-hover:bg-zinc-100/50 dark:group-hover:bg-zinc-800/50"
+                                            )}>
+                                                <div className={cn(
+                                                    "w-16 h-16 rounded-2xl flex items-center justify-center transition-transform duration-300",
+                                                    file ? "bg-blue-600 scale-110" : "bg-zinc-200 dark:bg-zinc-800 group-hover:scale-110"
+                                                )}>
+                                                    {file ? (
+                                                        <FileText className="w-8 h-8 text-white" />
+                                                    ) : (
+                                                        <Upload className="w-8 h-8 text-zinc-500 dark:text-zinc-400" />
+                                                    )}
+                                                </div>
+                                                <div className="text-center">
+                                                    <p className="font-bold text-zinc-900 dark:text-white">
+                                                        {file ? file.name : "Drop your Resume here"}
+                                                    </p>
+                                                    <p className="text-sm text-zinc-500 mt-1">
+                                                        {file ? `${(file.size / 1024 / 1024).toFixed(2)} MB` : "Support PDF files only (max 5MB)"}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="flex flex-col gap-3">
+                                            <Button
+                                                onClick={handleUpload}
+                                                disabled={!file || isUploading}
+                                                className="h-14 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg shadow-lg shadow-blue-500/20"
+                                            >
+                                                {isUploading ? (
+                                                    <>
+                                                        <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                                                        Parsing Intelligence...
+                                                    </>
+                                                ) : (
+                                                    <>Analyze Resume</>
+                                                )}
+                                            </Button>
+                                            <Button
+                                                variant="ghost"
+                                                onClick={handleSkip}
+                                                className="text-zinc-500 hover:text-zinc-900 dark:hover:text-white flex items-center gap-2"
+                                            >
+                                                <SkipForward className="w-4 h-4" />
+                                                Skip for now
+                                            </Button>
+                                        </div>
                                     </motion.div>
                                 )}
                             </div>

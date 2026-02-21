@@ -24,6 +24,7 @@ export async function generateRoadmap() {
     - Target Role: ${profile.targetRole}
     - Experience Level: ${profile.experienceLevel}
     - Skills: ${profile.skills.join(", ")}
+    ${profile.resumeText ? `- Context from Resume: ${profile.resumeText.substring(0, 3000)}` : ""}
 
     **Output Format (JSON ONLY)**:
     {

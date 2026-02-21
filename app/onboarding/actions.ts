@@ -5,6 +5,8 @@ import { prisma } from "@/lib/prisma"
 import { getServerUser } from "@/lib/server-auth"
 import { revalidatePath } from "next/cache"
 import { generateRoadmap } from "./roadmap-action"
+// @ts-expect-error - pdf-parse has no default export in some environments
+import pdf from "pdf-parse"
 
 // ... existing code ...
 
@@ -58,6 +60,38 @@ export async function saveProfile(profileData: any) {
     }
 }
 
+export async function uploadResume(formData: FormData) {
+    const user = await getServerUser()
+    if (!user) throw new Error("Unauthorized")
+
+    const file = formData.get("file") as File
+    if (!file) return { success: false, error: "No file provided" }
+
+    try {
+        const buffer = Buffer.from(await file.arrayBuffer())
+        const data = await pdf(buffer)
+        const text = data.text
+
+        await prisma.profile.upsert({
+            where: { userId: user.id },
+            update: { resumeText: text },
+            create: {
+                userId: user.id,
+                resumeText: text,
+                currentRole: "Explorer",
+                targetRole: "Growth",
+                experienceLevel: "Beginner",
+                skills: []
+            }
+        })
+
+        return { success: true, text: text.substring(0, 500) } // Return snippet for UI confirmation
+    } catch (error) {
+        console.error("PDF Parsing Error:", error)
+        return { success: false, error: "Failed to parse PDF" }
+    }
+}
+
 export async function resetUserOnboarding() {
     const user = await getServerUser()
     if (!user) throw new Error("Unauthorized")
@@ -88,10 +122,10 @@ export async function startOnboarding() {
 
     if (user?.name) {
         return {
-            question: `Welcome back, ${user.name.split(' ')[0]}! To set your new course, what is your current status or role?`,
-            type: "select",
-            options: ["Student", "Working Professional", "Freelancer", "Job Seeker", "Entrepreneur", "Other"],
-            field: "currentRole"
+            question: `Welcome back, ${user.name.split(' ')[0]}! To help me design a more precise path, would you like to upload your resume?`,
+            type: "file",
+            options: [],
+            field: "resume"
         }
     }
 
@@ -107,6 +141,11 @@ export async function processAnswer(history: { role: "user" | "assistant", conte
     const user = await getServerUser()
     if (!user) throw new Error("Unauthorized")
 
+    const profile = await prisma.profile.findUnique({
+        where: { userId: user.id },
+        select: { resumeText: true }
+    })
+
     console.log("Onboarding Inbound History:", JSON.stringify(history))
 
     // Analysis: Check what information we ALREADY have to help the AI
@@ -120,6 +159,9 @@ export async function processAnswer(history: { role: "user" | "assistant", conte
     const systemPrompt = `
     You are the "GrowthPilot Onboarding AI". Your mission is to interview the user and build their profile.
     
+    ${profile?.resumeText ? `IMPORTANT: The user has uploaded a resume. PRE-FILL as much as possible from this text, but still ask clarifying questions if details are ambiguous or missing.
+    RESUME TEXT SNIPPET: ${profile.resumeText.substring(0, 2000)}` : ""}
+
     STRICT CHECKLIST (Capture in this order):
     1. Name (Currently: ${profileState.name || 'MISSING'})
     2. Current Status/Role (Currently: ${profileState.status || 'MISSING'})
