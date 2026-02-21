@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { GlassCard } from "@/components/GlassCard"
 import { Button } from "@/components/ui/button"
-import { BrainCircuit, Map, Zap, CheckCircle2, TrendingUp, Search, User, FileText, LayoutDashboard, Cpu } from "lucide-react"
+import { Zap, CheckCircle2, TrendingUp, User, Cpu } from "lucide-react"
 import { motion } from "framer-motion"
 import Link from "next/link"
 

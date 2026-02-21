@@ -4,10 +4,9 @@ import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { GlassCard } from "@/components/GlassCard"
 import { Button } from "@/components/ui/button"
-import { Users, Heart, Target, Lightbulb, Rocket, Globe } from "lucide-react"
+import { Users, Heart, Target, Rocket, Globe } from "lucide-react"
 import { motion } from "framer-motion"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function AboutPage() {
     return (

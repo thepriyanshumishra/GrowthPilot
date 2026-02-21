@@ -5,7 +5,7 @@ import { GlassCard } from "@/components/GlassCard"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Mail, Lock, ArrowRight, Chrome, Eye, EyeOff, Sparkles, Wand2, Loader2, CheckCircle2 } from "lucide-react"
+import { Mail, Lock, ArrowRight, Chrome, Eye, EyeOff, Wand2, Loader2, CheckCircle2 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
@@ -36,7 +36,7 @@ export default function LoginPage() {
             if (emailForLink) {
                 setLoading(true);
                 signInWithEmailLink(auth, emailForLink, window.location.href)
-                    .then(async (result) => {
+                    .then(async () => {
                         window.localStorage.removeItem('emailForSignIn');
                         toast.success("Successfully signed in!");
                         const dbUser = await getCurrentUser()

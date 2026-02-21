@@ -21,6 +21,8 @@ import Link from "next/link"
 import * as motion from "framer-motion/client"
 import quotes from "@/lib/quotes.json"
 
+const getRandomQuote = () => quotes[Math.floor(Math.random() * quotes.length)]
+
 export default async function Dashboard() {
     const user = await getServerUser()
     if (!user) return <div>Please sign in</div>
@@ -55,8 +57,7 @@ export default async function Dashboard() {
     }))
 
     // Random Quote for every visit
-    const quoteIndex = Math.floor(Math.random() * quotes.length)
-    const randomQuote = quotes[quoteIndex]
+    const randomQuote = getRandomQuote()
 
     return (
         <div className="min-h-screen font-geist selection:bg-blue-500/30 pb-20">

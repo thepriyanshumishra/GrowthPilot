@@ -2,9 +2,7 @@ import { PrismaClient } from "@prisma/client"
 import { PrismaPg } from "@prisma/adapter-pg"
 import pg from "pg"
 
-if (process.env.NODE_ENV === "development") {
-    process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
-}
+// Removed global NODE_TLS_REJECT_UNAUTHORIZED to prevent warnings, using pg's ssl config instead
 
 const poolConfig: pg.PoolConfig = {
     connectionString: process.env.DATABASE_URL,

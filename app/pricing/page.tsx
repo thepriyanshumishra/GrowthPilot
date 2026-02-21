@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { GlassCard } from "@/components/GlassCard"
 import { Button } from "@/components/ui/button"
-import { CheckCircle2, XCircle, HelpCircle, Building2, Zap, Rocket, Star } from "lucide-react"
+import { CheckCircle2, XCircle, Building2, Zap } from "lucide-react"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import {

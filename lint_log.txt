@@ -1,0 +1,35 @@
+
+> growth-pilot-app@0.1.0 lint
+> eslint
+
+
+/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/app/(dashboard)/dashboard/page.tsx
+  58:35  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/app/(dashboard)/dashboard/page.tsx:58:35
+  56 |
+  57 |     // Random Quote for every visit
+> 58 |     const quoteIndex = Math.floor(Math.random() * quotes.length)
+     |                                   ^^^^^^^^^^^^^ Cannot call impure function
+  59 |     const randomQuote = quotes[quoteIndex]
+  60 |
+  61 |     return (  react-hooks/purity
+
+/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/app/about/page.tsx
+   7:32  warning  'Lightbulb' is defined but never used  @typescript-eslint/no-unused-vars
+  10:8   warning  'Image' is defined but never used      @typescript-eslint/no-unused-vars
+
+/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/app/auth/login/page.tsx
+   8:55  warning  'Sparkles' is defined but never used  @typescript-eslint/no-unused-vars
+  39:34  warning  'result' is defined but never used    @typescript-eslint/no-unused-vars
+
+/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/app/features/page.tsx
+  7:10  warning  'ArrowRight' is defined but never used  @typescript-eslint/no-unused-vars
+  7:70  warning  'Target' is defined but never used      @typescript-eslint/no-unused-vars
+  7:78  warning  'TrendingUp' is defined but never used  @typescript-eslint/no-unused-vars
+  7:90  warning  'Zap' is defined but never used         @typescript-eslint/no-unused-vars
+
+✖ 9 problems (1 error, 8 warnings)
+
