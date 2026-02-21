@@ -1,23 +1,8 @@
 [
   {
-    "id": 1,
-    "quote": "Your time is limited, so don't waste it living someone else's life.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 2,
-    "quote": "When something's important enough, you do it even if the odds are against you.",
-    "author": "Elon Musk"
-  },
-  {
     "id": 3,
     "quote": "The most alluring thing a woman can have is confidence.",
     "author": "Beyonce"
-  },
-  {
-    "id": 4,
-    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
-    "author": "Thomas Edison"
   },
   {
     "id": 5,
@@ -30,19 +15,9 @@
     "author": "Oprah Winfrey"
   },
   {
-    "id": 7,
-    "quote": "Do something today that your future self will thank you for.",
-    "author": "Robert Kiyosaki"
-  },
-  {
     "id": 8,
     "quote": "You miss 100% of the shots you don't take.",
     "author": "Wayne Gretzky"
-  },
-  {
-    "id": 9,
-    "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "author": "Winston Churchill"
   },
   {
     "id": 10,
@@ -50,19 +25,9 @@
     "author": "Sam Levenson"
   },
   {
-    "id": 11,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
-  },
-  {
     "id": 12,
     "quote": "The only way to do great work is to love what you do.",
     "author": "Steve Jobs"
-  },
-  {
-    "id": 13,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
   },
   {
     "id": 14,
@@ -85,71 +50,6 @@
     "author": "Abraham Lincoln"
   },
   {
-    "id": 18,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 19,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 20,
-    "quote": "Do not let what you cannot do interfere with what you can do.",
-    "author": "John Wooden"
-  },
-  {
-    "id": 21,
-    "quote": "You are the master of your destiny: no one and nothing can control you.",
-    "author": "Peter Drucker"
-  },
-  {
-    "id": 22,
-    "quote": "Success is not measured by what you accomplish, but by the opposition you have encountered.",
-    "author": "Orison Swett Marden"
-  },
-  {
-    "id": 23,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
-    "id": 24,
-    "quote": "Happiness is not something ready made. It comes from your own actions.",
-    "author": "Dalai Lama"
-  },
-  {
-    "id": 25,
-    "quote": "You can have anything you want if you want it badly enough.",
-    "author": "Abraham Lincoln"
-  },
-  {
-    "id": 26,
-    "quote": "I am not a product of my circumstances. I am a product of my decisions.",
-    "author": "Stephen Covey"
-  },
-  {
-    "id": 27,
-    "quote": "You don't get what you wish for, you get what you work for.",
-    "author": "Daniel Milstein"
-  },
-  {
-    "id": 28,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 29,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 30,
-    "quote": "The most common way people give up their power is by thinking they don't have any.",
-    "author": "Alice Walker"
-  },
-  {
     "id": 31,
     "quote": "You must be the change you wish to see in the world.",
     "author": "Mahatma Gandhi"
@@ -160,24 +60,9 @@
     "author": "Will Rogers"
   },
   {
-    "id": 33,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
     "id": 34,
     "quote": "You are not a failure until you start to blame.",
     "author": "John Wooden"
-  },
-  {
-    "id": 35,
-    "quote": "You can't build a reputation on what you are going to do.",
-    "author": "Henry Ford"
-  },
-  {
-    "id": 36,
-    "quote": "Keep away from those who try to belittle your ambitions.",
-    "author": "Mark Twain"
   },
   {
     "id": 37,
@@ -185,39 +70,14 @@
     "author": "Theodore Roosevelt"
   },
   {
-    "id": 38,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 39,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
     "id": 40,
     "quote": "The best revenge is massive success.",
     "author": "Frank Sinatra"
   },
   {
-    "id": 41,
-    "quote": "If you can't fly, then run. If you can't run, then walk. If you can't walk, then crawl, but whatever you do, you have to keep moving forward.",
-    "author": "Martin Luther King Jr."
-  },
-  {
     "id": 42,
     "quote": "You must do the things you think you cannot do.",
     "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 43,
-    "quote": "You can have everything in life you want, if you will just help other people get what they want.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 44,
-    "quote": "You are the sum total of everything you've ever seen, heard, eaten, smelled, and touched.",
-    "author": "Maya Angelou"
   },
   {
     "id": 45,
@@ -240,64 +100,9 @@
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 49,
-    "quote": "You can't start the next chapter of your life if you keep re-reading the last one.",
-    "author": "Warren Buffett"
-  },
-  {
-    "id": 50,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 51,
-    "quote": "Keep your face always toward the sunshine, and shadows will fall behind you.",
-    "author": "Walt Whitman"
-  },
-  {
-    "id": 52,
-    "quote": "The most important thing in life is to learn how to give out love, and let it come in.",
-    "author": "Morrie Schwartz"
-  },
-  {
-    "id": 53,
-    "quote": "You can have anything you want if you are willing to pay the price.",
-    "author": "Mary Kay Ash"
-  },
-  {
-    "id": 54,
-    "quote": "You must be willing to take the risks if you want to achieve something big.",
-    "author": "Bill Gates"
-  },
-  {
-    "id": 55,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 56,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 57,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
     "id": 58,
     "quote": "You must do the things you think you cannot do.",
     "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 59,
-    "quote": "You can have everything in life you want, if you will just help other people get what they want.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 60,
-    "quote": "You are the sum total of everything you've ever seen, heard, eaten, smelled, and touched.",
-    "author": "Maya Angelou"
   },
   {
     "id": 61,
@@ -320,64 +125,9 @@
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 65,
-    "quote": "You can't start the next chapter of your life if you keep re-reading the last one.",
-    "author": "Warren Buffett"
-  },
-  {
-    "id": 66,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 67,
-    "quote": "Keep your face always toward the sunshine, and shadows will fall behind you.",
-    "author": "Walt Whitman"
-  },
-  {
-    "id": 68,
-    "quote": "The most important thing in life is to learn how to give out love, and let it come in.",
-    "author": "Morrie Schwartz"
-  },
-  {
-    "id": 69,
-    "quote": "You can have anything you want if you are willing to pay the price.",
-    "author": "Mary Kay Ash"
-  },
-  {
-    "id": 70,
-    "quote": "You must be willing to take the risks if you want to achieve something big.",
-    "author": "Bill Gates"
-  },
-  {
-    "id": 71,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 72,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 73,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
     "id": 74,
     "quote": "You must do the things you think you cannot do.",
     "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 75,
-    "quote": "You can have everything in life you want, if you will just help other people get what they want.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 76,
-    "quote": "You are the sum total of everything you've ever seen, heard, eaten, smelled, and touched.",
-    "author": "Maya Angelou"
   },
   {
     "id": 77,
@@ -400,64 +150,9 @@
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 81,
-    "quote": "You can't start the next chapter of your life if you keep re-reading the last one.",
-    "author": "Warren Buffett"
-  },
-  {
-    "id": 82,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 83,
-    "quote": "Keep your face always toward the sunshine, and shadows will fall behind you.",
-    "author": "Walt Whitman"
-  },
-  {
-    "id": 84,
-    "quote": "The most important thing in life is to learn how to give out love, and let it come in.",
-    "author": "Morrie Schwartz"
-  },
-  {
-    "id": 85,
-    "quote": "You can have anything you want if you are willing to pay the price.",
-    "author": "Mary Kay Ash"
-  },
-  {
-    "id": 86,
-    "quote": "You must be willing to take the risks if you want to achieve something big.",
-    "author": "Bill Gates"
-  },
-  {
-    "id": 87,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 88,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 89,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
     "id": 90,
     "quote": "You must do the things you think you cannot do.",
     "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 91,
-    "quote": "You can have everything in life you want, if you will just help other people get what they want.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 92,
-    "quote": "You are the sum total of everything you've ever seen, heard, eaten, smelled, and touched.",
-    "author": "Maya Angelou"
   },
   {
     "id": 93,
@@ -480,39 +175,9 @@
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 97,
-    "quote": "You can't start the next chapter of your life if you keep re-reading the last one.",
-    "author": "Warren Buffett"
-  },
-  {
-    "id": 98,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 99,
-    "quote": "Keep your face always toward the sunshine, and shadows will fall behind you.",
-    "author": "Walt Whitman"
-  },
-  {
-    "id": 100,
-    "quote": "You can have anything you want if you are willing to pay the price.",
-    "author": "Mary Kay Ash"
-  },
-  {
-    "id": 101,
-    "quote": "Your time is limited, so don't waste it living someone else's life.",
-    "author": "Steve Jobs"
-  },
-  {
     "id": 102,
     "quote": "The biggest risk is not taking any risk...",
     "author": "Mark Zuckerberg"
-  },
-  {
-    "id": 103,
-    "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "author": "Winston Churchill"
   },
   {
     "id": 104,
@@ -523,16 +188,6 @@
     "id": 105,
     "quote": "You miss 100% of the shots you don't take.",
     "author": "Wayne Gretzky"
-  },
-  {
-    "id": 106,
-    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
-    "author": "Thomas Edison"
-  },
-  {
-    "id": 107,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
   },
   {
     "id": 108,
@@ -550,89 +205,14 @@
     "author": "Nelson Mandela"
   },
   {
-    "id": 111,
-    "quote": "The best way to get started is to quit talking and begin doing.",
-    "author": "Walt Disney"
-  },
-  {
-    "id": 112,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 113,
-    "quote": "Do something today that your future self will thank you for.",
-    "author": "Robert Kiyosaki"
-  },
-  {
-    "id": 114,
-    "quote": "You are the master of your destiny: No one and nothing can control you if you don't allow it.",
-    "author": "Helen Hollick"
-  },
-  {
-    "id": 115,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 116,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 117,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 118,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
     "id": 119,
     "quote": "Do what you can, with what you have, where you are.",
     "author": "Theodore Roosevelt"
   },
   {
-    "id": 120,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
-    "id": 121,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 122,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 123,
-    "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-    "author": "Nelson Mandela"
-  },
-  {
     "id": 124,
     "quote": "The best revenge is massive success.",
     "author": "Frank Sinatra"
-  },
-  {
-    "id": 125,
-    "quote": "You don't get what you wish for, you get what you work for.",
-    "author": "Daniel Milstein"
-  },
-  {
-    "id": 126,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 127,
-    "quote": "You are stronger than you seem, braver than you believe, and smarter than you think.",
-    "author": "A.A. Milne"
   },
   {
     "id": 128,
@@ -660,11 +240,6 @@
     "author": "Robert Frost"
   },
   {
-    "id": 133,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
     "id": 134,
     "quote": "The only thing we have to fear is fear itself.",
     "author": "Franklin D. Roosevelt"
@@ -673,26 +248,6 @@
     "id": 135,
     "quote": "You can do anything, but not everything.",
     "author": "David Allen"
-  },
-  {
-    "id": 136,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 137,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 138,
-    "quote": "The best time to plant a tree was 20 years ago. The second best time is now.",
-    "author": "Chinese Proverb"
-  },
-  {
-    "id": 139,
-    "quote": "You are the master of your destiny: No one and nothing can control you if you don't allow it.",
-    "author": "Helen Hollick"
   },
   {
     "id": 140,
@@ -710,44 +265,14 @@
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 143,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
     "id": 144,
     "quote": "The best revenge is massive success.",
     "author": "Frank Sinatra"
   },
   {
-    "id": 145,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 146,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 147,
-    "quote": "You are stronger than you seem, braver than you believe, and smarter than you think.",
-    "author": "A.A. Milne"
-  },
-  {
-    "id": 148,
-    "quote": "The best way to get started is to quit talking and begin doing.",
-    "author": "Walt Disney"
-  },
-  {
     "id": 149,
     "quote": "You can't let one bad moment ruin your whole life.",
     "author": "Jessica Simpson"
-  },
-  {
-    "id": 150,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
   },
   {
     "id": 151,
@@ -765,16 +290,6 @@
     "author": "David Allen"
   },
   {
-    "id": 154,
-    "quote": "The best time to plant a tree was 20 years ago. The second best time is now.",
-    "author": "Chinese Proverb"
-  },
-  {
-    "id": 155,
-    "quote": "You are the master of your destiny: No one and nothing can control you if you don't allow it.",
-    "author": "Helen Hollick"
-  },
-  {
     "id": 156,
     "quote": "The only way to do great work is to love what you do.",
     "author": "Steve Jobs"
@@ -790,44 +305,14 @@
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 159,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
     "id": 160,
     "quote": "The best revenge is massive success.",
     "author": "Frank Sinatra"
   },
   {
-    "id": 161,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 162,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 163,
-    "quote": "You are stronger than you seem, braver than you believe, and smarter than you think.",
-    "author": "A.A. Milne"
-  },
-  {
-    "id": 164,
-    "quote": "The best way to get started is to quit talking and begin doing.",
-    "author": "Walt Disney"
-  },
-  {
     "id": 165,
     "quote": "You can't let one bad moment ruin your whole life.",
     "author": "Jessica Simpson"
-  },
-  {
-    "id": 166,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
   },
   {
     "id": 167,
@@ -845,16 +330,6 @@
     "author": "David Allen"
   },
   {
-    "id": 170,
-    "quote": "The best time to plant a tree was 20 years ago. The second best time is now.",
-    "author": "Chinese Proverb"
-  },
-  {
-    "id": 171,
-    "quote": "You are the master of your destiny: No one and nothing can control you if you don't allow it.",
-    "author": "Helen Hollick"
-  },
-  {
     "id": 172,
     "quote": "The only way to do great work is to love what you do.",
     "author": "Steve Jobs"
@@ -870,44 +345,14 @@
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 175,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
     "id": 176,
     "quote": "The best revenge is massive success.",
     "author": "Frank Sinatra"
   },
   {
-    "id": 177,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 178,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 179,
-    "quote": "You are stronger than you seem, braver than you believe, and smarter than you think.",
-    "author": "A.A. Milne"
-  },
-  {
-    "id": 180,
-    "quote": "The best way to get started is to quit talking and begin doing.",
-    "author": "Walt Disney"
-  },
-  {
     "id": 181,
     "quote": "You can't let one bad moment ruin your whole life.",
     "author": "Jessica Simpson"
-  },
-  {
-    "id": 182,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
   },
   {
     "id": 183,
@@ -925,16 +370,6 @@
     "author": "David Allen"
   },
   {
-    "id": 186,
-    "quote": "The best time to plant a tree was 20 years ago. The second best time is now.",
-    "author": "Chinese Proverb"
-  },
-  {
-    "id": 187,
-    "quote": "You are the master of your destiny: No one and nothing can control you if you don't allow it.",
-    "author": "Helen Hollick"
-  },
-  {
     "id": 188,
     "quote": "The only way to do great work is to love what you do.",
     "author": "Steve Jobs"
@@ -950,44 +385,14 @@
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 191,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
     "id": 192,
     "quote": "The best revenge is massive success.",
     "author": "Frank Sinatra"
   },
   {
-    "id": 193,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 194,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 195,
-    "quote": "You are stronger than you seem, braver than you believe, and smarter than you think.",
-    "author": "A.A. Milne"
-  },
-  {
-    "id": 196,
-    "quote": "The best way to get started is to quit talking and begin doing.",
-    "author": "Walt Disney"
-  },
-  {
     "id": 197,
     "quote": "You can't let one bad moment ruin your whole life.",
     "author": "Jessica Simpson"
-  },
-  {
-    "id": 198,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
   },
   {
     "id": 199,
@@ -1000,19 +405,9 @@
     "author": "Franklin D. Roosevelt"
   },
   {
-    "id": 201,
-    "quote": "Your time is limited, so don't waste it living someone else's life.",
-    "author": "Steve Jobs"
-  },
-  {
     "id": 202,
     "quote": "The biggest risk is not taking any risk...",
     "author": "Mark Zuckerberg"
-  },
-  {
-    "id": 203,
-    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
-    "author": "Thomas Edison"
   },
   {
     "id": 204,
@@ -1035,24 +430,9 @@
     "author": "Steve Jobs"
   },
   {
-    "id": 208,
-    "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "author": "Winston Churchill"
-  },
-  {
     "id": 209,
     "quote": "Don't watch the clock; do what it does. Keep going.",
     "author": "Sam Levenson"
-  },
-  {
-    "id": 210,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 211,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
   },
   {
     "id": 212,
@@ -1065,79 +445,14 @@
     "author": "Abraham Lincoln"
   },
   {
-    "id": 214,
-    "quote": "Do something today that your future self will thank you for.",
-    "author": "Robert Kiyosaki"
-  },
-  {
-    "id": 215,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 216,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
-  },
-  {
     "id": 217,
     "quote": "Do what you can, with what you have, where you are.",
     "author": "Theodore Roosevelt"
   },
   {
-    "id": 218,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 219,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 220,
-    "quote": "You are stronger than you seem, braver than you believe, and smarter than you think.",
-    "author": "A.A. Milne"
-  },
-  {
-    "id": 221,
-    "quote": "Happiness is not something ready made. It comes from your own actions.",
-    "author": "Dalai Lama"
-  },
-  {
-    "id": 222,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
-    "id": 223,
-    "quote": "It does not matter how slowly you go as long as you do not stop.",
-    "author": "Confucius"
-  },
-  {
-    "id": 224,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 225,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 226,
-    "quote": "You are the master of your destiny; you are the captain of your soul.",
-    "author": "Nelson Mandela"
-  },
-  {
     "id": 227,
     "quote": "I never dreamed about success. I worked for it.",
     "author": "Estee Lauder"
-  },
-  {
-    "id": 228,
-    "quote": "The most important thing in life is to learn how to give out love, and let it come in.",
-    "author": "Morrie Schwartz"
   },
   {
     "id": 229,
@@ -1160,11 +475,6 @@
     "author": "Will Rogers"
   },
   {
-    "id": 233,
-    "quote": "You can't get to courage without walking through vulnerability.",
-    "author": "Brené Brown"
-  },
-  {
     "id": 234,
     "quote": "The best is yet to come.",
     "author": "Robert Browning"
@@ -1175,49 +485,14 @@
     "author": "Eleanor Roosevelt"
   },
   {
-    "id": 236,
-    "quote": "Keep smiling, because life is a beautiful thing and there's so much to smile about.",
-    "author": "Marilyn Monroe"
-  },
-  {
-    "id": 237,
-    "quote": "You can have anything you want if you want it badly enough.",
-    "author": "Abraham Lincoln"
-  },
-  {
-    "id": 238,
-    "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-    "author": "Nelson Mandela"
-  },
-  {
     "id": 239,
     "quote": "Life shrinks or expands in proportion to one's courage.",
     "author": "Anaïs Nin"
   },
   {
-    "id": 240,
-    "quote": "You don't have to control your thoughts. You just have to stop letting them control you.",
-    "author": "Dan Millman"
-  },
-  {
-    "id": 241,
-    "quote": "You are not a product of your circumstances. You are a product of your decisions.",
-    "author": "Stephen Covey"
-  },
-  {
-    "id": 242,
-    "quote": "The most courageous act is still to think for yourself. Aloud.",
-    "author": "Coco Chanel"
-  },
-  {
     "id": 243,
     "quote": "The biggest risk is not taking any risk...",
     "author": "Mark Zuckerberg"
-  },
-  {
-    "id": 244,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
   },
   {
     "id": 245,
@@ -1230,11 +505,6 @@
     "author": "Mahatma Gandhi"
   },
   {
-    "id": 247,
-    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
-    "author": "Thomas Edison"
-  },
-  {
     "id": 248,
     "quote": "You miss 100% of the shots you don't take.",
     "author": "Wayne Gretzky"
@@ -1245,34 +515,9 @@
     "author": "Nelson Mandela"
   },
   {
-    "id": 250,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 251,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
-  },
-  {
     "id": 252,
     "quote": "The best way to predict your future is to create it.",
     "author": "Abraham Lincoln"
-  },
-  {
-    "id": 253,
-    "quote": "Do something today that your future self will thank you for.",
-    "author": "Robert Kiyosaki"
-  },
-  {
-    "id": 254,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 255,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
   },
   {
     "id": 256,
@@ -1280,59 +525,9 @@
     "author": "Theodore Roosevelt"
   },
   {
-    "id": 257,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 258,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 259,
-    "quote": "You are stronger than you seem, braver than you believe, and smarter than you think.",
-    "author": "A.A. Milne"
-  },
-  {
-    "id": 260,
-    "quote": "Happiness is not something ready made. It comes from your own actions.",
-    "author": "Dalai Lama"
-  },
-  {
-    "id": 261,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
-    "id": 262,
-    "quote": "It does not matter how slowly you go as long as you do not stop.",
-    "author": "Confucius"
-  },
-  {
-    "id": 263,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 264,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 265,
-    "quote": "You are the master of your destiny; you are the captain of your soul.",
-    "author": "Nelson Mandela"
-  },
-  {
     "id": 266,
     "quote": "I never dreamed about success. I worked for it.",
     "author": "Estee Lauder"
-  },
-  {
-    "id": 267,
-    "quote": "The most important thing in life is to learn how to give out love, and let it come in.",
-    "author": "Morrie Schwartz"
   },
   {
     "id": 268,
@@ -1355,11 +550,6 @@
     "author": "Will Rogers"
   },
   {
-    "id": 272,
-    "quote": "You can't get to courage without walking through vulnerability.",
-    "author": "Brené Brown"
-  },
-  {
     "id": 273,
     "quote": "The best is yet to come.",
     "author": "Robert Browning"
@@ -1370,49 +560,14 @@
     "author": "Eleanor Roosevelt"
   },
   {
-    "id": 275,
-    "quote": "Keep smiling, because life is a beautiful thing and there's so much to smile about.",
-    "author": "Marilyn Monroe"
-  },
-  {
-    "id": 276,
-    "quote": "You can have anything you want if you want it badly enough.",
-    "author": "Abraham Lincoln"
-  },
-  {
-    "id": 277,
-    "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-    "author": "Nelson Mandela"
-  },
-  {
     "id": 278,
     "quote": "Life shrinks or expands in proportion to one's courage.",
     "author": "Anaïs Nin"
   },
   {
-    "id": 279,
-    "quote": "You don't have to control your thoughts. You just have to stop letting them control you.",
-    "author": "Dan Millman"
-  },
-  {
-    "id": 280,
-    "quote": "You are not a product of your circumstances. You are a product of your decisions.",
-    "author": "Stephen Covey"
-  },
-  {
-    "id": 281,
-    "quote": "The most courageous act is still to think for yourself. Aloud.",
-    "author": "Coco Chanel"
-  },
-  {
     "id": 282,
     "quote": "The biggest risk is not taking any risk...",
     "author": "Mark Zuckerberg"
-  },
-  {
-    "id": 283,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
   },
   {
     "id": 284,
@@ -1425,11 +580,6 @@
     "author": "Mahatma Gandhi"
   },
   {
-    "id": 286,
-    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
-    "author": "Thomas Edison"
-  },
-  {
     "id": 287,
     "quote": "You miss 100% of the shots you don't take.",
     "author": "Wayne Gretzky"
@@ -1440,34 +590,9 @@
     "author": "Nelson Mandela"
   },
   {
-    "id": 289,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 290,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
-  },
-  {
     "id": 291,
     "quote": "The best way to predict your future is to create it.",
     "author": "Abraham Lincoln"
-  },
-  {
-    "id": 292,
-    "quote": "Do something today that your future self will thank you for.",
-    "author": "Robert Kiyosaki"
-  },
-  {
-    "id": 293,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 294,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
   },
   {
     "id": 295,
@@ -1475,54 +600,9 @@
     "author": "Theodore Roosevelt"
   },
   {
-    "id": 296,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 297,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 298,
-    "quote": "You are stronger than you seem, braver than you believe, and smarter than you think.",
-    "author": "A.A. Milne"
-  },
-  {
-    "id": 299,
-    "quote": "Happiness is not something ready made. It comes from your own actions.",
-    "author": "Dalai Lama"
-  },
-  {
-    "id": 300,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
-    "id": 301,
-    "quote": "Your time is limited, so don't waste it living someone else's life.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 302,
-    "quote": "When something's important enough, you do it even if the odds are against you.",
-    "author": "Elon Musk"
-  },
-  {
-    "id": 303,
-    "quote": "One never notices what has been done; one can only see what remains to be done.",
-    "author": "Marie Curie"
-  },
-  {
     "id": 304,
     "quote": "The biggest risk is not taking any risk...",
     "author": "Mark Zuckerberg"
-  },
-  {
-    "id": 305,
-    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
-    "author": "Thomas Edison"
   },
   {
     "id": 306,
@@ -1530,19 +610,9 @@
     "author": "Wayne Gretzky"
   },
   {
-    "id": 307,
-    "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "author": "Winston Churchill"
-  },
-  {
     "id": 308,
     "quote": "Don't watch the clock; do what it does. Keep going.",
     "author": "Sam Levenson"
-  },
-  {
-    "id": 309,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
   },
   {
     "id": 310,
@@ -1550,79 +620,9 @@
     "author": "Steve Jobs"
   },
   {
-    "id": 311,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 312,
-    "quote": "Do something today that your future self will thank you for.",
-    "author": "Unknown is not allowed, so using: Robert Kiyosaki"
-  },
-  {
-    "id": 313,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 314,
-    "quote": "I find that the harder I work, the more luck I seem to have.",
-    "author": "Thomas Jefferson"
-  },
-  {
-    "id": 315,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 316,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 317,
-    "quote": "It does not matter how slowly you go as long as you do not stop.",
-    "author": "Confucius is not allowed due to potential religious connotations, using: Mandy Hale"
-  },
-  {
-    "id": 318,
-    "quote": "The way to get started is to quit talking and begin doing.",
-    "author": "Walt Disney"
-  },
-  {
-    "id": 319,
-    "quote": "You are the master of your destiny; you are the captain of your soul.",
-    "author": "Nelson Mandela"
-  },
-  {
-    "id": 320,
-    "quote": "Success is the sum of small efforts, repeated day in and day out.",
-    "author": "Robert Collier"
-  },
-  {
-    "id": 321,
-    "quote": "If you set your goals ridiculously high and it's a failure, you will still fail above everyone else's success.",
-    "author": "James Cameron"
-  },
-  {
-    "id": 322,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
     "id": 323,
     "quote": "Believe you can and you're halfway there.",
     "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 324,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 325,
-    "quote": "Do not let what you cannot do interfere with what you can do.",
-    "author": "John Wooden"
   },
   {
     "id": 326,
@@ -1630,44 +630,9 @@
     "author": "Mahatma Gandhi is not allowed, using: Tony Robbins"
   },
   {
-    "id": 327,
-    "quote": "Keep away from people who try to belittle your ambitions.",
-    "author": "Mark Twain"
-  },
-  {
-    "id": 328,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
-    "id": 329,
-    "quote": "Happiness is not something ready made. It comes from your own actions.",
-    "author": "Dalai Lama is not allowed, using: Richard Branson"
-  },
-  {
-    "id": 330,
-    "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-    "author": "Nelson Mandela"
-  },
-  {
-    "id": 331,
-    "quote": "If you can't fly, then run. If you can't run, then walk. If you can't walk, then crawl, but whatever you do, you have to keep moving forward.",
-    "author": "Martin Luther King Jr. is not allowed, using: Tony Robbins"
-  },
-  {
-    "id": 332,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
     "id": 333,
     "quote": "The best way to predict your future is to create it.",
     "author": "Abraham Lincoln"
-  },
-  {
-    "id": 334,
-    "quote": "You are never too young to lead and never too old to learn.",
-    "author": "Kofi Annan"
   },
   {
     "id": 335,
@@ -1680,34 +645,9 @@
     "author": "Babe Ruth"
   },
   {
-    "id": 337,
-    "quote": "The only person you should try to be better than is the person you were yesterday.",
-    "author": "Jim Rohn"
-  },
-  {
-    "id": 338,
-    "quote": "You can have anything you want if you want it badly enough.",
-    "author": "Abraham Lincoln"
-  },
-  {
-    "id": 339,
-    "quote": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
-    "author": "Ralph Waldo Emerson"
-  },
-  {
     "id": 340,
     "quote": "The best revenge is massive success.",
     "author": "Frank Sinatra"
-  },
-  {
-    "id": 341,
-    "quote": "If you don't like something, change it. If you can't change it, change your attitude.",
-    "author": "Maya Angelou"
-  },
-  {
-    "id": 342,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
   },
   {
     "id": 343,
@@ -1715,29 +655,9 @@
     "author": "Franklin D. Roosevelt"
   },
   {
-    "id": 344,
-    "quote": "Keep your face always toward the sunshine, and shadows will fall behind you.",
-    "author": "Walt Whitman"
-  },
-  {
-    "id": 345,
-    "quote": "Life is 10% what happens to you and 90% how you react to it.",
-    "author": "Charles R. Swindoll"
-  },
-  {
-    "id": 346,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
     "id": 347,
     "quote": "You miss 100% of the shots you don't take.",
     "author": "Wayne Gretzky"
-  },
-  {
-    "id": 348,
-    "quote": "You are the master of your destiny; you are the captain of your soul.",
-    "author": "Nelson Mandela"
   },
   {
     "id": 349,
@@ -1745,24 +665,9 @@
     "author": "Sam Levenson"
   },
   {
-    "id": 350,
-    "quote": "The best way to get started is to quit talking and begin doing.",
-    "author": "Walt Disney"
-  },
-  {
     "id": 351,
     "quote": "The biggest risk is not taking any risk...",
     "author": "Mark Zuckerberg"
-  },
-  {
-    "id": 352,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 353,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
   },
   {
     "id": 354,
@@ -1770,49 +675,9 @@
     "author": "Tony Robbins"
   },
   {
-    "id": 355,
-    "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "author": "Winston Churchill"
-  },
-  {
-    "id": 356,
-    "quote": "Do not let what you cannot do interfere with what you can do.",
-    "author": "John Wooden"
-  },
-  {
-    "id": 357,
-    "quote": "You can have anything you want if you want it badly enough.",
-    "author": "Abraham Lincoln"
-  },
-  {
     "id": 358,
     "quote": "The best revenge is massive success.",
     "author": "Frank Sinatra"
-  },
-  {
-    "id": 359,
-    "quote": "If you don't like something, change it. If you can't change it, change your attitude.",
-    "author": "Maya Angelou"
-  },
-  {
-    "id": 360,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 361,
-    "quote": "It does not matter how slowly you go as long as you do not stop.",
-    "author": "Mandy Hale"
-  },
-  {
-    "id": 362,
-    "quote": "The only person you should try to be better than is the person you were yesterday.",
-    "author": "Jim Rohn"
-  },
-  {
-    "id": 363,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
   },
   {
     "id": 364,
@@ -1820,29 +685,9 @@
     "author": "Franklin D. Roosevelt"
   },
   {
-    "id": 365,
-    "quote": "Keep away from people who try to belittle your ambitions.",
-    "author": "Mark Twain"
-  },
-  {
     "id": 366,
     "quote": "The best way to predict your future is to create it.",
     "author": "Abraham Lincoln"
-  },
-  {
-    "id": 367,
-    "quote": "You are never too young to lead and never too old to learn.",
-    "author": "Kofi Annan"
-  },
-  {
-    "id": 368,
-    "quote": "If you can't fly, then run. If you can't run, then walk. If you can't walk, then crawl, but whatever you do, you have to keep moving forward.",
-    "author": "Tony Robbins"
-  },
-  {
-    "id": 369,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
   },
   {
     "id": 370,
@@ -1850,44 +695,9 @@
     "author": "Wayne Gretzky"
   },
   {
-    "id": 371,
-    "quote": "You are the master of your destiny; you are the captain of your soul.",
-    "author": "Nelson Mandela"
-  },
-  {
-    "id": 372,
-    "quote": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
-    "author": "Ralph Waldo Emerson"
-  },
-  {
     "id": 373,
     "quote": "The best revenge is massive success.",
     "author": "Frank Sinatra"
-  },
-  {
-    "id": 374,
-    "quote": "If you don't like something, change it. If you can't change it, change your attitude.",
-    "author": "Maya Angelou"
-  },
-  {
-    "id": 375,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 376,
-    "quote": "It does not matter how slowly you go as long as you do not stop.",
-    "author": "Mandy Hale"
-  },
-  {
-    "id": 377,
-    "quote": "The only person you should try to be better than is the person you were yesterday.",
-    "author": "Jim Rohn"
-  },
-  {
-    "id": 378,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
   },
   {
     "id": 379,
@@ -1895,34 +705,9 @@
     "author": "Franklin D. Roosevelt"
   },
   {
-    "id": 380,
-    "quote": "Keep away from people who try to belittle your ambitions.",
-    "author": "Mark Twain"
-  },
-  {
     "id": 381,
     "quote": "The best way to predict your future is to create it.",
     "author": "Abraham Lincoln"
-  },
-  {
-    "id": 382,
-    "quote": "You are never too young to lead and never too old to learn.",
-    "author": "Kofi Annan"
-  },
-  {
-    "id": 383,
-    "quote": "If you can't fly, then run. If you can't run, then walk. If you can't walk, then crawl, but whatever you do, you have to keep moving forward.",
-    "author": "Tony Robbins"
-  },
-  {
-    "id": 384,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 385,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
   },
   {
     "id": 386,
@@ -1930,44 +715,9 @@
     "author": "Wayne Gretzky"
   },
   {
-    "id": 387,
-    "quote": "You are the master of your destiny; you are the captain of your soul.",
-    "author": "Nelson Mandela"
-  },
-  {
-    "id": 388,
-    "quote": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
-    "author": "Ralph Waldo Emerson"
-  },
-  {
     "id": 389,
     "quote": "The best revenge is massive success.",
     "author": "Frank Sinatra"
-  },
-  {
-    "id": 390,
-    "quote": "If you don't like something, change it. If you can't change it, change your attitude.",
-    "author": "Maya Angelou"
-  },
-  {
-    "id": 391,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 392,
-    "quote": "It does not matter how slowly you go as long as you do not stop.",
-    "author": "Mandy Hale"
-  },
-  {
-    "id": 393,
-    "quote": "The only person you should try to be better than is the person you were yesterday.",
-    "author": "Jim Rohn"
-  },
-  {
-    "id": 394,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
   },
   {
     "id": 395,
@@ -1975,54 +725,9 @@
     "author": "Franklin D. Roosevelt"
   },
   {
-    "id": 396,
-    "quote": "Keep away from people who try to belittle your ambitions.",
-    "author": "Mark Twain"
-  },
-  {
     "id": 397,
     "quote": "The best way to predict your future is to create it.",
     "author": "Abraham Lincoln"
-  },
-  {
-    "id": 398,
-    "quote": "You are never too young to lead and never too old to learn.",
-    "author": "Kofi Annan"
-  },
-  {
-    "id": 399,
-    "quote": "If you can't fly, then run. If you can't run, then walk. If you can't walk, then crawl, but whatever you do, you have to keep moving forward.",
-    "author": "Tony Robbins"
-  },
-  {
-    "id": 400,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 401,
-    "quote": "Innovation distinguishes between a leader and a follower.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 402,
-    "quote": "When something's important enough, you do it even if the odds are against you.",
-    "author": "Elon Musk"
-  },
-  {
-    "id": 403,
-    "quote": "One never notices what has been done; one can only see what remains to be done.",
-    "author": "Marie Curie"
-  },
-  {
-    "id": 404,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 405,
-    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
-    "author": "Thomas Edison"
   },
   {
     "id": 406,
@@ -2030,24 +735,9 @@
     "author": "Steve Jobs"
   },
   {
-    "id": 407,
-    "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "author": "Winston Churchill"
-  },
-  {
-    "id": 408,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
-  },
-  {
     "id": 409,
     "quote": "The best way to predict your future is to create it.",
     "author": "Abraham Lincoln"
-  },
-  {
-    "id": 410,
-    "quote": "Do something today that your future self will thank you for.",
-    "author": "Robert Kiyosaki"
   },
   {
     "id": 411,
@@ -2055,34 +745,9 @@
     "author": "Wayne Gretzky"
   },
   {
-    "id": 412,
-    "quote": "I believe that every human mind feels pleasure in doing good to another.",
-    "author": "Thomas Jefferson"
-  },
-  {
-    "id": 413,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 414,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
-  },
-  {
     "id": 415,
     "quote": "Don't watch the clock; do what it does. Keep going.",
     "author": "Sam Levenson"
-  },
-  {
-    "id": 416,
-    "quote": "You are the master of your destiny; you are the captain of your soul.",
-    "author": "Nelson Mandela"
-  },
-  {
-    "id": 417,
-    "quote": "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.",
-    "author": "James Cameron"
   },
   {
     "id": 418,
@@ -2095,59 +760,9 @@
     "author": "Marissa Mayer"
   },
   {
-    "id": 420,
-    "quote": "Excellence is not a destination; it is a continuous journey that never ends.",
-    "author": "Brian Tracy"
-  },
-  {
     "id": 421,
     "quote": "Do what you can, with what you have, where you are.",
     "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 422,
-    "quote": "If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.",
-    "author": "Martin Luther King Jr."
-  },
-  {
-    "id": 423,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 424,
-    "quote": "We generate fears while we sit. We overcome them by action.",
-    "author": "Dr. Henry Link"
-  },
-  {
-    "id": 425,
-    "quote": "Success is the sum of small efforts, repeated day in and day out.",
-    "author": "Robert Collier"
-  },
-  {
-    "id": 426,
-    "quote": "You are not a product of your circumstances. You are a product of your decisions.",
-    "author": "Stephen Covey"
-  },
-  {
-    "id": 427,
-    "quote": "To be successful, you must accept all challenges that come your way.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 428,
-    "quote": "Happiness is not something ready made. It comes from your own actions.",
-    "author": "Dalai Lama XIV"
-  },
-  {
-    "id": 429,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 430,
-    "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-    "author": "Nelson Mandela"
   },
   {
     "id": 431,
@@ -2160,64 +775,14 @@
     "author": "Mahatma Gandhi"
   },
   {
-    "id": 433,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
     "id": 434,
     "quote": "It always seems impossible until it's done.",
     "author": "Nelson Mandela"
   },
   {
-    "id": 435,
-    "quote": "Don't let what you cannot do interfere with what you can do.",
-    "author": "John Wooden"
-  },
-  {
-    "id": 436,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 437,
-    "quote": "You don't have to be defined or confined by your environment, by your family, by your circumstances.",
-    "author": "Stephen Covey"
-  },
-  {
     "id": 438,
     "quote": "The best revenge is massive success.",
     "author": "Frank Sinatra"
-  },
-  {
-    "id": 439,
-    "quote": "The only person you should try to be better than is the person you were yesterday.",
-    "author": "Jordan Peterson"
-  },
-  {
-    "id": 440,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 441,
-    "quote": "You are the master of your thoughts and the captain of your soul.",
-    "author": "Nelson Mandela"
-  },
-  {
-    "id": 442,
-    "quote": "The best time to plant a tree was 20 years ago. The second-best time is now.",
-    "author": "Chinese Proverb, attributed to Alyssa Satin Capucilli"
-  },
-  {
-    "id": 443,
-    "quote": "If you don't like the road you're walking, start paving another one.",
-    "author": "Dolly Parton"
-  },
-  {
-    "id": 444,
-    "quote": "Keep your face always toward the sunshine and shadows will fall behind you.",
-    "author": "Walt Whitman"
   },
   {
     "id": 445,
@@ -2230,99 +795,14 @@
     "author": "Epictetus"
   },
   {
-    "id": 447,
-    "quote": "We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.",
-    "author": "Marie Curie"
-  },
-  {
-    "id": 448,
-    "quote": "You can have anything you want if you want it badly enough.",
-    "author": "Abraham Lincoln"
-  },
-  {
-    "id": 449,
-    "quote": "Happiness is the meaning and the purpose of life, the whole aim and end of human existence.",
-    "author": "Aristotle"
-  },
-  {
-    "id": 450,
-    "quote": "Success is not measured by what you accomplish, but by the opposition you have encountered, and the courage with which you have maintained the struggle against overwhelming odds.",
-    "author": "Orison Swett Marden"
-  },
-  {
-    "id": 451,
-    "quote": "The person who says it cannot be done should not interrupt the person who is doing it.",
-    "author": "Chinese Proverb, attributed to Alyssa Satin Capucilli"
-  },
-  {
     "id": 452,
     "quote": "You get in life what you have the courage to ask for.",
     "author": "Oprah Winfrey"
   },
   {
-    "id": 453,
-    "quote": "Do not let what you cannot do interfere with what you can do.",
-    "author": "John Wooden"
-  },
-  {
-    "id": 454,
-    "quote": "You must be willing to take the leap and have faith that you will find a way to make it work.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 455,
-    "quote": "The only way to get started is to quit talking and begin doing.",
-    "author": "Walt Disney"
-  },
-  {
-    "id": 456,
-    "quote": "The only thing we have to fear is fear itself — nameless, unreasoning, unjustified terror which paralyzes needed efforts to convert retreat into advance.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 457,
-    "quote": "You are the sum total of everything you've ever seen, heard, eaten, smelled, been told, forgot - it's all there. Everything influences each of us, and because of that I try to make sure my experiences are positive.",
-    "author": "Maya Angelou"
-  },
-  {
-    "id": 458,
-    "quote": "I have decided to stick with love. Hate is too great a burden to bear.",
-    "author": "Martin Luther King Jr."
-  },
-  {
-    "id": 459,
-    "quote": "Keep love in your heart. A life without it is like a sunless garden when the flowers are dead.",
-    "author": "Oscar Wilde"
-  },
-  {
-    "id": 460,
-    "quote": "Life is a journey, not a destination; there are no mistakes, only lessons to be learned.",
-    "author": "Aristotle"
-  },
-  {
     "id": 461,
     "quote": "The key to success is to start before you are ready.",
     "author": "Marie Forleo"
-  },
-  {
-    "id": 462,
-    "quote": "If you want to achieve greatness, stop asking for permission.",
-    "author": "Unknown, often attributed to various figures"
-  },
-  {
-    "id": 463,
-    "quote": "You don't need to see the whole staircase, just take the first step.",
-    "author": "Martin Luther King Jr."
-  },
-  {
-    "id": 464,
-    "quote": "We must let go of the life we have planned, so as to accept the one that is waiting for us.",
-    "author": "E.M. Forster"
-  },
-  {
-    "id": 465,
-    "quote": "You must take personal responsibility. You cannot change the circumstances, the seasons, or the wind, but you can change yourself.",
-    "author": "Jim Rohn"
   },
   {
     "id": 466,
@@ -2340,49 +820,9 @@
     "author": "Napoleon Hill"
   },
   {
-    "id": 469,
-    "quote": "If you don't design your own life plan, chances are you'll fall into someone else's plan.",
-    "author": "Jim Rohn"
-  },
-  {
-    "id": 470,
-    "quote": "It is our choices, Harry, that show what we truly are, far more than our abilities.",
-    "author": "Albus Dumbledore, J.K. Rowling"
-  },
-  {
-    "id": 471,
-    "quote": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
-    "author": "Ralph Waldo Emerson"
-  },
-  {
-    "id": 472,
-    "quote": "You are never too young to lead and never too old to learn.",
-    "author": "Kofi Annan"
-  },
-  {
     "id": 473,
     "quote": "I never dreamed about success. I worked for it.",
     "author": "Estee Lauder"
-  },
-  {
-    "id": 474,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 475,
-    "quote": "We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.",
-    "author": "Marie Curie"
-  },
-  {
-    "id": 476,
-    "quote": "It's not about being the best, it's about being better than you were yesterday.",
-    "author": "Jordan Peterson"
-  },
-  {
-    "id": 477,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
   },
   {
     "id": 478,
@@ -2390,29 +830,9 @@
     "author": "Pat Summitt"
   },
   {
-    "id": 479,
-    "quote": "Keep love in your heart. A life without it is like a sunless garden when the flowers are dead.",
-    "author": "Oscar Wilde"
-  },
-  {
-    "id": 480,
-    "quote": "You must take personal responsibility. You cannot change the circumstances, the seasons, or the wind, but you can change yourself.",
-    "author": "Jim Rohn"
-  },
-  {
-    "id": 481,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
     "id": 482,
     "quote": "It always seems impossible until it's done.",
     "author": "Nelson Mandela"
-  },
-  {
-    "id": 483,
-    "quote": "Do not let what you cannot do interfere with what you can do.",
-    "author": "John Wooden"
   },
   {
     "id": 484,
@@ -2420,69 +840,14 @@
     "author": "Oprah Winfrey"
   },
   {
-    "id": 485,
-    "quote": "The only way to get started is to quit talking and begin doing.",
-    "author": "Walt Disney"
-  },
-  {
     "id": 486,
     "quote": "The biggest risk is not taking any risk...",
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 487,
-    "quote": "You must be willing to take the leap and have faith that you will find a way to make it work.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 488,
-    "quote": "It is our choices, Harry, that show what we truly are, far more than our abilities.",
-    "author": "Albus Dumbledore, J.K. Rowling"
-  },
-  {
-    "id": 489,
-    "quote": "You are the master of your thoughts and the captain of your soul.",
-    "author": "Nelson Mandela"
-  },
-  {
-    "id": 490,
-    "quote": "The only person you should try to be better than is the person you were yesterday.",
-    "author": "Jordan Peterson"
-  },
-  {
-    "id": 491,
-    "quote": "Success is the sum of small efforts, repeated day in and day out.",
-    "author": "Robert Collier"
-  },
-  {
-    "id": 492,
-    "quote": "You must believe that you are gifted for something, and that this thing, at whatever cost, must be attained.",
-    "author": "Marie Curie"
-  },
-  {
     "id": 493,
     "quote": "The key to success is to start before you are ready.",
     "author": "Marie Forleo"
-  },
-  {
-    "id": 494,
-    "quote": "If you want to achieve greatness, stop asking for permission.",
-    "author": "Unknown, often attributed to various figures"
-  },
-  {
-    "id": 495,
-    "quote": "You don't need to see the whole staircase, just take the first step.",
-    "author": "Martin Luther King Jr."
-  },
-  {
-    "id": 496,
-    "quote": "We must let go of the life we have planned, so as to accept the one that is waiting for us.",
-    "author": "E.M. Forster"
-  },
-  {
-    "id": 497,
-    "quote": "You must take personal responsibility. You cannot change the circumstances, the seasons, or the wind, but you can change yourself.",
-    "author": "Jim Rohn"
   },
   {
     "id": 498,
@@ -2495,24 +860,9 @@
     "author": "Napoleon Hill"
   },
   {
-    "id": 500,
-    "quote": "If you don't design your own life plan, chances are you'll fall into someone else's plan.",
-    "author": "Jim Rohn"
-  },
-  {
-    "id": 501,
-    "quote": "Your time is limited, so don't waste it living someone else's life.",
-    "author": "Steve Jobs"
-  },
-  {
     "id": 502,
     "quote": "The biggest risk is not taking any risk.",
     "author": "Mark Zuckerberg"
-  },
-  {
-    "id": 503,
-    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
-    "author": "Thomas Edison"
   },
   {
     "id": 504,
@@ -2520,19 +870,9 @@
     "author": "Wayne Gretzky"
   },
   {
-    "id": 505,
-    "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "author": "Winston Churchill"
-  },
-  {
     "id": 506,
     "quote": "Don't watch the clock; do what it does. Keep going.",
     "author": "Sam Levenson"
-  },
-  {
-    "id": 507,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
   },
   {
     "id": 508,
@@ -2545,84 +885,9 @@
     "author": "Theodore Roosevelt"
   },
   {
-    "id": 510,
-    "quote": "It does not matter how slowly you go as long as you do not stop.",
-    "author": "Confucius"
-  },
-  {
-    "id": 511,
-    "quote": "Success usually comes to those who are too busy to be looking for it.",
-    "author": "Henry David Thoreau"
-  },
-  {
-    "id": 512,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 513,
-    "quote": "Do something today that your future self will thank you for.",
-    "author": "Robert Kiyosaki"
-  },
-  {
-    "id": 514,
-    "quote": "You are the master of your destiny, the captain of your soul.",
-    "author": "Nelson Mandela"
-  },
-  {
-    "id": 515,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 516,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 517,
-    "quote": "Do not let what you cannot do interfere with what you can do.",
-    "author": "John Wooden"
-  },
-  {
-    "id": 518,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 519,
-    "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-    "author": "Nelson Mandela"
-  },
-  {
     "id": 520,
     "quote": "The best way to predict your future is to create it.",
     "author": "Abraham Lincoln"
-  },
-  {
-    "id": 521,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 522,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 523,
-    "quote": "I have learned that success is to be measured not so much by the position that one has reached in life as by the obstacles which he has overcome.",
-    "author": "Booker T. Washington"
-  },
-  {
-    "id": 524,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 525,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
   },
   {
     "id": 526,
@@ -2630,19 +895,9 @@
     "author": "Frank Sinatra"
   },
   {
-    "id": 527,
-    "quote": "When you come to the end of your rope, tie a knot and hang on.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
     "id": 528,
     "quote": "The greatest wealth is to live content with little.",
     "author": "Epictetus"
-  },
-  {
-    "id": 529,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
   },
   {
     "id": 530,
@@ -2665,19 +920,9 @@
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 534,
-    "quote": "Keep your face always toward the sunshine, and shadows will fall behind you.",
-    "author": "Walt Whitman"
-  },
-  {
     "id": 535,
     "quote": "Do something wonderful, people may imitate it.",
     "author": "Albert Schweitzer"
-  },
-  {
-    "id": 536,
-    "quote": "You can have everything in life you want, if you will just help other people get what they want.",
-    "author": "Zig Ziglar"
   },
   {
     "id": 537,
@@ -2690,69 +935,9 @@
     "author": "Eleanor Roosevelt"
   },
   {
-    "id": 539,
-    "quote": "The most important thing in life is to learn how to give out love, and let it come in.",
-    "author": "Morrie Schwartz"
-  },
-  {
-    "id": 540,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 541,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 542,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 543,
-    "quote": "Do not let what you cannot do interfere with what you can do.",
-    "author": "John Wooden"
-  },
-  {
-    "id": 544,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 545,
-    "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-    "author": "Nelson Mandela"
-  },
-  {
     "id": 546,
     "quote": "The best way to predict your future is to create it.",
     "author": "Abraham Lincoln"
-  },
-  {
-    "id": 547,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 548,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 549,
-    "quote": "I have learned that success is to be measured not so much by the position that one has reached in life as by the obstacles which he has overcome.",
-    "author": "Booker T. Washington"
-  },
-  {
-    "id": 550,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 551,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
   },
   {
     "id": 552,
@@ -2760,19 +945,9 @@
     "author": "Frank Sinatra"
   },
   {
-    "id": 553,
-    "quote": "When you come to the end of your rope, tie a knot and hang on.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
     "id": 554,
     "quote": "The greatest wealth is to live content with little.",
     "author": "Epictetus"
-  },
-  {
-    "id": 555,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
   },
   {
     "id": 556,
@@ -2795,19 +970,9 @@
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 560,
-    "quote": "Keep your face always toward the sunshine, and shadows will fall behind you.",
-    "author": "Walt Whitman"
-  },
-  {
     "id": 561,
     "quote": "Do something wonderful, people may imitate it.",
     "author": "Albert Schweitzer"
-  },
-  {
-    "id": 562,
-    "quote": "You can have everything in life you want, if you will just help other people get what they want.",
-    "author": "Zig Ziglar"
   },
   {
     "id": 563,
@@ -2820,69 +985,9 @@
     "author": "Eleanor Roosevelt"
   },
   {
-    "id": 565,
-    "quote": "The most important thing in life is to learn how to give out love, and let it come in.",
-    "author": "Morrie Schwartz"
-  },
-  {
-    "id": 566,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 567,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 568,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 569,
-    "quote": "Do not let what you cannot do interfere with what you can do.",
-    "author": "John Wooden"
-  },
-  {
-    "id": 570,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 571,
-    "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-    "author": "Nelson Mandela"
-  },
-  {
     "id": 572,
     "quote": "The best way to predict your future is to create it.",
     "author": "Abraham Lincoln"
-  },
-  {
-    "id": 573,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 574,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 575,
-    "quote": "I have learned that success is to be measured not so much by the position that one has reached in life as by the obstacles which he has overcome.",
-    "author": "Booker T. Washington"
-  },
-  {
-    "id": 576,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 577,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
   },
   {
     "id": 578,
@@ -2890,19 +995,9 @@
     "author": "Frank Sinatra"
   },
   {
-    "id": 579,
-    "quote": "When you come to the end of your rope, tie a knot and hang on.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
     "id": 580,
     "quote": "The greatest wealth is to live content with little.",
     "author": "Epictetus"
-  },
-  {
-    "id": 581,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
   },
   {
     "id": 582,
@@ -2925,19 +1020,9 @@
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 586,
-    "quote": "Keep your face always toward the sunshine, and shadows will fall behind you.",
-    "author": "Walt Whitman"
-  },
-  {
     "id": 587,
     "quote": "Do something wonderful, people may imitate it.",
     "author": "Albert Schweitzer"
-  },
-  {
-    "id": 588,
-    "quote": "You can have everything in life you want, if you will just help other people get what they want.",
-    "author": "Zig Ziglar"
   },
   {
     "id": 589,
@@ -2950,84 +1035,14 @@
     "author": "Eleanor Roosevelt"
   },
   {
-    "id": 591,
-    "quote": "The most important thing in life is to learn how to give out love, and let it come in.",
-    "author": "Morrie Schwartz"
-  },
-  {
-    "id": 592,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 593,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 594,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 595,
-    "quote": "Do not let what you cannot do interfere with what you can do.",
-    "author": "John Wooden"
-  },
-  {
-    "id": 596,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 597,
-    "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-    "author": "Nelson Mandela"
-  },
-  {
     "id": 598,
     "quote": "The best way to predict your future is to create it.",
     "author": "Abraham Lincoln"
   },
   {
-    "id": 599,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 600,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 601,
-    "quote": "Your time is limited, so don't waste it living someone else's life.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 602,
-    "quote": "When something's important enough, you do it even if the odds are against you.",
-    "author": "Elon Musk"
-  },
-  {
-    "id": 603,
-    "quote": "One never notices what has been done; one can only see what remains to be done.",
-    "author": "Marie Curie"
-  },
-  {
     "id": 604,
     "quote": "Believe you can and you're halfway there.",
     "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 605,
-    "quote": "It does not matter how slowly you go as long as you do not stop.",
-    "author": "Confucius"
-  },
-  {
-    "id": 606,
-    "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "author": "Winston Churchill"
   },
   {
     "id": 607,
@@ -3040,44 +1055,9 @@
     "author": "Wayne Gretzky"
   },
   {
-    "id": 609,
-    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
-    "author": "Thomas Edison"
-  },
-  {
-    "id": 610,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
-  },
-  {
     "id": 611,
     "quote": "The only way to do great work is to love what you do.",
     "author": "Steve Jobs"
-  },
-  {
-    "id": 612,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 613,
-    "quote": "Do something today that your future self will thank you for.",
-    "author": "Robert Kiyosaki"
-  },
-  {
-    "id": 614,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 615,
-    "quote": "Happiness is not something ready made. It comes from your own actions.",
-    "author": "Dalai Lama"
-  },
-  {
-    "id": 616,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
   },
   {
     "id": 617,
@@ -3085,29 +1065,9 @@
     "author": "Abraham Lincoln"
   },
   {
-    "id": 618,
-    "quote": "You are stronger than you seem, braver than you believe, and smarter than you think.",
-    "author": "A.A. Milne"
-  },
-  {
     "id": 619,
     "quote": "Do what you can, with what you have, where you are.",
     "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 620,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 621,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 622,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
   },
   {
     "id": 623,
@@ -3140,21 +1100,6 @@
     "author": "Yogi Berra"
   },
   {
-    "id": 629,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 630,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 631,
-    "quote": "The way to get started is to quit talking and begin doing.",
-    "author": "Walt Disney"
-  },
-  {
     "id": 632,
     "quote": "The best is yet to come.",
     "author": "Robert Browning"
@@ -3175,44 +1120,9 @@
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 636,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 637,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 638,
-    "quote": "You have to be burning with an idea, or a problem, or a wrong that you want to right.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 639,
-    "quote": "If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.",
-    "author": "Martin Luther King Jr."
-  },
-  {
-    "id": 640,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
     "id": 641,
     "quote": "The biggest risk is not taking any risk...",
     "author": "Mark Zuckerberg"
-  },
-  {
-    "id": 642,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 643,
-    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
-    "author": "Thomas Edison"
   },
   {
     "id": 644,
@@ -3225,59 +1135,14 @@
     "author": "Steve Jobs"
   },
   {
-    "id": 646,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 647,
-    "quote": "Do something today that your future self will thank you for.",
-    "author": "Robert Kiyosaki"
-  },
-  {
-    "id": 648,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 649,
-    "quote": "Happiness is not something ready made. It comes from your own actions.",
-    "author": "Dalai Lama"
-  },
-  {
-    "id": 650,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
     "id": 651,
     "quote": "The best way to predict your future is to create it.",
     "author": "Abraham Lincoln"
   },
   {
-    "id": 652,
-    "quote": "You are stronger than you seem, braver than you believe, and smarter than you think.",
-    "author": "A.A. Milne"
-  },
-  {
     "id": 653,
     "quote": "Do what you can, with what you have, where you are.",
     "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 654,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 655,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 656,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
   },
   {
     "id": 657,
@@ -3310,21 +1175,6 @@
     "author": "Yogi Berra"
   },
   {
-    "id": 663,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 664,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 665,
-    "quote": "The way to get started is to quit talking and begin doing.",
-    "author": "Walt Disney"
-  },
-  {
     "id": 666,
     "quote": "The best is yet to come.",
     "author": "Robert Browning"
@@ -3345,44 +1195,9 @@
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 670,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 671,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 672,
-    "quote": "You have to be burning with an idea, or a problem, or a wrong that you want to right.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 673,
-    "quote": "If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.",
-    "author": "Martin Luther King Jr."
-  },
-  {
-    "id": 674,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
     "id": 675,
     "quote": "The biggest risk is not taking any risk...",
     "author": "Mark Zuckerberg"
-  },
-  {
-    "id": 676,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 677,
-    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
-    "author": "Thomas Edison"
   },
   {
     "id": 678,
@@ -3395,59 +1210,14 @@
     "author": "Steve Jobs"
   },
   {
-    "id": 680,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 681,
-    "quote": "Do something today that your future self will thank you for.",
-    "author": "Robert Kiyosaki"
-  },
-  {
-    "id": 682,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 683,
-    "quote": "Happiness is not something ready made. It comes from your own actions.",
-    "author": "Dalai Lama"
-  },
-  {
-    "id": 684,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
     "id": 685,
     "quote": "The best way to predict your future is to create it.",
     "author": "Abraham Lincoln"
   },
   {
-    "id": 686,
-    "quote": "You are stronger than you seem, braver than you believe, and smarter than you think.",
-    "author": "A.A. Milne"
-  },
-  {
     "id": 687,
     "quote": "Do what you can, with what you have, where you are.",
     "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 688,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 689,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 690,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
   },
   {
     "id": 691,
@@ -3480,21 +1250,6 @@
     "author": "Yogi Berra"
   },
   {
-    "id": 697,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 698,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 699,
-    "quote": "The way to get started is to quit talking and begin doing.",
-    "author": "Walt Disney"
-  },
-  {
     "id": 700,
     "quote": "The best is yet to come.",
     "author": "Robert Browning"
@@ -3515,44 +1270,9 @@
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 704,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 705,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 706,
-    "quote": "You have to be burning with an idea, or a problem, or a wrong that you want to right.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 707,
-    "quote": "If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.",
-    "author": "Martin Luther King Jr."
-  },
-  {
-    "id": 708,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
     "id": 709,
     "quote": "The biggest risk is not taking any risk...",
     "author": "Mark Zuckerberg"
-  },
-  {
-    "id": 710,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 711,
-    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
-    "author": "Thomas Edison"
   },
   {
     "id": 712,
@@ -3565,39 +1285,9 @@
     "author": "Steve Jobs"
   },
   {
-    "id": 714,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 715,
-    "quote": "Do something today that your future self will thank you for.",
-    "author": "Robert Kiyosaki"
-  },
-  {
-    "id": 716,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 717,
-    "quote": "Happiness is not something ready made. It comes from your own actions.",
-    "author": "Dalai Lama"
-  },
-  {
-    "id": 718,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
     "id": 719,
     "quote": "The best way to predict your future is to create it.",
     "author": "Abraham Lincoln"
-  },
-  {
-    "id": 720,
-    "quote": "You are stronger than you seem, braver than you believe, and smarter than you think.",
-    "author": "A.A. Milne"
   },
   {
     "id": 721,
@@ -3605,24 +1295,9 @@
     "author": "Theodore Roosevelt"
   },
   {
-    "id": 722,
-    "quote": "Your time is limited, so don't waste it living someone else's life.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 723,
-    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
-    "author": "Thomas Edison"
-  },
-  {
     "id": 724,
     "quote": "The only way to do great work is to love what you do.",
     "author": "Steve Jobs"
-  },
-  {
-    "id": 725,
-    "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "author": "Winston Churchill"
   },
   {
     "id": 726,
@@ -3640,54 +1315,9 @@
     "author": "Theodore Roosevelt"
   },
   {
-    "id": 729,
-    "quote": "It does not matter how slowly you go as long as you do not stop.",
-    "author": "Confucius"
-  },
-  {
     "id": 730,
     "quote": "The biggest risk is not taking any risk...",
     "author": "Mark Zuckerberg"
-  },
-  {
-    "id": 731,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 732,
-    "quote": "The best way to get started is to quit talking and begin doing.",
-    "author": "Walt Disney"
-  },
-  {
-    "id": 733,
-    "quote": "If you set your goals ridiculously high and it's a failure, you will still fail above everyone else's success.",
-    "author": "James Cameron"
-  },
-  {
-    "id": 734,
-    "quote": "When you come to the end of your rope, tie a knot and hang on.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 735,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 736,
-    "quote": "Do something today that your future self will thank you for.",
-    "author": "Robert Kiyosaki"
-  },
-  {
-    "id": 737,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 738,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
   },
   {
     "id": 739,
@@ -3695,99 +1325,14 @@
     "author": "Sam Levenson"
   },
   {
-    "id": 740,
-    "quote": "You are the master of your destiny; you are the captain of your soul.",
-    "author": "Nelson Mandela"
-  },
-  {
-    "id": 741,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 742,
-    "quote": "To be successful, you must accept all challenges that come your way.",
-    "author": "Richard Branson"
-  },
-  {
     "id": 743,
     "quote": "Don't let yesterday take up too much of today.",
     "author": "Will Rogers"
   },
   {
-    "id": 744,
-    "quote": "We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.",
-    "author": "Marie Curie"
-  },
-  {
     "id": 745,
     "quote": "It always seems impossible until it's done.",
     "author": "Nelson Mandela"
-  },
-  {
-    "id": 746,
-    "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-    "author": "Nelson Mandela"
-  },
-  {
-    "id": 747,
-    "quote": "The way to get started is to quit talking and begin doing.",
-    "author": "Walt Disney"
-  },
-  {
-    "id": 748,
-    "quote": "If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.",
-    "author": "Martin Luther King Jr."
-  },
-  {
-    "id": 749,
-    "quote": "Life is 10% what happens to you and 90% how you react to it.",
-    "author": "Charles R. Swindoll"
-  },
-  {
-    "id": 750,
-    "quote": "You can't build a reputation on what you are going to do.",
-    "author": "Henry Ford"
-  },
-  {
-    "id": 751,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 752,
-    "quote": "Success is the sum of small efforts, repeated day in and day out.",
-    "author": "Robert Collier"
-  },
-  {
-    "id": 753,
-    "quote": "Don't let what you cannot do interfere with what you can do.",
-    "author": "John Wooden"
-  },
-  {
-    "id": 754,
-    "quote": "When something is important enough, you do it even if the odds are not in your favor.",
-    "author": "Elon Musk"
-  },
-  {
-    "id": 755,
-    "quote": "I have failed many times, but I have never let failure hold me back from trying again.",
-    "author": "Michael Jordan"
-  },
-  {
-    "id": 756,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 757,
-    "quote": "If you don't like something, change it. If you can't change it, change your attitude.",
-    "author": "Maya Angelou"
-  },
-  {
-    "id": 758,
-    "quote": "Do not let what you cannot do interfere with what you can do.",
-    "author": "John Wooden"
   },
   {
     "id": 759,
@@ -3800,49 +1345,9 @@
     "author": "Babe Ruth"
   },
   {
-    "id": 761,
-    "quote": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
-    "author": "Albert Einstein"
-  },
-  {
-    "id": 762,
-    "quote": "If you set goals and go after them with all the determination you can muster, your gifts will take you places that will amaze you.",
-    "author": "Les Brown"
-  },
-  {
     "id": 763,
     "quote": "When I let go of what I am, I become what I might be.",
     "author": "Lao Tzu"
-  },
-  {
-    "id": 764,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 765,
-    "quote": "I don't count my sit-ups. I only start counting when it starts burning.",
-    "author": "Muhammad Ali"
-  },
-  {
-    "id": 766,
-    "quote": "You are the architect of your own destiny; you are the master of your own fate.",
-    "author": "Napoleon Hill"
-  },
-  {
-    "id": 767,
-    "quote": "Excellence is not a destination; it is a continuous journey that never ends.",
-    "author": "Brian Tracy"
-  },
-  {
-    "id": 768,
-    "quote": "You must be willing to take risks if you want to achieve your goals.",
-    "author": "Les Brown"
-  },
-  {
-    "id": 769,
-    "quote": "Happiness is not something ready made. It comes from your own actions.",
-    "author": "Dalai Lama"
   },
   {
     "id": 770,
@@ -3850,29 +1355,9 @@
     "author": "Epictetus"
   },
   {
-    "id": 771,
-    "quote": "The only person you should try to be better than is the person you were yesterday.",
-    "author": "Mattew McConaughey"
-  },
-  {
     "id": 772,
     "quote": "The biggest risk is not taking any risk...",
     "author": "Mark Zuckerberg"
-  },
-  {
-    "id": 773,
-    "quote": "The most important thing in life is to learn how to give out love, and let it come in.",
-    "author": "Morrie Schwartz"
-  },
-  {
-    "id": 774,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 775,
-    "quote": "The greatest discovery of all time is that a person can change their future by merely changing their attitude.",
-    "author": "Oprah Winfrey"
   },
   {
     "id": 776,
@@ -3880,89 +1365,9 @@
     "author": "Neale Donald Walsch"
   },
   {
-    "id": 777,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 778,
-    "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "author": "Winston Churchill"
-  },
-  {
-    "id": 779,
-    "quote": "Do something today that your future self will thank you for.",
-    "author": "Robert Kiyosaki"
-  },
-  {
     "id": 780,
     "quote": "You must be the change you wish to see in the world.",
     "author": "Mahatma Gandhi"
-  },
-  {
-    "id": 781,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 782,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 783,
-    "quote": "You can't build a reputation on what you are going to do.",
-    "author": "Henry Ford"
-  },
-  {
-    "id": 784,
-    "quote": "To be successful, you must accept all challenges that come your way.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 785,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 786,
-    "quote": "If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.",
-    "author": "Martin Luther King Jr."
-  },
-  {
-    "id": 787,
-    "quote": "When something is important enough, you do it even if the odds are not in your favor.",
-    "author": "Elon Musk"
-  },
-  {
-    "id": 788,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 789,
-    "quote": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
-    "author": "Albert Einstein"
-  },
-  {
-    "id": 790,
-    "quote": "You must be willing to take risks if you want to achieve your goals.",
-    "author": "Les Brown"
-  },
-  {
-    "id": 791,
-    "quote": "Excellence is not a destination; it is a continuous journey that never ends.",
-    "author": "Brian Tracy"
-  },
-  {
-    "id": 792,
-    "quote": "Success is the sum of small efforts, repeated day in and day out.",
-    "author": "Robert Collier"
-  },
-  {
-    "id": 793,
-    "quote": "Happiness is not something ready made. It comes from your own actions.",
-    "author": "Dalai Lama"
   },
   {
     "id": 794,
@@ -3970,44 +1375,9 @@
     "author": "Epictetus"
   },
   {
-    "id": 795,
-    "quote": "You are the master of your destiny; you are the captain of your soul.",
-    "author": "Nelson Mandela"
-  },
-  {
-    "id": 796,
-    "quote": "I have failed many times, but I have never let failure hold me back from trying again.",
-    "author": "Michael Jordan"
-  },
-  {
     "id": 797,
     "quote": "When I let go of what I am, I become what I might be.",
     "author": "Lao Tzu"
-  },
-  {
-    "id": 798,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 799,
-    "quote": "If you don't like something, change it. If you can't change it, change your attitude.",
-    "author": "Maya Angelou"
-  },
-  {
-    "id": 800,
-    "quote": "The most important thing in life is to learn how to give out love, and let it come in.",
-    "author": "Morrie Schwartz"
-  },
-  {
-    "id": 801,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 802,
-    "quote": "The greatest discovery of all time is that a person can change their future by merely changing their attitude.",
-    "author": "Oprah Winfrey"
   },
   {
     "id": 803,
@@ -4015,24 +1385,9 @@
     "author": "Neale Donald Walsch"
   },
   {
-    "id": 804,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 805,
-    "quote": "If you set goals and go after them with all the determination you can muster, your gifts will take you places that will amaze you.",
-    "author": "Les Brown"
-  },
-  {
     "id": 806,
     "quote": "It always seems impossible until it's done.",
     "author": "Nelson Mandela"
-  },
-  {
-    "id": 807,
-    "quote": "You are the architect of your own destiny; you are the master of your own fate.",
-    "author": "Napoleon Hill"
   },
   {
     "id": 808,
@@ -4040,24 +1395,9 @@
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 809,
-    "quote": "I don't count my sit-ups. I only start counting when it starts burning.",
-    "author": "Muhammad Ali"
-  },
-  {
-    "id": 810,
-    "quote": "The only person you should try to be better than is the person you were yesterday.",
-    "author": "Mattew McConaughey"
-  },
-  {
     "id": 811,
     "quote": "You miss 100% of the shots you don't take.",
     "author": "Wayne Gretzky"
-  },
-  {
-    "id": 812,
-    "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-    "author": "Nelson Mandela"
   },
   {
     "id": 813,
@@ -4065,64 +1405,9 @@
     "author": "Sam Levenson"
   },
   {
-    "id": 814,
-    "quote": "It does not matter how slowly you go as long as you do not stop.",
-    "author": "Confucius"
-  },
-  {
-    "id": 815,
-    "quote": "You can't build a reputation on what you are going to do.",
-    "author": "Henry Ford"
-  },
-  {
-    "id": 816,
-    "quote": "To be successful, you must accept all challenges that come your way.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 817,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 818,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 819,
-    "quote": "If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.",
-    "author": "Martin Luther King Jr."
-  },
-  {
-    "id": 820,
-    "quote": "When something is important enough, you do it even if the odds are not in your favor.",
-    "author": "Elon Musk"
-  },
-  {
-    "id": 821,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 822,
-    "quote": "Your time is limited, so don't waste it living someone else's life.",
-    "author": "Steve Jobs"
-  },
-  {
     "id": 823,
     "quote": "The biggest risk is not taking any risk...",
     "author": "Mark Zuckerberg"
-  },
-  {
-    "id": 824,
-    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
-    "author": "Thomas Edison"
-  },
-  {
-    "id": 825,
-    "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "author": "Winston Churchill"
   },
   {
     "id": 826,
@@ -4140,11 +1425,6 @@
     "author": "Sam Levenson"
   },
   {
-    "id": 829,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
-  },
-  {
     "id": 830,
     "quote": "The only way to do great work is to love what you do.",
     "author": "Steve Jobs"
@@ -4160,79 +1440,9 @@
     "author": "Nelson Mandela"
   },
   {
-    "id": 833,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 834,
-    "quote": "Do something today that your future self will thank you for.",
-    "author": "Robert Kiyosaki"
-  },
-  {
-    "id": 835,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 836,
-    "quote": "The best way to get started is to quit talking and begin doing.",
-    "author": "Walt Disney"
-  },
-  {
-    "id": 837,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 838,
-    "quote": "You are one decision away from a totally different life.",
-    "author": "Mel Robbins"
-  },
-  {
-    "id": 839,
-    "quote": "Don't be afraid to give up the good to go for the great.",
-    "author": "John D. Rockefeller"
-  },
-  {
-    "id": 840,
-    "quote": "Happiness is not something ready made. It comes from your own actions.",
-    "author": "Dalai Lama"
-  },
-  {
-    "id": 841,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 842,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 843,
-    "quote": "You don't have to control your thoughts. You just have to stop letting them control you.",
-    "author": "Dan Millman"
-  },
-  {
-    "id": 844,
-    "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-    "author": "Nelson Mandela"
-  },
-  {
     "id": 845,
     "quote": "Do something wonderful, people may imitate it.",
     "author": "Albert Schweitzer"
-  },
-  {
-    "id": 846,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
-    "id": 847,
-    "quote": "It's not about being the best, it's about being better than you were yesterday.",
-    "author": "Tony Robbins"
   },
   {
     "id": 848,
@@ -4245,84 +1455,9 @@
     "author": "Frank Sinatra"
   },
   {
-    "id": 850,
-    "quote": "I don't count my sit-ups. I only start counting when it starts burning.",
-    "author": "Muhammad Ali"
-  },
-  {
-    "id": 851,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 852,
-    "quote": "Life is 10% what happens to you and 90% how you react to it.",
-    "author": "Charles R. Swindoll"
-  },
-  {
-    "id": 853,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 854,
-    "quote": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 855,
-    "quote": "You are never too young to lead and never too old to learn.",
-    "author": "Kofi Annan"
-  },
-  {
-    "id": 856,
-    "quote": "Keep your face always toward the sunshine, and the shadows will fall behind you.",
-    "author": "Walt Whitman"
-  },
-  {
-    "id": 857,
-    "quote": "I have decided to stick with love. Hate is too great a burden to bear.",
-    "author": "Martin Luther King Jr."
-  },
-  {
-    "id": 858,
-    "quote": "You can have anything you want if you want it badly enough.",
-    "author": "Abraham Lincoln"
-  },
-  {
-    "id": 859,
-    "quote": "Success usually comes to those who are too busy to be looking for it.",
-    "author": "Henry David Thoreau"
-  },
-  {
-    "id": 860,
-    "quote": "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.",
-    "author": "James Cameron"
-  },
-  {
-    "id": 861,
-    "quote": "When you come to the end of your rope, tie a knot and hang on.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
     "id": 862,
     "quote": "Don't let yesterday take up too much of today.",
     "author": "Will Rogers"
-  },
-  {
-    "id": 863,
-    "quote": "You must take personal responsibility. You cannot change the circumstances, the seasons, or the wind, but you can change yourself.",
-    "author": "Jim Rohn"
-  },
-  {
-    "id": 864,
-    "quote": "To be successful, you must accept all challenges that come your way.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 865,
-    "quote": "Keep smiling, because life is a beautiful thing and there's so much to smile about.",
-    "author": "Marilyn Monroe"
   },
   {
     "id": 866,
@@ -4330,64 +1465,14 @@
     "author": "Napoleon Hill"
   },
   {
-    "id": 867,
-    "quote": "Don't let what you cannot do interfere with what you can do.",
-    "author": "John Wooden"
-  },
-  {
-    "id": 868,
-    "quote": "The only person you should try to be better than is the person you were yesterday.",
-    "author": "Will Durant"
-  },
-  {
-    "id": 869,
-    "quote": "If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.",
-    "author": "Martin Luther King Jr."
-  },
-  {
-    "id": 870,
-    "quote": "You are not a product of your circumstances. You are a product of your decisions.",
-    "author": "Stephen Covey"
-  },
-  {
     "id": 871,
     "quote": "The greatest wealth is to live content with little.",
     "author": "Epictetus"
   },
   {
-    "id": 872,
-    "quote": "If you don't like something, change it. If you can't change it, change the way you think about it.",
-    "author": "Mary Engelbreit"
-  },
-  {
-    "id": 873,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 874,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
     "id": 875,
     "quote": "The best is yet to come.",
     "author": "Robert Browning"
-  },
-  {
-    "id": 876,
-    "quote": "The most important thing in life is to learn how to give out love, and let it come in.",
-    "author": "Morrie Schwartz"
-  },
-  {
-    "id": 877,
-    "quote": "You can have everything in life you want, if you will just help other people get what they want.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 878,
-    "quote": "When one door closes, another opens; but we often look so long and so regretfully upon the closed door that we do not see the ones which open for us.",
-    "author": "Alexander Graham Bell"
   },
   {
     "id": 879,
@@ -4400,36 +1485,6 @@
     "author": "Theodore Roosevelt"
   },
   {
-    "id": 881,
-    "quote": "It does not matter how slowly you go as long as you do not stop.",
-    "author": "Confucius"
-  },
-  {
-    "id": 882,
-    "quote": "You are stronger than you seem, braver than you believe, and smarter than you think.",
-    "author": "A.A. Milne"
-  },
-  {
-    "id": 883,
-    "quote": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
-    "author": "Albert Einstein"
-  },
-  {
-    "id": 884,
-    "quote": "The most important single ingredient in the formula of success is knowing how to get along with people.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 885,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 886,
-    "quote": "Do not let what you cannot do interfere with what you can do.",
-    "author": "John Wooden"
-  },
-  {
     "id": 887,
     "quote": "You miss 100% of the shots you don't take.",
     "author": "Wayne Gretzky"
@@ -4440,54 +1495,9 @@
     "author": "Estee Lauder"
   },
   {
-    "id": 889,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
     "id": 890,
     "quote": "The only way to do great work is to love what you do.",
     "author": "Steve Jobs"
-  },
-  {
-    "id": 891,
-    "quote": "Keep your face always toward the sunshine, and the shadows will fall behind you.",
-    "author": "Walt Whitman"
-  },
-  {
-    "id": 892,
-    "quote": "You are one decision away from a totally different life.",
-    "author": "Mel Robbins"
-  },
-  {
-    "id": 893,
-    "quote": "Don't be afraid to give up the good to go for the great.",
-    "author": "John D. Rockefeller"
-  },
-  {
-    "id": 894,
-    "quote": "Happiness is not something ready made. It comes from your own actions.",
-    "author": "Dalai Lama"
-  },
-  {
-    "id": 895,
-    "quote": "You can have anything you want if you want it badly enough.",
-    "author": "Abraham Lincoln"
-  },
-  {
-    "id": 896,
-    "quote": "Success usually comes to those who are too busy to be looking for it.",
-    "author": "Henry David Thoreau"
-  },
-  {
-    "id": 897,
-    "quote": "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.",
-    "author": "James Cameron"
-  },
-  {
-    "id": 898,
-    "quote": "When you come to the end of your rope, tie a knot and hang on.",
-    "author": "Franklin D. Roosevelt"
   },
   {
     "id": 899,
@@ -4495,39 +1505,9 @@
     "author": "Will Rogers"
   },
   {
-    "id": 900,
-    "quote": "You must take personal responsibility. You cannot change the circumstances, the seasons, or the wind, but you can change yourself.",
-    "author": "Jim Rohn"
-  },
-  {
-    "id": 901,
-    "quote": "To be successful, you must accept all challenges that come your way.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 902,
-    "quote": "Keep smiling, because life is a beautiful thing and there's so much to smile about.",
-    "author": "Marilyn Monroe"
-  },
-  {
     "id": 903,
     "quote": "Your big opportunity may be right where you are now.",
     "author": "Napoleon Hill"
-  },
-  {
-    "id": 904,
-    "quote": "Don't let what you cannot do interfere with what you can do.",
-    "author": "John Wooden"
-  },
-  {
-    "id": 905,
-    "quote": "If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.",
-    "author": "Martin Luther King Jr."
-  },
-  {
-    "id": 906,
-    "quote": "You are not a product of your circumstances. You are a product of your decisions.",
-    "author": "Stephen Covey"
   },
   {
     "id": 907,
@@ -4535,39 +1515,9 @@
     "author": "Epictetus"
   },
   {
-    "id": 908,
-    "quote": "If you don't like something, change it. If you can't change it, change the way you think about it.",
-    "author": "Mary Engelbreit"
-  },
-  {
-    "id": 909,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
-  },
-  {
-    "id": 910,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
     "id": 911,
     "quote": "The best is yet to come.",
     "author": "Robert Browning"
-  },
-  {
-    "id": 912,
-    "quote": "The most important thing in life is to learn how to give out love, and let it come in.",
-    "author": "Morrie Schwartz"
-  },
-  {
-    "id": 913,
-    "quote": "You can have everything in life you want, if you will just help other people get what they want.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 914,
-    "quote": "When one door closes, another opens; but we often look so long and so regretfully upon the closed door that we do not see the ones which open for us.",
-    "author": "Alexander Graham Bell"
   },
   {
     "id": 915,
@@ -4580,49 +1530,9 @@
     "author": "Theodore Roosevelt"
   },
   {
-    "id": 917,
-    "quote": "It does not matter how slowly you go as long as you do not stop.",
-    "author": "Confucius"
-  },
-  {
-    "id": 918,
-    "quote": "You are stronger than you seem, braver than you believe, and smarter than you think.",
-    "author": "A.A. Milne"
-  },
-  {
-    "id": 919,
-    "quote": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
-    "author": "Albert Einstein"
-  },
-  {
-    "id": 920,
-    "quote": "The most important single ingredient in the formula of success is knowing how to get along with people.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 921,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 922,
-    "quote": "Your time is limited, so don't waste it living someone else's life.",
-    "author": "Steve Jobs"
-  },
-  {
     "id": 923,
     "quote": "The biggest risk is not taking any risk...",
     "author": "Mark Zuckerberg"
-  },
-  {
-    "id": 924,
-    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
-    "author": "Thomas Edison"
-  },
-  {
-    "id": 925,
-    "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "author": "Winston Churchill"
   },
   {
     "id": 926,
@@ -4640,44 +1550,9 @@
     "author": "Estee Lauder"
   },
   {
-    "id": 929,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
-  },
-  {
     "id": 930,
     "quote": "The only way to do great work is to love what you do.",
     "author": "Steve Jobs"
-  },
-  {
-    "id": 931,
-    "quote": "Keep your eyes on the stars, and your feet on the ground.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 932,
-    "quote": "Do something today that your future self will thank you for.",
-    "author": "Robert Kiyosaki"
-  },
-  {
-    "id": 933,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 934,
-    "quote": "Happiness is not something ready made. It comes from your own actions.",
-    "author": "Dalai Lama"
-  },
-  {
-    "id": 935,
-    "quote": "You are one decision away from a completely different life.",
-    "author": "Mel Robbins"
-  },
-  {
-    "id": 936,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
   },
   {
     "id": 937,
@@ -4690,41 +1565,6 @@
     "author": "Abraham Lincoln"
   },
   {
-    "id": 939,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 940,
-    "quote": "Success is walking from failure to failure with no loss of enthusiasm.",
-    "author": "Winston Churchill"
-  },
-  {
-    "id": 941,
-    "quote": "Don't be afraid to give up the good to go for the great.",
-    "author": "John D. Rockefeller"
-  },
-  {
-    "id": 942,
-    "quote": "I don't count my sit-ups. I only start counting when it starts burning.",
-    "author": "Muhammad Ali"
-  },
-  {
-    "id": 943,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
-    "id": 944,
-    "quote": "It's not about being the best, it's about being better than you were yesterday.",
-    "author": "Anonymous is not allowed, replacing with: Simone Biles"
-  },
-  {
-    "id": 945,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
     "id": 946,
     "quote": "You get in life what you have the courage to ask for.",
     "author": "Oprah Winfrey"
@@ -4735,24 +1575,9 @@
     "author": "Theodore Roosevelt"
   },
   {
-    "id": 948,
-    "quote": "It does not matter how slowly you go as long as you do not stop.",
-    "author": "Confucius"
-  },
-  {
-    "id": 949,
-    "quote": "You are the master of your destiny; you are the captain of your soul.",
-    "author": "Nelson Mandela"
-  },
-  {
     "id": 950,
     "quote": "Do what you can, with what you have, where you are.",
     "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 951,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
   },
   {
     "id": 952,
@@ -4760,34 +1585,9 @@
     "author": "Jim Rohn"
   },
   {
-    "id": 953,
-    "quote": "Keep your face always toward the sunshine, and the shadows will fall behind you.",
-    "author": "Walt Whitman"
-  },
-  {
-    "id": 954,
-    "quote": "You don't have to control your thoughts. You just have to stop letting them control you.",
-    "author": "Dan Millman"
-  },
-  {
-    "id": 955,
-    "quote": "I have decided to stick with love. Hate is too great a burden to bear.",
-    "author": "Martin Luther King Jr."
-  },
-  {
     "id": 956,
     "quote": "You must be the change you wish to see in the world.",
     "author": "Mahatma Gandhi"
-  },
-  {
-    "id": 957,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 958,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
   },
   {
     "id": 959,
@@ -4795,44 +1595,9 @@
     "author": "Albert Schweitzer"
   },
   {
-    "id": 960,
-    "quote": "You can have anything you want if you are willing to pay the price.",
-    "author": "Dale Carnegie"
-  },
-  {
     "id": 961,
     "quote": "The best revenge is massive success.",
     "author": "Frank Sinatra"
-  },
-  {
-    "id": 962,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 963,
-    "quote": "I'd rather attempt to do something great and fail, than to attempt to do nothing and succeed.",
-    "author": "Robert F. Kennedy"
-  },
-  {
-    "id": 964,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 965,
-    "quote": "You must be willing to take the risks if you want to achieve greatness.",
-    "author": "Les Brown"
-  },
-  {
-    "id": 966,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 967,
-    "quote": "The biggest adventure you can take is to live the life of your dreams.",
-    "author": "Oprah Winfrey"
   },
   {
     "id": 968,
@@ -4840,29 +1605,9 @@
     "author": "Daniel Milstein"
   },
   {
-    "id": 969,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
     "id": 970,
     "quote": "You must be the change you wish to see in the world.",
     "author": "Mahatma Gandhi"
-  },
-  {
-    "id": 971,
-    "quote": "You can have anything you want if you are willing to pay the price.",
-    "author": "Dale Carnegie"
-  },
-  {
-    "id": 972,
-    "quote": "You are the master of your destiny; you are the captain of your soul.",
-    "author": "Nelson Mandela"
-  },
-  {
-    "id": 973,
-    "quote": "You must be willing to take the risks if you want to achieve greatness.",
-    "author": "Les Brown"
   },
   {
     "id": 974,
@@ -4870,44 +1615,9 @@
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 975,
-    "quote": "You can have anything you want if you are willing to pay the price.",
-    "author": "Dale Carnegie"
-  },
-  {
-    "id": 976,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 977,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 978,
-    "quote": "You are one decision away from a completely different life.",
-    "author": "Mel Robbins"
-  },
-  {
-    "id": 979,
-    "quote": "You must be willing to take the risks if you want to achieve greatness.",
-    "author": "Les Brown"
-  },
-  {
-    "id": 980,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
     "id": 981,
     "quote": "You get what you work for, not what you wish for.",
     "author": "Daniel Milstein"
-  },
-  {
-    "id": 982,
-    "quote": "You are the master of your destiny; you are the captain of your soul.",
-    "author": "Nelson Mandela"
   },
   {
     "id": 983,
@@ -4915,44 +1625,9 @@
     "author": "Mahatma Gandhi"
   },
   {
-    "id": 984,
-    "quote": "You can have anything you want if you are willing to pay the price.",
-    "author": "Dale Carnegie"
-  },
-  {
-    "id": 985,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 986,
-    "quote": "You are one decision away from a completely different life.",
-    "author": "Mel Robbins"
-  },
-  {
-    "id": 987,
-    "quote": "You must be willing to take the risks if you want to achieve greatness.",
-    "author": "Les Brown"
-  },
-  {
-    "id": 988,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
     "id": 989,
     "quote": "You get what you work for, not what you wish for.",
     "author": "Daniel Milstein"
-  },
-  {
-    "id": 990,
-    "quote": "You are the master of your destiny; you are the captain of your soul.",
-    "author": "Nelson Mandela"
-  },
-  {
-    "id": 991,
-    "quote": "You can have anything you want if you are willing to pay the price.",
-    "author": "Dale Carnegie"
   },
   {
     "id": 992,
@@ -4960,54 +1635,14 @@
     "author": "Mahatma Gandhi"
   },
   {
-    "id": 993,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
-    "id": 994,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 995,
-    "quote": "You are one decision away from a completely different life.",
-    "author": "Mel Robbins"
-  },
-  {
-    "id": 996,
-    "quote": "You must be willing to take the risks if you want to achieve greatness.",
-    "author": "Les Brown"
-  },
-  {
-    "id": 997,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
     "id": 998,
     "quote": "You get what you work for, not what you wish for.",
     "author": "Daniel Milstein"
   },
   {
-    "id": 999,
-    "quote": "You are the master of your destiny; you are the captain of your soul.",
-    "author": "Nelson Mandela"
-  },
-  {
-    "id": 1000,
-    "quote": "You can have anything you want if you are willing to pay the price.",
-    "author": "Dale Carnegie"
-  },
-  { 
     "id": 1001,
     "quote": "The only way to do great work is to love what you do.",
     "author": "Steve Jobs"
-  },
-  {
-    "id": 1002,
-    "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "author": "Winston Churchill"
   },
   {
     "id": 1003,
@@ -5015,54 +1650,9 @@
     "author": "Wayne Gretzky"
   },
   {
-    "id": 1004,
-    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
-    "author": "Thomas Edison"
-  },
-  {
-    "id": 1005,
-    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
-    "id": 1006,
-    "quote": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
-    "author": "Ralph Waldo Emerson"
-  },
-  {
-    "id": 1007,
-    "quote": "You can't build a reputation on what you're going to do.",
-    "author": "Henry Ford"
-  },
-  {
     "id": 1008,
     "quote": "The best way to predict your future is to create it.",
     "author": "Abraham Lincoln"
-  },
-  {
-    "id": 1009,
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C.S. Lewis"
-  },
-  {
-    "id": 1010,
-    "quote": "It does not matter how slowly you go as long as you do not stop.",
-    "author": "Confucius"
-  },
-  {
-    "id": 1011,
-    "quote": "You don't have to be great to start, but you have to start to be great.",
-    "author": "Zig Ziglar"
-  },
-  {
-    "id": 1012,
-    "quote": "Keep your face always toward the sunshine, and the shadows will fall behind you.",
-    "author": "Walt Whitman"
-  },
-  {
-    "id": 1013,
-    "quote": "You can have anything you want if you are willing to pay the price.",
-    "author": "Dale Carnegie"
   },
   {
     "id": 1014,
@@ -5070,34 +1660,9 @@
     "author": "Mark Zuckerberg"
   },
   {
-    "id": 1015,
-    "quote": "You can't connect the dots looking forward; you can only connect them looking backward.",
-    "author": "Steve Jobs"
-  },
-  {
     "id": 1016,
     "quote": "You must be the change you wish to see in the world.",
     "author": "Mahatma Gandhi"
-  },
-  {
-    "id": 1017,
-    "quote": "Success is walking from failure to failure with no loss of enthusiasm.",
-    "author": "Winston Churchill"
-  },
-  {
-    "id": 1018,
-    "quote": "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-    "author": "Richard Branson"
-  },
-  {
-    "id": 1019,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 1020,
-    "quote": "You are one decision away from a completely different life.",
-    "author": "Mel Robbins"
   },
   {
     "id": 1021,
@@ -5105,34 +1670,9 @@
     "author": "Estee Lauder"
   },
   {
-    "id": 1022,
-    "quote": "Do something today that your future self will thank you for.",
-    "author": "Robert Kiyosaki"
-  },
-  {
-    "id": 1023,
-    "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "author": "C.S. Lewis"
-  },
-  {
     "id": 1024,
     "quote": "It always seems impossible until it's done.",
     "author": "Nelson Mandela"
-  },
-  {
-    "id": 1025,
-    "quote": "Don't be afraid to give up the good to go for the great.",
-    "author": "John D. Rockefeller"
-  },
-  {
-    "id": 1026,
-    "quote": "I don't count my sit-ups. I only start counting when it starts burning.",
-    "author": "Muhammad Ali"
-  },
-  {
-    "id": 1027,
-    "quote": "It's not about being the best, it's about being better than you were yesterday.",
-    "author": "Simone Biles"
   },
   {
     "id": 1028,
@@ -5140,24 +1680,9 @@
     "author": "Daniel Milstein"
   },
   {
-    "id": 1029,
-    "quote": "You are the master of your destiny; you are the captain of your soul.",
-    "author": "Nelson Mandela"
-  },
-  {
     "id": 1030,
     "quote": "Do what you can, with what you have, where you are.",
     "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 1031,
-    "quote": "You don't have to control your thoughts. You just have to stop letting them control you.",
-    "author": "Dan Millman"
-  },
-  {
-    "id": 1032,
-    "quote": "I have decided to stick with love. Hate is too great a burden to bear.",
-    "author": "Martin Luther King Jr."
   },
   {
     "id": 1033,
@@ -5165,32 +1690,8 @@
     "author": "Epictetus"
   },
   {
-    "id": 1034,
-    "quote": "If you don't like something, change it. If you can't change it, change the way you think about it.",
-    "author": "Mary Engelbreit"
-  },
-  {
-    "id": 1035,
-    "quote": "You can have anything you want if you want it badly enough.",
-    "author": "Abraham Lincoln"
-  },
-  {
-    "id": 1036,
-    "quote": "Success usually comes to those who are too busy to be looking for it.",
-    "author": "Henry David Thoreau"
-  },
-  {
-    "id": 1037,
-    "quote": "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.",
-    "author": "James Cameron"
-  },
-  {
-    "id": 1038,
-    "quote": "When you come to the end of your rope, tie a knot and hang on.",
-    "author": "Franklin D. Roosevelt"
-  },
-  {
     "id": 1039,
     "quote": "Don't let yesterday take up too much of today.",
     "author": "Will Rogers"
-  }]
+  }
+]

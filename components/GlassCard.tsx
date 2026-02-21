@@ -16,7 +16,7 @@ export function GlassCard({ children, className, delay = 0 }: GlassCardProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay }}
             className={cn(
-                "bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl border border-white/20 dark:border-zinc-800/50 shadow-2xl rounded-3xl",
+                "clay-panel rounded-3xl",
                 className
             )}
         >

@@ -62,7 +62,7 @@ export function SidebarContent() {
     }
 
     return (
-        <div className="h-full bg-white/80 dark:bg-[#121212]/70 backdrop-blur-3xl border border-zinc-200/50 dark:border-white/5 rounded-[2.5rem] flex flex-col shadow-[0_8px_32px_rgba(0,0,0,0.05)] overflow-hidden">
+        <div className="h-full clay-panel rounded-[2.5rem] flex flex-col overflow-hidden">
             {/* Brand Area */}
             <div className="p-7 pb-4">
                 <Link href="/" className="flex items-center gap-3 group transition-all active:scale-95">
@@ -84,8 +84,8 @@ export function SidebarContent() {
                     onClick={() => setOpen(true)}
                     className="w-full relative group flex items-center h-10 transition-all active:scale-[0.98]"
                 >
-                    <Search className="absolute left-3.5 w-3.5 h-3.5 text-zinc-400 group-hover:text-blue-500 transition-colors" />
-                    <div className="w-full bg-zinc-100/60 dark:bg-white/5 border border-zinc-200/50 dark:border-white/5 rounded-xl h-full flex items-center pl-10 pr-4 text-[12.5px] font-semibold text-zinc-400/80 group-hover:bg-zinc-100 dark:group-hover:bg-white/10 transition-colors">
+                    <Search className="absolute left-3.5 w-3.5 h-3.5 text-zinc-400 group-hover:text-blue-500 z-10 transition-colors" />
+                    <div className="w-full clay-input rounded-xl h-full flex items-center pl-10 pr-4 text-[12.5px] font-semibold text-zinc-400/80 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors">
                         Search Intel...
                     </div>
                     <div className="absolute right-3 flex gap-1 items-center opacity-30 group-hover:opacity-60 transition-opacity">

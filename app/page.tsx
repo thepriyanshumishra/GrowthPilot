@@ -60,8 +60,8 @@ export default function Home() {
             <Navbar />
 
             {/* Hero Section */}
-            <section className="relative pt-44 pb-32 px-4 container mx-auto flex flex-col items-center text-center">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[500px] bg-gradient-to-b from-blue-500/10 to-transparent blur-[120px] -z-10" />
+            <section className="relative pt-32 pb-24 md:pt-44 md:pb-32 px-4 container mx-auto flex flex-col items-center text-center">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[300px] md:h-[500px] bg-gradient-to-b from-blue-500/10 to-transparent blur-[80px] md:blur-[120px] -z-10" />
 
                 <motion.div
                     initial={{ opacity: 0, y: 10 }}
@@ -76,9 +76,9 @@ export default function Home() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 }}
-                    className="text-6xl md:text-8xl font-black tracking-tight text-zinc-900 dark:text-white leading-[1.05] max-w-4xl mb-8"
+                    className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tight text-zinc-900 dark:text-white leading-[1.1] md:leading-[1.05] max-w-4xl mb-6 md:mb-8"
                 >
-                    Turn Chaos Into <br />
+                    Turn Chaos Into <br className="hidden sm:block" />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Growth Roadmaps.</span>
                 </motion.h1>
 
@@ -95,11 +95,11 @@ export default function Home() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3 }}
-                    className="flex flex-col sm:flex-row gap-4 w-full justify-center"
+                    className="flex flex-col sm:flex-row gap-4 w-full justify-center px-4 sm:px-0"
                 >
                     {user ? (
                         <Link href="/dashboard">
-                            <Button className="h-14 px-10 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold shadow-2xl shadow-blue-500/20 w-full sm:w-auto">
+                            <Button className="clay-btn-primary h-14 px-10 rounded-2xl text-lg font-bold w-full sm:w-auto">
                                 Go to Dashboard
                                 <ArrowRight className="ml-2 w-5 h-5" />
                             </Button>
@@ -107,14 +107,14 @@ export default function Home() {
                     ) : (
                         <Link href="/auth/signup" className="w-full sm:w-auto">
                             <Button
-                                className="h-14 px-10 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold shadow-2xl shadow-blue-500/20 w-full sm:w-auto"
+                                className="clay-btn-primary h-14 px-10 rounded-2xl text-lg font-bold w-full sm:w-auto"
                             >
                                 Start Learning Free
                                 <ArrowRight className="ml-2 w-5 h-5" />
                             </Button>
                         </Link>
                     )}
-                    <Button variant="outline" className="h-14 px-10 rounded-2xl border-2 border-zinc-200 dark:border-zinc-800 text-lg font-bold hover:bg-zinc-50 dark:hover:bg-zinc-900 w-full sm:w-auto">
+                    <Button variant="outline" className="clay-btn h-14 px-10 rounded-2xl border-none text-lg font-bold w-full sm:w-auto text-zinc-800 dark:text-zinc-200">
                         <Play className="mr-2 w-5 h-5 fill-current" />
                         Watch Demo
                     </Button>
@@ -122,10 +122,10 @@ export default function Home() {
             </section>
 
             {/* Designed for Every Learning Style */}
-            <section className="py-24 container mx-auto px-4 max-w-6xl">
-                <div className="text-center space-y-4 mb-16">
-                    <h2 className="text-4xl md:text-5xl font-black tracking-tight">
-                        Designed for every <br />
+            <section className="py-16 md:py-24 container mx-auto px-6 max-w-6xl">
+                <div className="text-center space-y-4 mb-12 md:mb-16">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight">
+                        Designed for every <br className="hidden sm:block" />
                         <span className="text-blue-600 italic">career stage.</span>
                     </h2>
                 </div>
@@ -144,31 +144,31 @@ export default function Home() {
             </section>
 
             {/* Final CTA */}
-            <section className="py-32 container mx-auto px-4 max-w-5xl">
-                <GlassCard className="p-12 md:p-24 relative overflow-hidden text-center space-y-8 bg-zinc-50 dark:bg-zinc-900 border-none shadow-none">
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-blue-600/20 blur-[80px]" />
-                    <div className="mx-auto w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white mb-4 shadow-xl shadow-blue-500/40">
-                        <Sparkles className="w-6 h-6" />
+            <section className="py-20 md:py-32 container mx-auto px-4 max-w-5xl mb-12">
+                <GlassCard className="p-8 py-12 md:p-24 relative overflow-hidden text-center space-y-6 md:space-y-8">
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-48 md:w-64 md:h-64 bg-blue-600/20 blur-[60px] md:blur-[80px]" />
+                    <div className="mx-auto w-10 h-10 md:w-12 md:h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white mb-4 shadow-xl shadow-blue-500/40">
+                        <Sparkles className="w-5 h-5 md:w-6 md:h-6" />
                     </div>
-                    <h2 className="text-4xl md:text-6xl font-black tracking-tight relative z-10">
-                        Ready to master your <br /> career path?
+                    <h2 className="text-3xl sm:text-4xl md:text-6xl font-black tracking-tight relative z-10">
+                        Ready to master your <br className="hidden sm:block" /> career path?
                     </h2>
-                    <p className="text-zinc-500 text-lg relative z-10 max-w-xl mx-auto">
+                    <p className="text-zinc-500 text-base md:text-lg relative z-10 max-w-xl mx-auto px-2">
                         Join thousands of students and researchers who are transforming their study workflow with GrowthPilot AI.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8 relative z-10">
-                        <Link href="/onboarding">
-                            <Button className="h-14 px-10 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold shadow-2xl shadow-blue-500/20">
+                    <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center pt-6 md:pt-8 relative z-10 px-4 sm:px-0">
+                        <Link href="/onboarding" className="w-full sm:w-auto">
+                            <Button className="clay-btn-primary h-12 md:h-14 px-8 md:px-10 rounded-2xl text-base md:text-lg font-bold w-full">
                                 Get Started for Free
                             </Button>
                         </Link>
-                        <Link href="/auth/login">
-                            <Button variant="outline" className="h-14 px-10 rounded-2xl border border-zinc-200 dark:border-zinc-800 text-lg font-bold bg-white dark:bg-zinc-900">
+                        <Link href="/auth/login" className="w-full sm:w-auto">
+                            <Button variant="outline" className="clay-btn border-none h-12 md:h-14 px-8 md:px-10 rounded-2xl text-base md:text-lg font-bold text-zinc-900 dark:text-zinc-100 w-full">
                                 Sign In
                             </Button>
                         </Link>
                     </div>
-                    <p className="text-blue-600 font-semibold text-xs pt-4 uppercase tracking-widest">
+                    <p className="text-blue-600 font-semibold text-[10px] md:text-xs pt-4 uppercase tracking-widest px-4">
                         Limited time offer: All features are 100% free during our public beta.
                     </p>
                 </GlassCard>

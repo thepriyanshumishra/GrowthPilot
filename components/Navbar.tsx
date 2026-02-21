@@ -2,7 +2,6 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
 import { Moon, Sun } from "lucide-react"
 import { motion } from "framer-motion"
 import { useAuth } from "@/context/AuthContext"
@@ -23,50 +22,48 @@ export function Navbar() {
         <motion.nav
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            className="fixed top-0 left-0 right-0 z-50 flex justify-center p-6 px-4 pointer-events-none"
+            className="fixed top-0 left-0 right-0 z-50 flex justify-center p-4 sm:p-6 pointer-events-none"
         >
-            <div className="w-full max-w-7xl bg-white/70 dark:bg-zinc-900/70 backdrop-blur-2xl border border-white/20 dark:border-zinc-800/50 rounded-2xl px-6 py-4 flex items-center justify-between shadow-sm pointer-events-auto">
-                <Link href="/" className="flex items-center gap-3 group">
-                    <div className="relative w-9 h-9 rounded-xl overflow-hidden shadow-xl shadow-blue-500/20 ring-1 ring-white/10 group-hover:scale-110 transition-all duration-300">
+            <div className="w-full max-w-6xl clay-panel rounded-[2.5rem] px-6 py-3 md:px-8 flex items-center justify-between pointer-events-auto transition-all duration-500">
+                <Link href="/" className="flex items-center gap-4 group">
+                    <div className="relative w-11 h-11 rounded-[1.2rem] overflow-hidden group-hover:scale-105 transition-all duration-500 shadow-[4px_4px_10px_rgba(0,0,0,0.1),inset_2px_2px_4px_rgba(255,255,255,0.5),inset_-2px_-2px_4px_rgba(0,0,0,0.1)] dark:shadow-[4px_4px_10px_rgba(0,0,0,0.4),inset_2px_2px_4px_rgba(255,255,255,0.1),inset_-2px_-2px_4px_rgba(0,0,0,0.3)]">
                         <Image src="/logo.png" alt="GrowthPilot" fill className="object-cover" />
                     </div>
-                    <span className="text-[17px] font-black tracking-tight text-zinc-900 dark:text-white uppercase transition-colors group-hover:text-blue-600">GrowthPilot</span>
+                    <span className="text-lg font-extrabold tracking-tight text-zinc-800 dark:text-zinc-100 uppercase transition-colors group-hover:text-blue-500 drop-shadow-sm">GrowthPilot</span>
                 </Link>
 
-                <div className="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-500 dark:text-zinc-400">
-                    <Link href="/features" className="hover:text-zinc-900 dark:hover:text-white transition-colors">Features</Link>
-                    <Link href="/how-it-works" className="hover:text-zinc-900 dark:hover:text-white transition-colors">How it Works</Link>
-                    <Link href="/pricing" className="hover:text-zinc-900 dark:hover:text-white transition-colors">Pricing</Link>
+                <div className="hidden lg:flex items-center gap-8 text-[15px] font-bold text-zinc-600 dark:text-zinc-300">
+                    <Link href="/features" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Features</Link>
+                    <Link href="/how-it-works" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">How it Works</Link>
+                    <Link href="/pricing" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Pricing</Link>
                 </div>
 
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-4">
                     {mounted && (
-                        <Button
-                            variant="ghost"
-                            size="icon"
+                        <button
                             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                            className="rounded-xl text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                            className="flex items-center justify-center w-11 h-11 rounded-2xl clay-btn text-zinc-600 hover:text-blue-500 dark:text-zinc-300 dark:hover:text-blue-400"
                         >
                             {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-                        </Button>
+                        </button>
                     )}
 
                     {user ? (
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-2 sm:gap-3">
                             <Link href="/dashboard">
-                                <Button variant="secondary" className="rounded-xl font-medium px-5">
+                                <button className="px-4 py-2 sm:px-6 sm:py-2.5 rounded-[1.1rem] font-bold text-zinc-700 dark:text-zinc-200 clay-btn text-xs sm:text-sm">
                                     Dashboard
-                                </Button>
+                                </button>
                             </Link>
-                            <Button onClick={logout} variant="ghost" className="rounded-xl font-medium px-5">
+                            <button onClick={logout} className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-[1.1rem] font-bold text-rose-500 dark:text-rose-400 clay-btn text-xs sm:text-sm">
                                 Sign Out
-                            </Button>
+                            </button>
                         </div>
                     ) : (
                         <Link href="/auth/signup">
-                            <Button className="bg-zinc-900 dark:bg-white text-white dark:text-black hover:bg-zinc-800 dark:hover:bg-zinc-100 rounded-xl px-6 font-medium">
+                            <button className="px-6 py-2.5 sm:px-8 sm:py-3 rounded-[1.1rem] font-bold clay-btn-primary text-sm sm:text-base">
                                 Get Started
-                            </Button>
+                            </button>
                         </Link>
                     )}
                 </div>

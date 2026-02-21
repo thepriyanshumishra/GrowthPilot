@@ -11,8 +11,8 @@ export default function DashboardLayout({
             <DailyCheckIn />
             <MobileSidebar />
             <Sidebar />
-            <div className="flex-1 lg:pl-80 pb-20 lg:pb-8 pt-16 lg:pt-8 w-full">
-                <div className="max-w-7xl mx-auto px-4 lg:px-8">
+            <div className="flex-1 lg:pl-80 pb-20 lg:pb-8 pt-20 lg:pt-8 w-full">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {children}
                 </div>
             </div>

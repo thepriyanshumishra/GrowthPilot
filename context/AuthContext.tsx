@@ -96,7 +96,11 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
                 router.push("/onboarding");
             }
         } catch (error: any) {
-            if (error.code !== 'auth/popup-closed-by-user') {
+            if (
+                error.code !== 'auth/popup-closed-by-user' &&
+                error.code !== 'auth/cancelled-popup-request' &&
+                error.code !== 'auth/popup-blocked'
+            ) {
                 console.error("Error signing in with Google", error);
             }
         }

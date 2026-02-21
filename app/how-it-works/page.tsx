@@ -13,31 +13,31 @@ export default function HowItWorksPage() {
         <main className="min-h-screen bg-[#FDFDFF] dark:bg-black overflow-hidden font-geist">
             <Navbar />
 
-            <section className="pt-44 pb-32 px-4 container mx-auto text-center">
+            <section className="pt-32 pb-16 md:pt-44 md:pb-32 px-4 container mx-auto text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 text-purple-600 dark:text-purple-400 text-xs font-bold uppercase tracking-wider mb-8"
+                    className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 text-purple-600 dark:text-purple-400 text-xs font-bold uppercase tracking-wider mb-6 md:mb-8"
                 >
                     <TrendingUp className="w-3.5 h-3.5" />
                     Our Methodology
                 </motion.div>
-                <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-8 text-zinc-900 dark:text-white">
-                    Science of <br /> <span className="text-purple-600">Career Growth.</span>
+                <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight mb-6 md:mb-8 text-zinc-900 dark:text-white leading-[1.1]">
+                    Science of <br className="hidden sm:block" /> <span className="text-purple-600">Career Growth.</span>
                 </h1>
-                <p className="text-zinc-500 text-xl max-w-2xl mx-auto mb-12">
+                <p className="text-zinc-500 text-base md:text-xl max-w-2xl mx-auto mb-8 md:mb-12 px-2">
                     GrowthPilot combines proven educational psychology with state-of-the-art AI to create a learning loop that actually works.
                 </p>
             </section>
 
             {/* Detailed Step-by-Step Visualization */}
-            <section className="py-24 container mx-auto px-4 max-w-5xl space-y-32">
+            <section className="py-16 md:py-24 container mx-auto px-4 max-w-5xl space-y-24 md:space-y-32">
                 {/* Step 1: Profiling */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
                     <div className="space-y-6">
                         <div className="text-xs font-bold text-zinc-400 uppercase tracking-widest mb-2">Phase 01</div>
-                        <h2 className="text-4xl font-bold text-zinc-900 dark:text-white">Deep Profiling</h2>
-                        <p className="text-lg text-zinc-500 leading-relaxed">
+                        <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-white">Deep Profiling</h2>
+                        <p className="text-base md:text-lg text-zinc-500 leading-relaxed">
                             It starts with understanding YOU. Our AI doesn't just ask "What do you want to be?". It conducts a deep interview to understand:
                         </p>
                         <ul className="space-y-3">
@@ -70,37 +70,37 @@ export default function HowItWorksPage() {
                 </div>
 
                 {/* Step 2: Generation */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                    <GlassCard className="order-2 md:order-1 p-10 flex flex-col items-center justify-center min-h-[300px] border-blue-500/20">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+                    <GlassCard className="order-2 md:order-1 p-8 md:p-10 flex flex-col items-center justify-center min-h-[250px] md:min-h-[300px] border-blue-500/20">
                         <div className="grid grid-cols-2 gap-4 w-full max-w-xs">
                             <div className="bg-blue-600 text-white p-4 rounded-xl text-center shadow-lg transform -rotate-3">
-                                <span className="block text-2xl font-bold mb-1">45</span>
+                                <span className="block text-xl md:text-2xl font-bold mb-1">45</span>
                                 <span className="text-[10px] uppercase font-bold opacity-80">Days</span>
                             </div>
                             <div className="bg-white dark:bg-zinc-900 p-4 rounded-xl text-center shadow-lg border border-zinc-100 dark:border-zinc-800 transform rotate-3">
-                                <span className="block text-2xl font-bold mb-1 text-zinc-900 dark:text-white">12</span>
+                                <span className="block text-xl md:text-2xl font-bold mb-1 text-zinc-900 dark:text-white">12</span>
                                 <span className="text-[10px] uppercase font-bold text-zinc-400">Milestones</span>
                             </div>
                         </div>
                     </GlassCard>
                     <div className="space-y-6 order-1 md:order-2">
                         <div className="text-xs font-bold text-zinc-400 uppercase tracking-widest mb-2">Phase 02</div>
-                        <h2 className="text-4xl font-bold text-zinc-900 dark:text-white">Generative Synthesis</h2>
-                        <p className="text-lg text-zinc-500 leading-relaxed">
-                            Using the Llama-3 70B parameter model, we synthesize your profile against thousands of job descriptions and industry standards to generate a bespoke curriculum.
+                        <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-white">Generative Synthesis</h2>
+                        <p className="text-base md:text-lg text-zinc-500 leading-relaxed">
+                            Using the Llama-3-70B parameter model, we synthesize your profile against thousands of job descriptions and industry standards to generate a bespoke curriculum.
                         </p>
-                        <p className="text-lg text-zinc-500 leading-relaxed">
+                        <p className="text-base md:text-lg text-zinc-500 leading-relaxed">
                             This isn't a template. It's a graph of dependencies, ensuring you learn "React" only after you've mastered "JavaScript Closures".
                         </p>
                     </div>
                 </div>
 
                 {/* Step 3: Execution */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
                     <div className="space-y-6">
                         <div className="text-xs font-bold text-zinc-400 uppercase tracking-widest mb-2">Phase 03</div>
-                        <h2 className="text-4xl font-bold text-zinc-900 dark:text-white">Daily Execution Loop</h2>
-                        <p className="text-lg text-zinc-500 leading-relaxed">
+                        <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-white">Daily Execution Loop</h2>
+                        <p className="text-base md:text-lg text-zinc-500 leading-relaxed">
                             A roadmap is useless without action. We break milestones down into atomic daily tasks that take &lt; 45 mins to complete.
                         </p>
                         <div className="p-6 bg-zinc-50 dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800">
@@ -124,13 +124,13 @@ export default function HowItWorksPage() {
             </section>
 
             {/* Technical Underpinnings */}
-            <section className="py-24 bg-zinc-950 text-white">
+            <section className="py-16 md:py-24 bg-zinc-950 text-white">
                 <div className="container mx-auto px-4 max-w-4xl text-center">
-                    <Cpu className="w-12 h-12 text-blue-500 mx-auto mb-8" />
-                    <h2 className="text-3xl font-bold mb-8">Under the Hood</h2>
-                    <p className="text-zinc-400 mb-12 text-lg">GrowthPilot is built on a sophisticated stack of modern technologies.</p>
+                    <Cpu className="w-10 h-10 md:w-12 md:h-12 text-blue-500 mx-auto mb-6 md:mb-8" />
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-8">Under the Hood</h2>
+                    <p className="text-zinc-400 mb-8 md:mb-12 text-base md:text-lg px-2">GrowthPilot is built on a sophisticated stack of modern technologies.</p>
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
                         {[
                             { title: "Llama-3 70B", desc: "Reasoning Engine" },
                             { title: "Groq Cloud", desc: "Low-Latency Inference" },
@@ -146,10 +146,10 @@ export default function HowItWorksPage() {
                 </div>
             </section>
 
-            <section className="py-24 text-center">
-                <h2 className="text-3xl font-bold mb-8 text-zinc-900 dark:text-white">Experience the difference.</h2>
-                <Link href="/auth/signup">
-                    <Button className="h-14 px-12 rounded-2xl bg-zinc-900 dark:bg-white text-white dark:text-black hover:opacity-90 text-lg font-bold">
+            <section className="py-20 md:py-24 text-center px-4">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-zinc-900 dark:text-white">Experience the difference.</h2>
+                <Link href="/auth/signup" className="block w-full sm:w-auto px-4 sm:px-0">
+                    <Button className="clay-btn h-12 md:h-14 px-8 md:px-12 rounded-2xl text-base md:text-lg font-bold text-zinc-900 dark:text-zinc-100 border-none transition-all active:scale-95 w-full sm:w-auto">
                         Start Your Journey
                     </Button>
                 </Link>

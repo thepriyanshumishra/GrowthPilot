@@ -19,19 +19,19 @@ export default function PricingPage() {
         <main className="min-h-screen bg-[#FDFDFF] dark:bg-black overflow-hidden font-geist">
             <Navbar />
 
-            <section className="pt-44 pb-20 px-4 container mx-auto text-center">
+            <section className="pt-32 pb-16 md:pt-44 md:pb-20 px-4 container mx-auto text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 text-green-600 dark:text-green-400 text-xs font-bold uppercase tracking-wider mb-8"
+                    className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 text-green-600 dark:text-green-400 text-xs font-bold uppercase tracking-wider mb-6 md:mb-8"
                 >
                     <Zap className="w-3.5 h-3.5" />
                     Transparent Pricing
                 </motion.div>
-                <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-6 text-zinc-900 dark:text-white">
-                    Start Your Growth <br /> <span className="text-green-600">For Free.</span>
+                <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight mb-4 md:mb-6 text-zinc-900 dark:text-white leading-[1.1]">
+                    Start Your Growth <br className="hidden sm:block" /> <span className="text-green-600">For Free.</span>
                 </h1>
-                <p className="text-zinc-500 text-xl max-w-2xl mx-auto mb-10">
+                <p className="text-zinc-500 text-base md:text-xl max-w-2xl mx-auto mb-8 md:mb-10 px-2">
                     We're currently in Public Beta. That means you get all our premium features for $0.
                 </p>
 
@@ -69,7 +69,7 @@ export default function PricingPage() {
                                 <li className="flex gap-3 opactiy-50 text-zinc-400"><XCircle className="w-4 h-4" /> Community Support Only</li>
                             </ul>
                         </div>
-                        <Button variant="outline" className="w-full mt-8" disabled>Coming Soon</Button>
+                        <Button variant="outline" className="clay-btn w-full mt-8 border-none text-zinc-500 hover:text-zinc-600 transition-all font-bold" disabled>Coming Soon</Button>
                     </GlassCard>
 
                     {/* EXPERT TIER (Beta Highlight) */}
@@ -95,7 +95,7 @@ export default function PricingPage() {
                             </ul>
                         </div>
                         <Link href="/auth/signup">
-                            <Button className="w-full mt-8 bg-blue-600 hover:bg-blue-700 text-white h-12 font-bold shadow-lg shadow-blue-500/25">
+                            <Button className="w-full mt-8 clay-btn-primary h-12 font-bold shadow-lg shadow-blue-500/25 transition-all">
                                 Join Beta Now
                             </Button>
                         </Link>
@@ -122,25 +122,25 @@ export default function PricingPage() {
                             </ul>
                         </div>
                         <Link href="mailto:sales@growthpilot.ai" className="w-full mt-8">
-                            <Button variant="outline" className="w-full">Contact Sales</Button>
+                            <Button variant="outline" className="w-full clay-btn border-none font-bold text-zinc-700 dark:text-zinc-300 transition-all">Contact Sales</Button>
                         </Link>
                     </GlassCard>
                 </div>
             </section>
 
             {/* Enterprise Section */}
-            <section className="py-24 bg-zinc-50 dark:bg-zinc-900 border-y border-zinc-200 dark:border-zinc-800">
-                <div className="container mx-auto px-4 max-w-5xl flex flex-col md:flex-row items-center justify-between gap-12">
+            <section className="py-16 md:py-24 bg-zinc-50 dark:bg-zinc-900 border-y border-zinc-200 dark:border-zinc-800">
+                <div className="container mx-auto px-4 max-w-5xl flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 text-center md:text-left">
                     <div className="space-y-4 max-w-xl">
-                        <div className="text-xs font-bold text-zinc-400 uppercase tracking-widest flex items-center gap-2">
+                        <div className="text-xs font-bold text-zinc-400 uppercase tracking-widest flex items-center justify-center md:justify-start gap-2">
                             <Building2 className="w-4 h-4" /> Enterprise
                         </div>
-                        <h2 className="text-3xl font-bold text-zinc-900 dark:text-white">Upskill your entire workforce?</h2>
-                        <p className="text-lg text-zinc-500">
+                        <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 dark:text-white">Upskill your entire workforce?</h2>
+                        <p className="text-base md:text-lg text-zinc-500 px-4 md:px-0">
                             We offer custom API integrations, SSO, and private LLM instances for large organizations looking to accelerate their talent density.
                         </p>
                     </div>
-                    <Button size="lg" className="bg-zinc-900 dark:bg-white text-white dark:text-black">
+                    <Button size="lg" className="clay-btn px-8 h-12 rounded-xl text-zinc-900 dark:text-zinc-100 font-bold border-none transition-all w-full sm:w-auto">
                         Schedule a Demo
                     </Button>
                 </div>

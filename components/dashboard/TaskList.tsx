@@ -185,7 +185,7 @@ export function TaskList({ initialTasks }: { initialTasks: any[] }) {
                         <Button
                             onClick={() => selectedTask && handleComplete(selectedTask.id)}
                             disabled={selectedTask?.status === 'DONE' || loadingIds.includes(selectedTask?.id || '')}
-                            className={`w-full sm:w-auto ${selectedTask?.status === 'DONE' ? 'bg-green-600 hover:bg-green-700' : 'bg-blue-600 hover:bg-blue-700'}`}
+                            className={`w-full sm:w-auto font-bold transition-all ${selectedTask?.status === 'DONE' ? 'clay-btn bg-green-600 hover:bg-green-700 text-white border-none shadow-lg shadow-green-500/20' : 'clay-btn-primary'}`}
                         >
                             {selectedTask?.status === 'DONE' ? (
                                 <>

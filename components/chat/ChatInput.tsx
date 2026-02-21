@@ -34,7 +34,7 @@ export function ChatInput({ onSend, isLoading, isRecording, onStartRecording, on
     ]
 
     return (
-        <div className="absolute bottom-6 left-0 right-0 px-6 z-30 pointer-events-none">
+        <div className="absolute bottom-4 md:bottom-6 left-0 right-0 px-4 md:px-6 z-30 pointer-events-none">
             <div className="max-w-3xl mx-auto w-full relative pointer-events-auto">
 
                 {/* Minimal Suggestions Bar */}
@@ -44,7 +44,7 @@ export function ChatInput({ onSend, isLoading, isRecording, onStartRecording, on
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, scale: 0.95 }}
-                            className="absolute -top-10 left-0 right-0 flex gap-2 overflow-x-auto pb-2 px-1 scrollbar-none"
+                            className="absolute -top-10 left-0 right-0 flex gap-2 overflow-x-auto pb-2 px-1 scrollbar-hide"
                         >
                             {suggestions.map((item, i) => (
                                 <button

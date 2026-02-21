@@ -93,9 +93,9 @@ export default function SignupPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
-                className="w-full max-w-md z-10"
+                className="w-full max-w-md z-10 px-4 sm:px-0"
             >
-                <GlassCard className="p-8 space-y-8 bg-white/60 dark:bg-zinc-900/60 backdrop-blur-3xl border-white/40 dark:border-zinc-800/50 shadow-[0_32px_120px_-20px_rgba(0,0,0,0.1)] rounded-[2.5rem]">
+                <GlassCard className="p-6 sm:p-8 space-y-8 clay-panel rounded-[2rem] sm:rounded-[2.5rem]">
                     <AnimatePresence mode="wait">
                         {!linkSent ? (
                             <motion.div
@@ -106,8 +106,8 @@ export default function SignupPage() {
                                 className="space-y-8"
                             >
                                 <div className="text-center space-y-2">
-                                    <h1 className="text-3xl font-black tracking-tight text-zinc-900 dark:text-white">Create Account</h1>
-                                    <p className="text-zinc-500 text-sm font-medium">Join the next generation of career growth</p>
+                                    <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-zinc-900 dark:text-white">Create Account</h1>
+                                    <p className="text-zinc-500 text-xs sm:text-sm font-medium">Join the next generation of career growth</p>
                                 </div>
 
                                 <div className="flex p-1 bg-zinc-100/50 dark:bg-white/5 rounded-2xl border border-zinc-200/50 dark:border-white/5">
@@ -140,7 +140,7 @@ export default function SignupPage() {
                                                 <Input
                                                     id="name"
                                                     placeholder="John Doe"
-                                                    className="pl-11 h-12 rounded-2xl bg-white/50 dark:bg-black/20 border-zinc-200/50 dark:border-white/5 focus-visible:ring-blue-500/20 focus-visible:border-blue-500/50 transition-all"
+                                                    className="clay-input pl-11 h-12 rounded-2xl transition-all"
                                                     value={name}
                                                     onChange={(e) => setName(e.target.value)}
                                                     required={loginMethod === "password"}
@@ -157,7 +157,7 @@ export default function SignupPage() {
                                                 id="email"
                                                 type="email"
                                                 placeholder="commander@enterprise.com"
-                                                className="pl-11 h-12 rounded-2xl bg-white/50 dark:bg-black/20 border-zinc-200/50 dark:border-white/5 focus-visible:ring-blue-500/20 focus-visible:border-blue-500/50 transition-all"
+                                                className="clay-input pl-11 h-12 rounded-2xl transition-all"
                                                 value={email}
                                                 onChange={(e) => setEmail(e.target.value)}
                                                 required
@@ -178,7 +178,7 @@ export default function SignupPage() {
                                                     id="password"
                                                     type={showPassword ? "text" : "password"}
                                                     placeholder="••••••••"
-                                                    className="pl-11 pr-11 h-12 rounded-2xl bg-white/50 dark:bg-black/20 border-zinc-200/50 dark:border-white/5 focus-visible:ring-blue-500/20 focus-visible:border-blue-500/50 transition-all"
+                                                    className="clay-input pl-11 pr-11 h-12 rounded-2xl transition-all"
                                                     value={password}
                                                     onChange={(e) => setPassword(e.target.value)}
                                                     required={loginMethod === "password"}
@@ -206,7 +206,7 @@ export default function SignupPage() {
 
                                     <Button
                                         disabled={loading}
-                                        className="w-full h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-black uppercase tracking-widest transition-all shadow-xl shadow-blue-500/20 active:scale-[0.98]"
+                                        className="clay-btn-primary w-full h-12 rounded-2xl font-black uppercase tracking-widest transition-all"
                                     >
                                         {loading ? (
                                             <Loader2 className="w-4 h-4 animate-spin" />
@@ -233,7 +233,7 @@ export default function SignupPage() {
                                         onClick={signInWithGoogle}
                                         variant="outline"
                                         type="button"
-                                        className="w-full h-12 rounded-2xl border-zinc-200 dark:border-white/5 bg-white/50 dark:bg-white/5 font-bold hover:bg-white dark:hover:bg-white/10 transition-all flex items-center justify-center gap-3"
+                                        className="clay-btn w-full h-12 rounded-2xl border-none font-bold transition-all flex items-center justify-center gap-3 text-zinc-900 dark:text-zinc-100"
                                     >
                                         <Chrome className="w-4 h-4 text-zinc-900 dark:text-zinc-100" />
                                         <span className="text-xs uppercase tracking-widest font-black">Join with Google</span>

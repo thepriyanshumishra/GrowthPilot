@@ -1,0 +1,51 @@
+
+> growth-pilot-app@0.1.0 build
+> prisma generate && next build
+
+[dotenv@17.3.1] injecting env (3) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+Loaded Prisma config from prisma.config.ts.
+
+Prisma schema loaded from prisma/schema.prisma.
+
+✔ Generated Prisma Client (v7.4.0) to ./node_modules/@prisma/client in 169ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+
+▲ Next.js 16.1.6 (Turbopack)
+- Environments: .env
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+Error: Cannot apply unknown utility class `shadow-[10px_10px_30px_rgba(0,`
+    [2m[at onInvalidCandidate (/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/node_modules/tailwindcss/dist/lib.js:21:1511)][0m
+    [2m[at Te (/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/node_modules/tailwindcss/dist/lib.js:16:36326)][0m
+    [2m[at /Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/node_modules/tailwindcss/dist/lib.js:21:355][0m
+    [2m[at Rr (/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/node_modules/tailwindcss/dist/lib.js:3:1718)][0m
+    [2m[at _ (/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/node_modules/tailwindcss/dist/lib.js:3:1377)][0m
+    [2m[at $e (/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/node_modules/tailwindcss/dist/lib.js:21:172)][0m
+    [2m[at un (/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/node_modules/tailwindcss/dist/lib.js:38:294)][0m
+    [2m[at async cn (/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/node_modules/tailwindcss/dist/lib.js:38:631)][0m
+    [2m[at async Xr (/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/node_modules/@tailwindcss/node/dist/index.js:10:3417)][0m
+    [2m[at async I (/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/node_modules/@tailwindcss/postcss/dist/index.js:10:3977)][0m
+
+> Build error occurred
+Error: Turbopack build failed with 1 errors:
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/app/globals.css:1:1: Cannot apply unknown utility class `shadow-[10px_10px_30px_rgba(0,`
+    at Input.error (node_modules/postcss/lib/input.js:135:16) [/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/.next/build/chunks/node_modules_fe693df6._.js:4651:22]
+    at Root.error (node_modules/postcss/lib/node.js:146:32) [/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/.next/build/chunks/node_modules_fe693df6._.js:928:38]
+    [at Object.Once (/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    at async LazyResult.runAsync (node_modules/postcss/lib/lazy-result.js:293:11) [/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/.next/build/chunks/node_modules_fe693df6._.js:6206:21]
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/.next/build/chunks/[root-of-the-server]__51225daf._.js:146:36]
+    at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23) [/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/.next/build/chunks/[root-of-the-server]__974941ed._.js:443:31]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/.next/build/chunks/[root-of-the-server]__51225daf._.js:146:36])
+    at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23) [/Users/thedarkpcm/Desktop/Priyanshu/GrowthPilot/.next/build/chunks/[root-of-the-server]__974941ed._.js:443:31])

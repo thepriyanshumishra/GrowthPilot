@@ -260,15 +260,15 @@ export default function ChatCoach() {
     }
 
     return (
-        <div className="font-geist h-[calc(100vh-2rem)] flex relative bg-white dark:bg-zinc-950 rounded-3xl overflow-hidden border border-zinc-200/80 dark:border-zinc-800 shadow-[0_24px_80px_-16px_rgba(0,0,0,0.1)]">
+        <div className="font-geist h-[calc(100vh-2rem)] md:h-[calc(100vh-2rem)] flex flex-col md:flex-row relative bg-white dark:bg-zinc-950 rounded-2xl md:rounded-3xl overflow-hidden border border-zinc-200/80 dark:border-zinc-800 shadow-[0_24px_80px_-16px_rgba(0,0,0,0.1)]">
 
             {/* Main Interaction Plane */}
-            <div className="flex-1 flex flex-col min-w-0 bg-[#F9F9FB] dark:bg-[#09090B]">
+            <div className="flex-1 flex flex-col min-w-0 bg-[#F9F9FB] dark:bg-[#09090B] h-full">
 
                 {/* Minimal Header */}
-                <header className="px-8 h-16 flex items-center justify-between bg-white/60 dark:bg-zinc-900/40 backdrop-blur-3xl border-b border-zinc-200/50 dark:border-zinc-800/50 z-20">
-                    <div className="flex items-center gap-4">
-                        <div className="relative h-8 w-8 rounded-[8px] overflow-hidden shadow-md ring-1 ring-black/5 dark:ring-white/10">
+                <header className="px-4 md:px-8 h-14 md:h-16 flex items-center justify-between bg-white/60 dark:bg-zinc-900/40 backdrop-blur-3xl border-b border-zinc-200/50 dark:border-zinc-800/50 z-20 shrink-0">
+                    <div className="flex items-center gap-3 md:gap-4">
+                        <div className="relative h-6 w-6 md:h-8 md:w-8 rounded-[8px] overflow-hidden shadow-md ring-1 ring-black/5 dark:ring-white/10 shrink-0">
                             <Image
                                 src="/logo.png"
                                 alt="GP"
@@ -276,9 +276,9 @@ export default function ChatCoach() {
                                 className="object-cover"
                             />
                         </div>
-                        <div className="flex items-baseline gap-2">
-                            <h1 className="text-[14px] font-black tracking-tight text-zinc-900 dark:text-zinc-100 uppercase">GrowthPilot Terminal</h1>
-                            <span className="text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-widest px-1.5 py-0.5 rounded-full border border-zinc-200/50 dark:border-zinc-800/50">L-70B</span>
+                        <div className="flex items-baseline gap-1.5 md:gap-2">
+                            <h1 className="text-[12px] md:text-[14px] font-black tracking-tight text-zinc-900 dark:text-zinc-100 uppercase truncate max-w-[120px] sm:max-w-none">GrowthPilot Terminal</h1>
+                            <span className="text-[8px] md:text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-widest px-1.5 py-0.5 rounded-full border border-zinc-200/50 dark:border-zinc-800/50 hidden sm:inline-block">L-70B</span>
                         </div>
                     </div>
 
@@ -287,7 +287,7 @@ export default function ChatCoach() {
                             onClick={handleConcludeSession}
                             disabled={messages.length === 0}
                             variant="outline"
-                            className="h-8 px-3 rounded-[8px] bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-[11px] font-bold text-blue-600 dark:text-blue-400 hover:bg-zinc-50 transition-all shadow-sm"
+                            className="clay-btn h-8 px-3 rounded-[8px] border-none text-[11px] font-bold text-blue-600 dark:text-blue-400 transition-all shadow-sm"
                         >
                             <CheckCircle2 className="w-3.5 h-3.5 mr-1.5" />
                             Finalize
@@ -297,7 +297,7 @@ export default function ChatCoach() {
                             onClick={handleNewChat}
                             variant="ghost"
                             size="icon"
-                            className="h-8 w-8 rounded-[8px] text-zinc-400 hover:text-zinc-900"
+                            className="clay-btn bg-transparent border-none shadow-none h-8 w-8 rounded-[8px] text-zinc-400 hover:text-zinc-900 transition-all"
                         >
                             <History className="w-4 h-4" />
                         </Button>
@@ -305,24 +305,24 @@ export default function ChatCoach() {
                 </header>
 
                 <ScrollArea className="flex-1" ref={scrollRef}>
-                    <div className="max-w-[800px] mx-auto w-full px-6 py-10 pb-44">
+                    <div className="max-w-[800px] mx-auto w-full px-4 md:px-6 py-6 md:py-10 pb-32 md:pb-44">
                         {messages.length === 0 ? (
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.98 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 className="flex flex-col items-center justify-center min-h-[50vh] text-center"
                             >
-                                <div className="mb-8 p-4 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/50 dark:border-zinc-800 shadow-sm">
-                                    <Bot className="w-10 h-10 text-zinc-400" />
+                                <div className="mb-6 md:mb-8 p-3 md:p-4 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/50 dark:border-zinc-800 shadow-sm">
+                                    <Bot className="w-8 h-8 md:w-10 md:h-10 text-zinc-400" />
                                 </div>
-                                <h1 className="text-3xl font-black tracking-tighter text-zinc-900 dark:text-zinc-100 mb-2">
+                                <h1 className="text-2xl md:text-3xl font-black tracking-tighter text-zinc-900 dark:text-zinc-100 mb-2">
                                     Commander <span className="text-blue-600">{authUser?.displayName?.split(' ')[0]}</span>
                                 </h1>
-                                <p className="text-[13px] text-zinc-400 font-medium max-w-[280px] leading-relaxed mb-10">
+                                <p className="text-[11px] md:text-[13px] text-zinc-400 font-medium max-w-[280px] leading-relaxed mb-6 md:mb-10">
                                     Systems calibrated. Initiate briefing or simulation whenever ready.
                                 </p>
 
-                                <div className="grid grid-cols-2 gap-3 w-full max-w-[500px]">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full max-w-[500px]">
                                     {[
                                         { label: "Technical Interview", icon: BrainCircuit, color: "text-blue-500" },
                                         { label: "Milestone Debrief", icon: LayoutDashboard, color: "text-zinc-500" },
@@ -467,13 +467,13 @@ export default function ChatCoach() {
                                     <div className="p-6 px-8 border-t border-zinc-100 dark:border-zinc-900 flex gap-3 bg-zinc-50/20">
                                         <Button
                                             variant="ghost"
-                                            className="h-10 px-6 rounded-xl text-[12px] font-bold text-zinc-400 hover:text-zinc-900"
+                                            className="clay-btn bg-transparent border-none shadow-none h-10 px-6 rounded-xl text-[12px] font-bold text-zinc-400 hover:text-zinc-900 transition-all"
                                             onClick={() => setIsConcluding(false)}
                                         >
                                             Dismiss
                                         </Button>
                                         <Button
-                                            className="flex-1 h-10 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 rounded-xl font-black text-[12px] uppercase tracking-wider shadow-lg shadow-zinc-500/10 active:scale-95 transition-all"
+                                            className="clay-btn flex-1 h-10 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 border-none rounded-xl font-black text-[12px] uppercase tracking-wider transition-all"
                                             onClick={handleConfirmConclusion}
                                         >
                                             Commit Changes <ArrowRight className="w-3.5 h-3.5 ml-2" />

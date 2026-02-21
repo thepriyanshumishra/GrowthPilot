@@ -5,8 +5,8 @@ import Image from "next/image"
 
 export function Footer() {
     return (
-        <footer className="bg-black text-white pt-24 pb-12 px-6 border-t border-zinc-800">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-zinc-800 pb-16">
+        <footer className="clay-panel rounded-t-[3rem] mt-12 pt-24 pb-12 px-6 overflow-hidden">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-black/5 dark:border-white/5 pb-16">
                 <div className="space-y-6">
                     <div className="flex items-center gap-3">
                         <div className="relative w-9 h-9 rounded-xl overflow-hidden ring-1 ring-white/20 shadow-xl shadow-blue-500/10">
