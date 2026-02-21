@@ -66,8 +66,46 @@ export async function generateRoadmap() {
         })
 
         const content = completion.choices[0].message.content || "{}"
-        const text = content.replace(/```json\n?|\n?```/g, "").trim() // Sanitize
-        const roadmapData = JSON.parse(text)
+        let text = content.replace(/```json\n?|\n?```/g, "").trim() // Sanitize
+
+        // Attempt aggressive cleanup if Llama output conversational text before the JSON
+        const firstBrace = text.indexOf('{')
+        const lastBrace = text.lastIndexOf('}')
+        if (firstBrace !== -1 && lastBrace !== -1) {
+            text = text.substring(firstBrace, lastBrace + 1)
+        }
+
+        let roadmapData;
+        try {
+            roadmapData = JSON.parse(text)
+        } catch (parseError) {
+            console.error("AI returned malformed JSON, using fallback roadmap framework.", parseError)
+            roadmapData = {
+                title: `${profile.targetRole || 'Career'} Blueprint`,
+                description: "A structured, foundational roadmap for your immediate growth.",
+                milestones: [
+                    { title: "Establish System Foundations", description: "Review and organize your primary skillsets.", status: "PENDING" },
+                    { title: "Core Competency Deep-Dive", description: "Focus intensely on missing fundamental knowledge.", status: "PENDING" },
+                    { title: "Action & Execution", description: "Apply knowledge to real-world scenarios or projects.", status: "PENDING" }
+                ],
+                initial_tasks: [
+                    {
+                        title: "Audit Current Skills",
+                        description: "List out your current skills and grade yourself 1-10.",
+                        difficulty: "Easy",
+                        estimatedMinutes: 20,
+                        metadata: { instructions: "Open a doc and list your top 5 hard skills.", resources: "None required.", outcome: "Self-awareness baseline" }
+                    },
+                    {
+                        title: "Identify 3 Major Gaps",
+                        description: "Find the missing links between your role and your target role.",
+                        difficulty: "Medium",
+                        estimatedMinutes: 30,
+                        metadata: { instructions: "Look at job descriptions for your target role.", resources: "LinkedIn Jobs.", outcome: "Targeted learning list" }
+                    }
+                ]
+            }
+        }
 
         // DELETE existing roadmap to ensure fresh start
         await prisma.roadmap.deleteMany({

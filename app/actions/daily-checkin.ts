@@ -32,6 +32,15 @@ export async function updateTaskStatus(taskId: string, status: "DONE" | "TODO") 
         where: { id: taskId, userId: user.id },
         data: { status }
     })
+
+    // Reward XP
+    if (status === "DONE") {
+        await prisma.profile.update({
+            where: { userId: user.id },
+            data: { xp: { increment: 50 } }
+        })
+    }
+
     return { success: true }
 }
 
@@ -39,12 +48,18 @@ export async function rescheduleTasksStart() {
     const user = await getServerUser()
     if (!user) return { success: false }
 
-    // Reschedule typically means just keeping them TODO, but maybe update 'dateAssigned' to today?
-    // In our schema we have `dateAssigned?`. Let's assume we just keep them. 
-    // Actually user might want to know they are "Rescheduled".
-    // For now, we simply keep them as TODO (which they are).
-    // But we might want to update `updatedAt` to bump them?
+    const yesterday = new Date()
+    yesterday.setHours(0, 0, 0, 0)
 
-    // Just return success for now as logic implies "Moving to today's view" which is usually default view.
+    // Bump the createdAt timestamp of all older TODO tasks to now so they sort to today
+    await prisma.task.updateMany({
+        where: {
+            userId: user.id,
+            status: "TODO",
+            createdAt: { lt: yesterday }
+        },
+        data: { createdAt: new Date() }
+    })
+
     return { success: true }
 }

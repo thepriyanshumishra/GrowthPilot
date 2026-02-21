@@ -96,8 +96,8 @@ export default function AboutPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-12">
                         {[
                             { name: "Priyanshu Mishra", role: "Founder & Lead Engineer", img: "https://github.com/thepriyanshumishra.png" },
-                            { name: "AI Agent", role: "Co-Founder (Literally)", img: "https://i.pravatar.cc/150?u=ai" },
-                            { name: "Open Source", role: "Community", img: "https://i.pravatar.cc/150?u=os" }
+                            { name: "Groq Llama-3", role: "AI Co-Founder", img: "https://github.com/meta.png" },
+                            { name: "Open Source", role: "Community Support", img: "https://github.com/vercel.png" }
                         ].map((member, i) => (
                             <div key={i} className="flex flex-col items-center space-y-4 group">
                                 <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-zinc-800 group-hover:border-blue-600 transition-colors">
