@@ -56,7 +56,7 @@ export default function Home() {
     if (loading) return null;
 
     return (
-        <main className="min-h-screen bg-[#FDFDFF] dark:bg-black overflow-hidden font-geist">
+        <main className="min-h-screen bg-[#FDFDFF] dark:bg-black overflow-hidden font-sans">
             <Navbar />
 
             {/* Hero Section */}

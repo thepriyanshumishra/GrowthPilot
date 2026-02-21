@@ -225,7 +225,7 @@ export default function OnboardingPage() {
     }
 
     return (
-        <div className="min-h-screen bg-white dark:bg-black font-geist flex flex-col relative overflow-hidden">
+        <div className="min-h-screen bg-white dark:bg-black font-sans flex flex-col relative overflow-hidden">
             {/* Header / ProgressBar could go here */}
             <div className="absolute top-0 left-0 w-full p-6 flex justify-between items-center z-10">
                 <Link href="/" className="flex items-center gap-3 group">

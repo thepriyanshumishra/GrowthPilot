@@ -16,7 +16,7 @@ import {
 
 export default function PricingPage() {
     return (
-        <main className="min-h-screen bg-[#FDFDFF] dark:bg-black overflow-hidden font-geist">
+        <main className="min-h-screen bg-[#FDFDFF] dark:bg-black overflow-hidden font-sans">
             <Navbar />
 
             <section className="pt-32 pb-16 md:pt-44 md:pb-20 px-4 container mx-auto text-center">

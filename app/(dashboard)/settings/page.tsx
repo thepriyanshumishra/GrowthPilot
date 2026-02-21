@@ -75,7 +75,7 @@ export default function SettingsPage() {
     }
 
     return (
-        <div className="font-geist max-w-4xl mx-auto p-4 md:p-6 space-y-6 md:space-y-8 pb-20">
+        <div className="font-sans max-w-4xl mx-auto p-4 md:p-6 space-y-6 md:space-y-8 pb-20">
             <div className="flex flex-col gap-1">
                 <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-zinc-900 dark:text-white">Settings</h1>
                 <p className="text-zinc-500 text-sm md:text-base">Manage your profile, preferences, and account security.</p>

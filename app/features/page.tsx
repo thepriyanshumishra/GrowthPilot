@@ -10,7 +10,7 @@ import Link from "next/link"
 
 export default function FeaturesPage() {
     return (
-        <main className="min-h-screen bg-[#FDFDFF] dark:bg-black overflow-hidden font-geist">
+        <main className="min-h-screen bg-[#FDFDFF] dark:bg-black overflow-hidden font-sans">
             <Navbar />
 
             {/* Hero Section */}

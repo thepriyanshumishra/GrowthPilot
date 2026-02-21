@@ -260,7 +260,7 @@ export default function ChatCoach() {
     }
 
     return (
-        <div className="font-geist h-[calc(100vh-2rem)] md:h-[calc(100vh-2rem)] flex flex-col md:flex-row relative bg-white dark:bg-zinc-950 rounded-2xl md:rounded-3xl overflow-hidden border border-zinc-200/80 dark:border-zinc-800 shadow-[0_24px_80px_-16px_rgba(0,0,0,0.1)]">
+        <div className="font-sans h-[calc(100vh-2rem)] md:h-[calc(100vh-2rem)] flex flex-col md:flex-row relative bg-white dark:bg-zinc-950 rounded-2xl md:rounded-3xl overflow-hidden border border-zinc-200/80 dark:border-zinc-800 shadow-[0_24px_80px_-16px_rgba(0,0,0,0.1)]">
 
             {/* Main Interaction Plane */}
             <div className="flex-1 flex flex-col min-w-0 bg-[#F9F9FB] dark:bg-[#09090B] h-full">

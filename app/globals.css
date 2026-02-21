@@ -3,6 +3,9 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-heading: var(--font-outfit), var(--font-inter), ui-sans-serif;
+
   --color-border: hsl(var(--border));
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
@@ -59,35 +62,48 @@
 }
 
 @utility clay-panel {
-  @apply bg-white/40 backdrop-blur-2xl border border-white/60 shadow-lg;
+  @apply bg-white border border-white/80;
+  box-shadow:
+    0 20px 50px -12px rgba(0, 0, 0, 0.1),
+    inset 0 2px 4px 0 rgba(255, 255, 255, 1),
+    inset 0 -2px 4px 0 rgba(0, 0, 0, 0.05);
 
   &:where(.dark, .dark *) {
-    @apply bg-zinc-900/40 border-white/10 shadow-lg;
+    @apply bg-zinc-900 border-zinc-800;
+    box-shadow:
+      0 20px 50px -12px rgba(0, 0, 0, 0.5),
+      inset 0 1px 1px 0 rgba(255, 255, 255, 0.1);
   }
 }
 
 @utility clay-btn {
-  @apply bg-white/50 backdrop-blur-md shadow-lg transition-all hover:scale-105 active:scale-95;
+  @apply bg-white border border-zinc-100 shadow-sm transition-all hover:translate-y-[-2px] hover:shadow-md active:translate-y-[1px] active:shadow-inner;
 
   &:where(.dark, .dark *) {
-    @apply bg-zinc-800/50 shadow-lg;
+    @apply bg-zinc-800 border-zinc-700;
   }
 }
 
 @utility clay-btn-primary {
-  @apply bg-primary text-primary-foreground shadow-lg transition-all hover:scale-105 active:scale-95;
+  @apply bg-blue-500 text-white border-b-4 border-blue-700 shadow-lg transition-all hover:translate-y-[-2px] hover:shadow-xl active:translate-y-[2px] active:border-b-0;
 
   &:where(.dark, .dark *) {
-    @apply shadow-lg;
+    @apply bg-blue-600 border-blue-800;
   }
 }
 
 @utility clay-input {
-  @apply bg-zinc-50 border-white/20 shadow-inner;
+  @apply bg-white border-2 border-zinc-100 focus-within:border-blue-400 transition-all;
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.02);
 
   &:where(.dark, .dark *) {
-    @apply bg-zinc-800/50 border-zinc-700 shadow-inner;
+    @apply bg-zinc-950/50 border-zinc-800 focus-within:border-blue-500;
   }
+}
+
+@utility clay-icon-box {
+  @apply bg-blue-500 rounded-lg flex items-center justify-center p-1.5 shadow-sm;
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 @layer base {
@@ -134,6 +150,15 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 224.3 76.3% 48%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading antialiased;
   }
 
   * {

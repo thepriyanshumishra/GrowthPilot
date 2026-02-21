@@ -10,7 +10,7 @@ import Link from "next/link"
 
 export default function HowItWorksPage() {
     return (
-        <main className="min-h-screen bg-[#FDFDFF] dark:bg-black overflow-hidden font-geist">
+        <main className="min-h-screen bg-[#FDFDFF] dark:bg-black overflow-hidden font-sans">
             <Navbar />
 
             <section className="pt-32 pb-16 md:pt-44 md:pb-32 px-4 container mx-auto text-center">

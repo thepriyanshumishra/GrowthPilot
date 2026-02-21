@@ -16,7 +16,7 @@ export default async function PublicProfile({ params }: { params: Promise<{ user
     const level = Math.floor(xp / 1000) + 1
 
     return (
-        <div className="min-h-screen bg-[#F5F5F7] dark:bg-black font-geist py-20 px-6">
+        <div className="min-h-screen bg-[#F5F5F7] dark:bg-black font-sans py-20 px-6">
             <div className="max-w-4xl mx-auto space-y-12">
                 {/* Profile Header */}
                 <div className="flex flex-col items-center text-center space-y-4">

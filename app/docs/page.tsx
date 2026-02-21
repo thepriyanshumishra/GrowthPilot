@@ -7,7 +7,7 @@ import { FileText } from "lucide-react"
 
 export default function DocsPage() {
     return (
-        <main className="min-h-screen bg-[#FDFDFF] dark:bg-black overflow-hidden font-geist">
+        <main className="min-h-screen bg-[#FDFDFF] dark:bg-black overflow-hidden font-sans">
             <Navbar />
             <section className="pt-44 pb-32 px-4 container mx-auto max-w-4xl text-center">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 text-xs font-bold uppercase tracking-wider mb-8">

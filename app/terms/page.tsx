@@ -7,7 +7,7 @@ import { Scale } from "lucide-react"
 
 export default function TermsPage() {
     return (
-        <main className="min-h-screen bg-[#FDFDFF] dark:bg-black overflow-hidden font-geist">
+        <main className="min-h-screen bg-[#FDFDFF] dark:bg-black overflow-hidden font-sans">
             <Navbar />
             <section className="pt-44 pb-32 px-4 container mx-auto max-w-4xl">
                 <div className="text-center mb-16">

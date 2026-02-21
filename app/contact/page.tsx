@@ -24,7 +24,7 @@ export default function ContactPage() {
     }
 
     return (
-        <main className="min-h-screen bg-[#FDFDFF] dark:bg-black overflow-hidden font-geist">
+        <main className="min-h-screen bg-[#FDFDFF] dark:bg-black overflow-hidden font-sans">
             <Navbar />
 
             <section className="pt-44 pb-20 px-4 container mx-auto text-center">

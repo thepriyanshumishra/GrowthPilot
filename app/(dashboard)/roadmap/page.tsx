@@ -22,7 +22,7 @@ export default async function RoadmapPage() {
 
     if (!roadmap) {
         return (
-            <div className="font-geist min-h-screen flex flex-col items-center justify-center p-4">
+            <div className="font-sans min-h-screen flex flex-col items-center justify-center p-4">
                 <GlassCard className="max-w-md p-8 text-center space-y-6 bg-white/50 backdrop-blur-xl border-zinc-200 shadow-xl">
                     <div className="mx-auto w-16 h-16 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center">
                         <MapIcon className="w-8 h-8" />
@@ -40,7 +40,7 @@ export default async function RoadmapPage() {
     const progress = milestones.length > 0 ? Math.round((completedCount / milestones.length) * 100) : 0
 
     return (
-        <div className="font-geist h-[calc(100vh-2rem)] md:h-[calc(100vh-2rem)] flex flex-col relative bg-[#F5F5F7] dark:bg-black rounded-2xl md:rounded-3xl overflow-hidden border border-zinc-200 dark:border-zinc-800 shadow-2xl">
+        <div className="font-sans h-[calc(100vh-2rem)] md:h-[calc(100vh-2rem)] flex flex-col relative bg-[#F5F5F7] dark:bg-black rounded-2xl md:rounded-3xl overflow-hidden border border-zinc-200 dark:border-zinc-800 shadow-2xl">
             {/* Ultra-Premium Glass Header */}
             <div className="absolute top-0 left-0 right-0 z-20 px-4 md:px-6 py-3 md:py-4 flex items-center justify-between bg-white/60 dark:bg-black/60 backdrop-blur-xl border-b border-zinc-200/50 dark:border-zinc-800/50 h-14 md:h-16">
                 <div className="flex items-center gap-2 md:gap-3">

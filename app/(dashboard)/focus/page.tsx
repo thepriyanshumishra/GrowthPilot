@@ -20,7 +20,7 @@ export default function FocusPage() {
     } = useFocus()
 
     return (
-        <div className="font-geist h-full flex flex-col p-4 md:p-6 max-w-7xl mx-auto space-y-6 md:space-y-8 pb-20">
+        <div className="font-sans h-full flex flex-col p-4 md:p-6 max-w-7xl mx-auto space-y-6 md:space-y-8 pb-20">
             <div className="space-y-1">
                 <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-zinc-900 dark:text-white flex items-center gap-2 md:gap-3">
                     <Target className="w-6 h-6 md:w-8 md:h-8 text-blue-600" />

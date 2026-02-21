@@ -91,7 +91,7 @@ export default function SquadsPage() {
     }
 
     return (
-        <div className="min-h-screen bg-[#F5F5F7] dark:bg-black font-geist pb-20 md:pb-0">
+        <div className="min-h-screen bg-[#F5F5F7] dark:bg-black font-sans pb-20 md:pb-0">
             <main className="px-4 py-6 md:px-0 md:py-0">
                 <header className="mb-8 md:mb-12 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
                     <div className="space-y-2">

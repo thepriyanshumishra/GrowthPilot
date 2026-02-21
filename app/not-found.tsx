@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer"
 
 export default function NotFound() {
     return (
-        <main className="min-h-screen bg-[#FDFDFF] dark:bg-black flex flex-col font-geist overflow-hidden">
+        <main className="min-h-screen bg-[#FDFDFF] dark:bg-black flex flex-col font-sans overflow-hidden">
             <Navbar />
 
             {/* Main Content Area */}

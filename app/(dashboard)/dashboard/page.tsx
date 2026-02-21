@@ -111,7 +111,7 @@ export default async function Dashboard() {
     const randomQuote = getRandomQuote()
 
     return (
-        <div className="min-h-screen font-geist selection:bg-blue-500/30 pb-20">
+        <div className="min-h-screen font-sans selection:bg-blue-500/30 pb-20">
             <main className="space-y-6 md:space-y-8">
                 {/* 1. HUD Area: Profile & Quick Stats - Asymmetric 8:4 Split */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
