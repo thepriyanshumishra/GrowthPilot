@@ -121,7 +121,7 @@ export async function generateRoadmap() {
             })
 
             // 3. Create new roadmap
-            const createdRoadmap = await tx.roadmap.create({
+            await tx.roadmap.create({
                 data: {
                     userId: user.id,
                     title: roadmapData.title,

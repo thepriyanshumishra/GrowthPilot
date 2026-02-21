@@ -31,7 +31,7 @@ export async function updateTaskStatus(taskId: string, status: "DONE" | "TODO") 
     try {
         await prisma.$transaction(async (tx) => {
             // 1. Verify and update the task
-            const task = await tx.task.update({
+            await tx.task.update({
                 where: { id: taskId, userId: user.id },
                 data: { status }
             })

@@ -5,8 +5,7 @@ import { prisma } from "@/lib/prisma"
 import { getServerUser } from "@/lib/server-auth"
 import { revalidatePath } from "next/cache"
 import { generateRoadmap } from "./roadmap-action"
-// @ts-expect-error - pdf-parse has no default export in some environments
-import pdf from "pdf-parse"
+import { PDFParse } from "pdf-parse"
 
 // ... existing code ...
 
@@ -80,7 +79,8 @@ export async function uploadResume(formData: FormData) {
 
     try {
         const buffer = Buffer.from(await file.arrayBuffer())
-        const data = await pdf(buffer)
+        const parser = new PDFParse({ data: buffer })
+        const data = await parser.getText()
         const text = data.text
 
         if (!text || text.trim().length === 0) {
