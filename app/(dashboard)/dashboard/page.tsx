@@ -23,6 +23,31 @@ import quotes from "@/lib/quotes.json"
 
 const getRandomQuote = () => quotes[Math.floor(Math.random() * quotes.length)]
 
+function formatDynamicTime(totalMinutes: number) {
+    if (!totalMinutes || totalMinutes <= 0) return "0m"
+
+    const minsInYear = 365 * 24 * 60
+    const minsInDay = 24 * 60
+    const minsInHour = 60
+
+    const y = Math.floor(totalMinutes / minsInYear)
+    let rem = totalMinutes % minsInYear
+
+    const d = Math.floor(rem / minsInDay)
+    rem = rem % minsInDay
+
+    const h = Math.floor(rem / minsInHour)
+    const m = rem % minsInHour
+
+    const parts: string[] = []
+    if (y > 0) parts.push(`${y}y`)
+    if (d > 0) parts.push(`${d}d`)
+    if (h > 0) parts.push(`${h}h`)
+    if (m > 0 || parts.length === 0) parts.push(`${m}m`)
+
+    return parts.join(' ')
+}
+
 export default async function Dashboard() {
     const user = await getServerUser()
     if (!user) return <div>Please sign in</div>
@@ -141,7 +166,7 @@ export default async function Dashboard() {
                             <div className="p-3 md:p-4 rounded-xl bg-white/50 dark:bg-zinc-900/50 border border-zinc-100 dark:border-zinc-800 backdrop-blur-sm flex sm:flex-col justify-between items-center sm:items-start">
                                 <div className="text-xs text-zinc-500 font-medium sm:mb-1">Focus Time</div>
                                 <div className="text-lg md:text-xl font-bold text-zinc-900 dark:text-white">
-                                    {Math.floor((profile?.focusTimeTotal || 0) / 60)}h {(profile?.focusTimeTotal || 0) % 60}m
+                                    {formatDynamicTime(profile?.focusTimeTotal || 0)}
                                 </div>
                             </div>
                             <div className="p-3 md:p-4 rounded-xl bg-white/50 dark:bg-zinc-900/50 border border-zinc-100 dark:border-zinc-800 backdrop-blur-sm flex sm:flex-col justify-between items-center sm:items-start">

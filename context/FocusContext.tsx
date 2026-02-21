@@ -1,8 +1,9 @@
 "use client"
 
-import React, { createContext, useContext, useState, useEffect, ReactNode } from "react"
+import React, { createContext, useContext, useState, useEffect, useRef, ReactNode } from "react"
 import { addXP } from "@/app/actions/gamification"
 import { toast } from "sonner"
+import { addFocusTime } from "@/app/actions/focus"
 
 export type TimerMode = {
     id: string
@@ -41,12 +42,21 @@ export function FocusProvider({ children }: { children: ReactNode }) {
     const [timeLeft, setTimeLeft] = useState(selectedMode.duration)
     const [isActive, setIsActive] = useState(false)
     const [sessionCount, setSessionCount] = useState(0)
+    const unloggedSeconds = useRef(0)
 
     useEffect(() => {
         let interval: NodeJS.Timeout | null = null
         if (isActive && timeLeft > 0) {
             interval = setInterval(() => {
                 setTimeLeft((prev) => prev - 1)
+
+                // Track focus time strictly based on seconds passed
+                unloggedSeconds.current += 1
+                if (unloggedSeconds.current >= 60) {
+                    const mins = Math.floor(unloggedSeconds.current / 60)
+                    unloggedSeconds.current -= (mins * 60)
+                    addFocusTime(mins).catch(console.error)
+                }
             }, 1000)
         }
         return () => {
@@ -75,6 +85,7 @@ export function FocusProvider({ children }: { children: ReactNode }) {
         setSelectedMode(mode)
         setIsActive(false)
         setTimeLeft(mode.duration)
+        unloggedSeconds.current = 0
     }
 
     const toggleTimer = () => setIsActive(!isActive)
@@ -82,6 +93,7 @@ export function FocusProvider({ children }: { children: ReactNode }) {
     const resetTimer = () => {
         setIsActive(false)
         setTimeLeft(selectedMode.duration)
+        unloggedSeconds.current = 0
     }
 
     const formatTime = (seconds: number) => {
