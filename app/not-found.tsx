@@ -29,16 +29,11 @@ export default function NotFound() {
                 {/* Left Side: Sadness Image */}
                 <div className="w-full md:w-1/2 flex justify-center md:justify-end md:pr-12 relative animate-in fade-in slide-in-from-bottom-8 duration-1000">
                     <div className="relative w-[300px] h-[300px] md:w-[450px] md:h-[450px]">
-                        {/* Using a reliable publicly available Sadness transparent PNG URL as a source, falling back nicely if broken */}
+                        {/* Using the local image uploaded by the user */}
                         <img
-                            src="https://static.wikia.nocookie.net/disney/images/5/54/Sadness_Inside_Out.png"
+                            src="/sadness.png"
                             alt="Sadness from Inside Out crying"
                             className="object-contain w-full h-full drop-shadow-2xl"
-                            onError={(e) => {
-                                // Fallback if Wikia image blocks hotlinking
-                                e.currentTarget.src = "https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-20810-s1q5sn_36d19472.jpeg";
-                                e.currentTarget.className = "object-contain w-full h-full rounded-2xl";
-                            }}
                         />
                     </div>
                 </div>
