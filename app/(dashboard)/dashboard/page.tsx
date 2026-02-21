@@ -27,29 +27,55 @@ export default async function Dashboard() {
     const user = await getServerUser()
     if (!user) return <div>Please sign in</div>
 
-    const profile = await prisma.profile.findUnique({ where: { userId: user.id } })
-    const roadmap = await prisma.roadmap.findFirst({
-        where: { userId: user.id },
-        include: { milestones: true }
+    const dbUser = await prisma.user.findUnique({
+        where: { id: user.id },
+        include: {
+            profile: true,
+            roadmap: { include: { milestones: true } },
+            tasks: { orderBy: { createdAt: 'desc' } },
+            squad: true
+        }
     })
-    const tasks = await prisma.task.findMany({
-        where: { userId: user.id },
-        orderBy: { createdAt: 'desc' }
-    })
+
+    if (!dbUser) return null;
+
+    const profile = dbUser.profile
+    const roadmap = dbUser.roadmap
+    const tasks = dbUser.tasks
+    const userSquad = dbUser.squad
 
     const milestones = roadmap?.milestones || []
     const completedMilestones = milestones.filter((m: any) => m.status === 'COMPLETED').length
     const progress = milestones.length > 0 ? Math.round((completedMilestones / milestones.length) * 100) : 0
 
-    const timeData = [
-        { name: 'Mon', value: 40 },
-        { name: 'Tue', value: 70 },
-        { name: 'Wed', value: 45 },
-        { name: 'Thu', value: 90 },
-        { name: 'Fri', value: 65 },
-        { name: 'Sat', value: 30 },
-        { name: 'Sun', value: 80 },
-    ]
+    // Dynamic 7-day activity data
+    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+    const timeData: { name: string, value: number }[] = []
+    const now = new Date()
+    now.setHours(0, 0, 0, 0)
+    for (let i = 6; i >= 0; i--) {
+        const d = new Date(now)
+        d.setDate(d.getDate() - i)
+
+        // Match on local date string purely for rendering stats simply
+        const doneThatDay = tasks.filter((t: any) =>
+            t.status === 'DONE' &&
+            new Date(t.updatedAt).setHours(0, 0, 0, 0) === d.getTime()
+        ).length
+
+        timeData.push({ name: days[d.getDay()], value: doneThatDay })
+    }
+
+    // Dynamic Squad Rank
+    let squadRankContext = ""
+    if (userSquad) {
+        const rank = await prisma.squad.count({
+            where: { totalXp: { gt: userSquad.totalXp } }
+        })
+        squadRankContext = `Global Rank #${rank + 1} (${userSquad.totalXp} XP)`
+    } else {
+        squadRankContext = "Not Enlisted"
+    }
 
     const radarData = (profile?.skills || []).slice(0, 5).map((skill: string, i: number) => ({
         name: skill.toUpperCase(),
@@ -113,8 +139,8 @@ export default async function Dashboard() {
                                 <div className="text-lg md:text-xl font-bold text-zinc-900 dark:text-white">{profile?.xp?.toLocaleString() || 0}</div>
                             </div>
                             <div className="p-3 md:p-4 rounded-xl bg-white/50 dark:bg-zinc-900/50 border border-zinc-100 dark:border-zinc-800 backdrop-blur-sm flex sm:flex-col justify-between items-center sm:items-start">
-                                <div className="text-xs text-zinc-500 font-medium sm:mb-1">Focus Time</div>
-                                <div className="text-lg md:text-xl font-bold text-zinc-900 dark:text-white">12h 30m</div>
+                                <div className="text-xs text-zinc-500 font-medium sm:mb-1">Commitment</div>
+                                <div className="text-lg md:text-xl font-bold text-zinc-900 dark:text-white">{profile?.availabilityHours || 1}h / day</div>
                             </div>
                             <div className="p-3 md:p-4 rounded-xl bg-white/50 dark:bg-zinc-900/50 border border-zinc-100 dark:border-zinc-800 backdrop-blur-sm flex sm:flex-col justify-between items-center sm:items-start">
                                 <div className="text-xs text-zinc-500 font-medium sm:mb-1">Tasks Done</div>
@@ -190,8 +216,8 @@ export default async function Dashboard() {
                                 <GlassCard className="p-5 h-32 flex flex-col justify-between hover:border-purple-500/30 transition-all hover:-translate-y-1">
                                     <Trophy className="w-8 h-8 text-purple-600" />
                                     <div>
-                                        <div className="text-sm font-bold text-zinc-900 dark:text-white">Squad</div>
-                                        <div className="text-[10px] text-zinc-500 font-medium mt-0.5">Global Rank #42</div>
+                                        <div className="text-sm font-bold text-zinc-900 dark:text-white">Squad {userSquad ? `• ${userSquad.name}` : ""}</div>
+                                        <div className="text-[10px] text-zinc-500 font-medium mt-0.5">{squadRankContext}</div>
                                     </div>
                                 </GlassCard>
                             </Link>
