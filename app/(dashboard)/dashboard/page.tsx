@@ -139,8 +139,10 @@ export default async function Dashboard() {
                                 <div className="text-lg md:text-xl font-bold text-zinc-900 dark:text-white">{profile?.xp?.toLocaleString() || 0}</div>
                             </div>
                             <div className="p-3 md:p-4 rounded-xl bg-white/50 dark:bg-zinc-900/50 border border-zinc-100 dark:border-zinc-800 backdrop-blur-sm flex sm:flex-col justify-between items-center sm:items-start">
-                                <div className="text-xs text-zinc-500 font-medium sm:mb-1">Commitment</div>
-                                <div className="text-lg md:text-xl font-bold text-zinc-900 dark:text-white">{profile?.availabilityHours || 1}h / day</div>
+                                <div className="text-xs text-zinc-500 font-medium sm:mb-1">Focus Time</div>
+                                <div className="text-lg md:text-xl font-bold text-zinc-900 dark:text-white">
+                                    {Math.floor((profile?.focusTimeTotal || 0) / 60)}h {(profile?.focusTimeTotal || 0) % 60}m
+                                </div>
                             </div>
                             <div className="p-3 md:p-4 rounded-xl bg-white/50 dark:bg-zinc-900/50 border border-zinc-100 dark:border-zinc-800 backdrop-blur-sm flex sm:flex-col justify-between items-center sm:items-start">
                                 <div className="text-xs text-zinc-500 font-medium sm:mb-1">Tasks Done</div>
