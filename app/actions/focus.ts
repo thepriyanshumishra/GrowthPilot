@@ -9,10 +9,21 @@ export async function addFocusTime(minutes: number) {
     const user = await getServerUser()
     if (!user) return { success: false }
 
-    await prisma.profile.update({
-        where: { userId: user.id },
-        data: { focusTimeTotal: { increment: minutes } }
-    })
+    // Security check: No single focus session should exceed 200 minutes (3.3 hours)
+    if (minutes > 200) {
+        console.error(`Suspicious focus time attempt: ${minutes}m by ${user.id}`)
+        return { success: false, error: "Invalid focus duration" }
+    }
 
-    return { success: true }
+    try {
+        await prisma.profile.update({
+            where: { userId: user.id },
+            data: { focusTimeTotal: { increment: minutes } }
+        })
+
+        return { success: true }
+    } catch (error) {
+        console.error("Failed to update focus time", error)
+        return { success: false }
+    }
 }

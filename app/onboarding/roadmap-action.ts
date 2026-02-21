@@ -108,47 +108,50 @@ export async function generateRoadmap() {
             }
         }
 
-        // DELETE existing roadmap to ensure fresh start
-        await prisma.roadmap.deleteMany({
-            where: { userId: user.id }
-        })
+        // Atomically replace roadmap and tasks
+        await prisma.$transaction(async (tx) => {
+            // 1. DELETE existing roadmap to ensure fresh start
+            await tx.roadmap.deleteMany({
+                where: { userId: user.id }
+            })
 
-        // DELETE existing tasks (optional, but good for a fresh start/re-generation)
-        await prisma.task.deleteMany({
-            where: { userId: user.id, status: 'TODO' } // Keep done tasks? For now, let's clear TODOs to avoid duplicates if re-generating
-        })
+            // 2. DELETE existing tasks (clear TODOs to avoid duplicates if re-generating)
+            await tx.task.deleteMany({
+                where: { userId: user.id, status: 'TODO' }
+            })
 
-        // Create new roadmap
-        await prisma.roadmap.create({
-            data: {
-                userId: user.id,
-                title: roadmapData.title,
-                description: roadmapData.description,
-                milestones: {
-                    create: roadmapData.milestones.map((m: any, index: number) => ({
-                        title: m.title,
-                        description: m.description,
-                        order: index + 1,
-                        status: "PENDING"
-                    }))
+            // 3. Create new roadmap
+            const createdRoadmap = await tx.roadmap.create({
+                data: {
+                    userId: user.id,
+                    title: roadmapData.title,
+                    description: roadmapData.description,
+                    milestones: {
+                        create: roadmapData.milestones.map((m: any, index: number) => ({
+                            title: m.title,
+                            description: m.description,
+                            order: index + 1,
+                            status: "PENDING"
+                        }))
+                    }
                 }
+            })
+
+            // 4. Create initial tasks
+            if (roadmapData.initial_tasks && Array.isArray(roadmapData.initial_tasks)) {
+                await tx.task.createMany({
+                    data: roadmapData.initial_tasks.map((t: any) => ({
+                        userId: user.id,
+                        title: t.title,
+                        description: t.description || "",
+                        difficulty: t.difficulty || "Medium",
+                        estimatedMinutes: t.estimatedMinutes || 30,
+                        metadata: t.metadata || {}, // Save the structured details
+                        status: "TODO"
+                    }))
+                })
             }
         })
-
-        // Create initial tasks
-        if (roadmapData.initial_tasks && Array.isArray(roadmapData.initial_tasks)) {
-            await prisma.task.createMany({
-                data: roadmapData.initial_tasks.map((t: any) => ({
-                    userId: user.id,
-                    title: t.title,
-                    description: t.description || "",
-                    difficulty: t.difficulty || "Medium",
-                    estimatedMinutes: t.estimatedMinutes || 30,
-                    metadata: t.metadata || {}, // Save the structured details
-                    status: "TODO"
-                }))
-            })
-        }
 
         return { success: true }
     } catch (error) {

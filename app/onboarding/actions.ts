@@ -67,10 +67,25 @@ export async function uploadResume(formData: FormData) {
     const file = formData.get("file") as File
     if (!file) return { success: false, error: "No file provided" }
 
+    // Security: Validate file size (5MB max)
+    const MAX_SIZE = 5 * 1024 * 1024
+    if (file.size > MAX_SIZE) {
+        return { success: false, error: "File too large. Maximum size is 5MB." }
+    }
+
+    // Security: Validate MIME type
+    if (file.type !== "application/pdf") {
+        return { success: false, error: "Invalid file type. Only PDF is supported." }
+    }
+
     try {
         const buffer = Buffer.from(await file.arrayBuffer())
         const data = await pdf(buffer)
         const text = data.text
+
+        if (!text || text.trim().length === 0) {
+            return { success: false, error: "No text could be extracted from this PDF. Please try a different format or manual entry." }
+        }
 
         await prisma.profile.upsert({
             where: { userId: user.id },
