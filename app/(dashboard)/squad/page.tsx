@@ -4,37 +4,81 @@ import { GlassCard } from "@/components/GlassCard"
 import { Users, Trophy, Zap, Shield, ArrowUpRight, Loader2 } from "lucide-react"
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
-import { getSquads, joinSquad } from "./actions"
+import { getSquads, joinSquad, createSquad, getUserSquad } from "./actions"
 import { useAuth } from "@/context/AuthContext"
 import { toast } from "sonner"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Textarea } from "@/components/ui/textarea"
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+} from "@/components/ui/dialog"
 
 export default function SquadsPage() {
     const { user } = useAuth()
     const [squads, setSquads] = useState<any[]>([])
+    const [userSquad, setUserSquad] = useState<any>(null)
     const [isLoading, setIsLoading] = useState(true)
+    const [isCreating, setIsCreating] = useState(false)
+    const [newSquadName, setNewSquadName] = useState("")
+    const [newSquadDesc, setNewSquadDesc] = useState("")
+    const [openDialog, setOpenDialog] = useState(false)
 
     useEffect(() => {
-        const loadSquads = async () => {
+        const loadData = async () => {
             try {
-                const data = await getSquads()
-                setSquads(data)
+                const [allSquads, mySquad] = await Promise.all([
+                    getSquads(),
+                    getUserSquad()
+                ])
+                setSquads(allSquads)
+                setUserSquad(mySquad)
             } catch (error) {
-                console.error("Failed to load squads:", error)
+                console.error("Failed to load squads data:", error)
             } finally {
                 setIsLoading(false)
             }
         }
-        loadSquads()
+        loadData()
     }, [])
 
     const handleJoin = async (squadId: string) => {
         if (!user) return
         try {
-            await joinSquad(squadId, user.uid)
+            await joinSquad(squadId)
             toast.success("Squad joined successfully!")
             window.location.reload()
         } catch {
             toast.error("Failed to join squad")
+        }
+    }
+
+    const handleCreate = async () => {
+        if (!newSquadName.trim() || !newSquadDesc.trim()) {
+            toast.error("Please fill in all fields")
+            return
+        }
+
+        setIsCreating(true)
+        try {
+            const res = await createSquad(newSquadName, newSquadDesc)
+            if (res.success) {
+                toast.success("Squad tactical command established!")
+                setOpenDialog(false)
+                window.location.reload()
+            } else {
+                toast.error(res.error || "Failed to create squad")
+            }
+        } catch {
+            toast.error("Failed to create squad")
+        } finally {
+            setIsCreating(false)
         }
     }
 
@@ -59,12 +103,79 @@ export default function SquadsPage() {
                         <p className="text-zinc-500 max-w-xl font-medium text-sm md:text-base">Join a tactical squad, sync your milestones, and climb the global leaderboards with your team.</p>
                     </div>
 
-                    <GlassCard className="p-3 md:p-4 px-5 md:px-6 w-full md:w-auto rounded-2xl flex items-center justify-between md:justify-start gap-6 bg-white dark:bg-zinc-900/50 border border-zinc-200/50 dark:border-zinc-800/50 shadow-sm">
-                        <div className="text-left md:text-center">
-                            <div className="text-[9px] md:text-[10px] font-semibold text-zinc-400 uppercase tracking-wider">Your Squad</div>
-                            <div className="text-base md:text-lg font-semibold text-blue-600">Active</div>
-                        </div>
-                    </GlassCard>
+                    <div className="flex flex-col md:flex-row gap-4 items-center">
+                        <GlassCard className="p-3 md:p-4 px-5 md:px-6 w-full md:w-auto rounded-2xl flex items-center justify-between md:justify-start gap-6 bg-white dark:bg-zinc-900/50 border border-zinc-200/50 dark:border-zinc-800/50 shadow-sm">
+                            <div className="text-left md:text-center">
+                                <div className="text-[9px] md:text-[10px] font-semibold text-zinc-400 uppercase tracking-wider">Your Squad</div>
+                                <div className="text-base md:text-lg font-semibold text-blue-600">
+                                    {userSquad ? userSquad.name : "None Active"}
+                                </div>
+                            </div>
+
+                            {!userSquad ? (
+                                <Dialog open={openDialog} onOpenChange={setOpenDialog}>
+                                    <DialogTrigger asChild>
+                                        <Button className="clay-btn-primary h-8 px-4 text-xs font-bold shrink-0">
+                                            Form Squad
+                                        </Button>
+                                    </DialogTrigger>
+                                    <DialogContent className="sm:max-w-[425px]">
+                                        <DialogHeader>
+                                            <DialogTitle>Form Tactical Squad</DialogTitle>
+                                            <DialogDescription>
+                                                Create a new squad and invite members to climb the global leaderboard together.
+                                            </DialogDescription>
+                                        </DialogHeader>
+                                        <div className="grid gap-4 py-4">
+                                            <div className="grid gap-2">
+                                                <Label htmlFor="name">Squad Designation</Label>
+                                                <Input
+                                                    id="name"
+                                                    placeholder="E.g., Task Force 141"
+                                                    value={newSquadName}
+                                                    onChange={(e) => setNewSquadName(e.target.value)}
+                                                    className="clay-input h-11"
+                                                />
+                                            </div>
+                                            <div className="grid gap-2">
+                                                <Label htmlFor="desc">Mission Statement</Label>
+                                                <Textarea
+                                                    id="desc"
+                                                    placeholder="What is your squad's primary objective?"
+                                                    value={newSquadDesc}
+                                                    onChange={(e) => setNewSquadDesc(e.target.value)}
+                                                    className="clay-input"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="flex justify-end pt-2">
+                                            <Button
+                                                onClick={handleCreate}
+                                                className="clay-btn-primary font-bold min-w-[120px]"
+                                                disabled={isCreating}
+                                            >
+                                                {isCreating ? <Loader2 className="w-4 h-4 animate-spin" /> : "Establish Squad"}
+                                            </Button>
+                                        </div>
+                                    </DialogContent>
+                                </Dialog>
+                            ) : (
+                                <div className="flex items-center gap-4">
+                                    <div className="text-center">
+                                        <div className="text-[9px] md:text-[10px] font-semibold text-zinc-400 uppercase tracking-wider">Members</div>
+                                        <div className="text-sm md:text-base font-bold text-zinc-900 dark:text-white">{userSquad.members?.length || 1}</div>
+                                    </div>
+                                    <div className="text-center">
+                                        <div className="text-[9px] md:text-[10px] font-semibold text-zinc-400 uppercase tracking-wider">Total XP</div>
+                                        <div className="text-sm md:text-base font-bold text-zinc-900 dark:text-white flex items-center justify-center gap-1">
+                                            <Zap className="w-3 h-3 text-blue-500" />
+                                            {userSquad.totalXp}
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+                        </GlassCard>
+                    </div>
                 </header>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -74,14 +185,14 @@ export default function SquadsPage() {
                         <div className="space-y-3">
                             {squads.length === 0 ? (
                                 <div className="p-8 md:p-12 text-center text-zinc-500 text-sm md:text-base bg-white/50 dark:bg-zinc-900/50 rounded-2xl md:rounded-3xl border border-dashed border-zinc-200 dark:border-zinc-800">
-                                    No squads found. Start by creating one (Admin only).
+                                    No squads found. Start by minting your own.
                                 </div>
                             ) : squads.map((squad, i) => (
                                 <motion.div
                                     key={squad.id}
-                                    whileHover={{ x: 5 }}
-                                    className="cursor-pointer"
-                                    onClick={() => handleJoin(squad.id)}
+                                    whileHover={!userSquad ? { x: 5 } : {}}
+                                    className={!userSquad ? "cursor-pointer" : "cursor-default opacity-90"}
+                                    onClick={() => !userSquad && handleJoin(squad.id)}
                                 >
                                     <GlassCard className="p-4 md:p-5 rounded-xl md:rounded-2xl flex items-center justify-between group bg-white dark:bg-zinc-900/40 hover:border-zinc-200 dark:hover:border-zinc-800 transition-all border border-zinc-100 dark:border-zinc-800/50 shadow-sm">
                                         <div className="flex items-center gap-4 md:gap-6">
@@ -89,7 +200,10 @@ export default function SquadsPage() {
                                                 {i + 1}
                                             </div>
                                             <div className="min-w-0 pr-2">
-                                                <h4 className="text-base md:text-lg font-semibold tracking-tight text-zinc-900 dark:text-white truncate">{squad.name}</h4>
+                                                <h4 className="text-base md:text-lg font-semibold tracking-tight text-zinc-900 dark:text-white truncate">
+                                                    {squad.name}
+                                                    {userSquad?.id === squad.id && <span className="ml-2 text-[10px] bg-blue-100 dark:bg-blue-900/30 text-blue-600 px-2 py-0.5 rounded-full uppercase tracking-wider">You</span>}
+                                                </h4>
                                                 <div className="flex flex-wrap items-center gap-2 md:gap-4 mt-1">
                                                     <span className="text-[10px] md:text-[11px] font-medium text-zinc-400 flex items-center gap-1">
                                                         <Users className="w-3 h-3 md:w-3.5 md:h-3.5" /> {squad._count.members}
@@ -100,7 +214,9 @@ export default function SquadsPage() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5 text-zinc-300 group-hover:text-blue-600 transition-colors shrink-0" />
+                                        {!userSquad && (
+                                            <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5 text-zinc-300 group-hover:text-blue-600 transition-colors shrink-0" />
+                                        )}
                                     </GlassCard>
                                 </motion.div>
                             ))}

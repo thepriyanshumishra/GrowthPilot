@@ -39,6 +39,19 @@ export async function updateTaskStatus(taskId: string, status: "DONE" | "TODO") 
             where: { userId: user.id },
             data: { xp: { increment: 50 } }
         })
+
+        // Also add XP to their Squad if they are in one
+        const dbUser = await prisma.user.findUnique({
+            where: { id: user.id },
+            select: { squadId: true }
+        })
+
+        if (dbUser?.squadId) {
+            await prisma.squad.update({
+                where: { id: dbUser.squadId },
+                data: { totalXp: { increment: 50 } }
+            })
+        }
     }
 
     return { success: true }
